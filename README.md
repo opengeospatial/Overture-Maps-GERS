@@ -1,4 +1,3 @@
-# Overture-Maps-GERS
 
 = OGC: GERS Community Standard
 
