@@ -1,8 +1,6 @@
-# Overture Maps/OGC Global Entity Reference System (GERS)
+# Overture Maps/OGC Global Entity Reference System (GERS) Draft Standard
 
-## OGC: GERS Community Standard
-
-### What is GERS
+## What is GERS
 
 The Global Entity Reference System (GERS) is a framework created by the http://https://overturemaps.org/[Overture Maps Foundation] to provide unique, persistent identifiers (GERS IDs) for real-world entities such as buildings, places, and roads in their open map data. These IDs facilitate data interoperability and sharing by enabling different datasets to be easily connected and enriched using a common reference.
 
@@ -10,7 +8,7 @@ The Global Entity Reference System (GERS) is a framework created by the http://h
 
 GERS is supported by a diverse community of over 40 organizations, including Amazon Web Services (AWS), Meta, Microsoft, TomTom, and Esri. These companies have committed to and depend on Overture data. Overture powers the maps used by billions of people across Meta’s, Microsoft’s, TomTom’s, and Esri’s platforms. Many of the Overture Maps supporting organizations are also OGC Member organization.
 
-### What does a GERS ID look like?
+## What does a GERS ID look like?
 
 GERS IDs use the https://en.wikipedia.org/wiki/Universally_unique_identifier[UUID] (Universally Unique Identifier) format. Every GERS ID follows the standard UUID format (e.g., 12345678-1234-5678-1234-567812345678), making them:
 
@@ -25,7 +23,7 @@ Why it matters:
 * No collisions: Guaranteed uniqueness across all systems
 * Standard tooling: Leverage existing UUID libraries and utilities
 
-### OGC Draft of the Standard
+## OGC Draft of the Standard
 
 A version of the document can be viewed here:
 
