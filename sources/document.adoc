@@ -1,0 +1,23 @@
+= GERS: OGC Community Standard
+:doctype: draft OGC Community Standard
+:docsubtype: standard
+:status: Draft
+:committee: technical
+:docnumber: xx-xxx
+:edition: 1.0
+:received-date: 2025-xx-xx
+:issued-date: xxxx-xx-xx
+:published-date: xxxx-xx-xx
+:copyright-year: 2025
+:fullname: Carl Reed
+:role: editor
+:submitting-organizations: TBD
+:imagesdir: images
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::00-preface.adoc[]
+
+include::06-policy.adoc[]
