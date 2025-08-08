@@ -1,5 +1,6 @@
-.Preface
+[preface]
 
+== Preface
 
 The OGC Global Entity Reference System Standard defines:
 
@@ -27,7 +28,6 @@ If security considerations have been made for this Standard, follow the examples
 Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
 NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
 ////
-
 
 
 == Submitters
