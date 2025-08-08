@@ -1,10 +1,10 @@
 [.preface]
 == Foreword
 
-The OGC Global Entity Reference System Standard:
+The OGC Global Entity Reference System Standard defines:
 
-. Defines a reference system for exchanging and enriching geospatial data.
-. Schema to structure geospatial data into a datastore that includes the reference system and is consistent with other OGC/ISO Standards.
+. A reference system for exchanging and enriching geospatial data.
+. A schema to structure geospatial data into a datastore that includes the GERS id and that is consistent with other OGC/ISO Standards.
 
 _Attention is drawn to the possibility that some of the elements of this document may
 be the subject of patent rights. The Open Geospatial Consortium Inc. shall not be
