@@ -14,6 +14,8 @@ References are to follow the Springer LNCS style, with the exception that option
 _Identification of Common Molecular Subsequences_.
 Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)
 
+* [[[RFC4122, IETF RFC 4122:2005]]], A Universally Unique IDentifier (UUID) URN Namespace
+
 * [[[RFC7946, IETF RFC 7946:2016]]], The GeoJSON Format
 
 * [[[ISO19107,ISO 19107-1:2003]]], Geographic information -- Spatial Schema
