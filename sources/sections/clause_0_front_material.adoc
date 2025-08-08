@@ -18,17 +18,16 @@ Recipients of this document are requested to submit, with their comments, notifi
 
 == Security considerations
 
-//If no security considerations have been made for this Standard, use the following text.
+   Do not assume that the GERS IDs (UUIDs) are hard to guess. For example the IDs should not be used
+   as security capabilities (identifiers whose mere possession grants
+   access).  A predictable random number source will exacerbate the situation.
 
-No security considerations have been made for this Standard.
+   Do not assume that it is easy to determine if a GERS ID has been
+   slightly transposed in order to redirect a reference to another
+   object.  Humans do not have the ability to easily check the integrity
+   of a GERS ID by simply glancing at it.
 
-////
-If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
-“VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
-Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
-NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
-////
-
+NOTE: The security measures discussed above to not provide confentiality. This is outside the scope of this document.
 
 == Submitters
 
