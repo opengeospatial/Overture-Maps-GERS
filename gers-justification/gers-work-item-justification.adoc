@@ -45,11 +45,13 @@ The submitters agree to abide by the TC Policies and Procedures and OGC Intellec
 
 Once approved, the GERS Community Standard Work Item defined by this document is valid for a period of six (6) months from the apporval date.
 
+More information on the Overture Maps GERS information can be found here: https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/
+
 == Overview of proposed submission
 
-////
-Summarize the proposed Community standard. In this summary, provide an overview of the geospatial interoperability requirements the proposed standard supports, the history of its development and use, and use cases.
-////
+This section provides an overview of the proposed submission, benefits of implementing GERS, a summary of the GERS Model, and an overview of the organization submitting this Community Standard: Overture Maps Foundation.
+
+=== Overview of the GERS Model and Reference System
 
 The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry
 
@@ -58,6 +60,26 @@ Organizations can spend up to 90% of their time and resources on data preparatio
 Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation tax – a hidden cost that affects everyone working with data obtained from multiple sources.
 
 GERS changes this equation by providing persistent, unique identifiers for every geospatial entity – from buildings and roads to places and addresses. With GERS, what once took weeks of complex geospatial conflation can now be accomplished in minutes with simple column joins.
+
+=== What will be standardized?
+
+=== Benefits of implementing GERS
+
+The key benefits of implementing GERS as identified by the Overture Foundation community are:
+
+- Simplified Data Integration: GERS IDs allow developers to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
+- Reduced Costs: By streamlining data integration, GERS helps reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
+- Increased Interoperability: GERS promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
+- Enhanced Data Richness: With GERS, it becomes easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
+- Innovation in Geospatial: GERS is expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
+
+=== What is the Overture Maps Foundation"
+
+Overture is a collaborative open-data initiative led by software developers, data experts, cartographic engineers, and product managers from dozens of Overture Maps Foundation member companies. Since its launch in December 2022, Overture members have been working toward a shared vision: To create reliable, user-friendly, and interoperable open map data that supports both current and future map products. Overture Members envision a world where shared, open base layers drive collaboration and innovation across industries and communities.
+
+To achieve this, Overture’s core contributors have been developing our common schema, datasets, platform, and system of unique, stable IDs known as GERS. Member companies contribute data and engineering expertise to enable the creation of global datasets that are accurate, comprehensive, and regularly updated to reflect changes in the world. By combining multiple data sources and fostering cross-company collaboration, we are able to achieve results no single organization could accomplish alone.
+
+NOTE: Many of the Overture Foundation members are also OGC Members, including: Esri, TomTom, con terra GmbH, Maxar, and CampToCamp. A number of past OGC Member organizations are also key supporters of the Overture Maps foundation, inluding AWS and Microsoft.
 
 == Motivation of supporting OGC Members for this submission
 
@@ -121,15 +143,17 @@ URL:
 
 == Supporting OGC Members
 
-////
-List the supporting organizations. There must be at least three OGC organizations of which at least one must be an OGC Voting Member.
-////
+The following OGC Members suppot this submission:
+
+|===
+| Organization | Member Level | URL
+|===
 
 == Intellectual Property Rights
 
 Will the contributor retain intellectual property rights?
 
-* [ ] Yes
+* [X] Yes
 * [ ] No
 
 If yes, the contributor will be required to work with OGC staff to properly attribute the submitter’s intellectual property rights.
