@@ -51,6 +51,14 @@ Once approved, the GERS Community Standard Work Item defined by this document is
 Summarize the proposed Community standard. In this summary, provide an overview of the geospatial interoperability requirements the proposed standard supports, the history of its development and use, and use cases.
 ////
 
+The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry
+
+Organizations can spend up to 90% of their time and resources on data preparation and integration rather than value-adding analysis. For organizations using geospatial data, the challenge is even more acute: Different data producers describe the same real-world entities in different ways, use different reference systems, and different ontologies. Yhe combinations of these differences make it expensive and time-consuming to combine datasets from these different sources. 
+
+Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation tax – a hidden cost that affects everyone working with data obtained from multiple sources.
+
+GERS changes this equation by providing persistent, unique identifiers for every geospatial entity – from buildings and roads to places and addresses. With GERS, what once took weeks of complex geospatial conflation can now be accomplished in minutes with simple column joins.
+
 == Motivation of supporting OGC Members for this submission
 
 ////
@@ -64,6 +72,9 @@ State whether this proposed Community standard has any dependencies on OGC stand
 ////
 
 == Alignment with OGC Standards Baseline
+
+The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC
+
 
 ////
 Describe where this proposed standard fits with respect to the existing OGC standards baseline and standards in development in the OGC and whether this proposed standard may compete with or enhance an existing OGC standard.
