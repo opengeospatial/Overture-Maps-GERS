@@ -63,6 +63,8 @@ GERS changes this equation by providing persistent, unique identifiers for every
 
 === What will be standardized?
 
+Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical Overture Map that is maintained by the Overture Map Foundation. The proposed GERS Community Standard has a more limited focus that includes the model as documented in the data and registry schema, and the generation of the GERS ID. This focus results in a  standard that can be implemented by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the precisely implementation (See below).
+
 === Benefits of implementing GERS
 
 The key benefits of implementing GERS as identified by the Overture Foundation community are:
