@@ -93,9 +93,11 @@ Provide a brief paragraph from one or more supporting OGC members that describes
 State whether this proposed Community standard has any dependencies on OGC standards or is itself normatively referenced by an OGC standard and list those standards, as applicable.
 ////
 
-== Alignment with OGC Standards Baseline
+== Alignment with OGC and other International Standards
 
-The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC
+The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC including:
+
+The GERS ID is generated following the rules as defined in IETF RFC UUID
 
 
 ////
@@ -104,22 +106,37 @@ Describe where this proposed standard fits with respect to the existing OGC stan
 
 == Evidence of implementation
 
-The following implementations use the proposed Community standard.
+The following implementations use the proposed Community Standard.
 
-*Implementation name:*
+Organizations that support and rely on Overture data, and therefore are effectively "implementing" or leveraging GERS, include:
+
+- Amazon Web Services (AWS)
+- Meta
+- Microsoft
+- TomTom
+- Esri
+- Precisely (using GERS IDs to integrate with their data products)
+- Addresscloud (leveraging GERS for geospatial risk analysis)
+
+*Precisely Data Link Program:*
+
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. 
 
 *Date of most recent version:*
 
+June 2025
+
 *Implementation description:*
 
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems.
+
 *Implementation URL:*
+
+https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS
 
 *Is implementation complete?*
 
 * [x] Yes
-* [ ] No
-
-*If not,* what portions of the proposed Community standard are implemented?
 
 ////
 Repeat for each implementation. Place a "x" in the appropriate box regarding complete implementation.
@@ -139,7 +156,7 @@ Is the proposed Community standard currently publicly available?
 * [x] Yes
 * [ ] No
 
-URL:
+URL: https://github.com/OvertureMaps
 
 == Supporting OGC Members
 
@@ -147,6 +164,7 @@ The following OGC Members suppot this submission:
 
 |===
 | Organization | Member Level | URL
+| Overture Maps| Principal    |
 |===
 
 == Intellectual Property Rights
@@ -156,6 +174,8 @@ Will the contributor retain intellectual property rights?
 * [X] Yes
 * [ ] No
 
-If yes, the contributor will be required to work with OGC staff to properly attribute the submitter’s intellectual property rights.
 
-If no, the contributor will assign intellectual property rights to the OGC.
+
+Overture Maps
+
+The companies listed above have granted the Open Geospatial Consortium (OGC) a nonexclusive, royalty-free, paid up, worldwide license to copy and distribute this document and to modify this document and distribute copies of the modified version under a <<TBD>> license (see below).
