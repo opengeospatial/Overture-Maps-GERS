@@ -99,7 +99,7 @@ State whether this proposed Community standard has any dependencies on OGC stand
 
 The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC including:
 
-The GERS ID is generated following the rules as defined in IETF RFC UUID
+The GERS ID is generated following the rules as defined in IETF https://datatracker.ietf.org/doc/html/rfc4122[RFC 4122] A Universally Unique IDentifier (UUID) URN Namespace.
 
 
 ////
