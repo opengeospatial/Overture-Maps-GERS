@@ -122,15 +122,15 @@ Organizations that support and rely on Overture data, and therefore are effectiv
 
 === *Precisely Data Link Program:*
 
-Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. 
-
 *Date of most recent version:*
 
 June 2025
 
 *Implementation description:*
 
-Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems.
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
+
+Precisely solutions leverage their broader ID system and the PreciselyID, a unique and persistent identifier assigned to addresses through validation and geocoding services. By creating link tables between GERS IDs and Precisely’s unique IDs, they’ve eliminated the need for complex spatial operations.
 
 *Implementation URL:*
 
