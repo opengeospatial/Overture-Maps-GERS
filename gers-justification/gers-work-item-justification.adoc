@@ -106,6 +106,8 @@ Describe where this proposed standard fits with respect to the existing OGC stan
 
 == Evidence of implementation
 
+=== Overview of implementations
+
 The following implementations use the proposed Community Standard.
 
 Organizations that support and rely on Overture data, and therefore are effectively "implementing" or leveraging GERS, include:
@@ -118,7 +120,7 @@ Organizations that support and rely on Overture data, and therefore are effectiv
 - Precisely (using GERS IDs to integrate with their data products)
 - Addresscloud (leveraging GERS for geospatial risk analysis)
 
-*Precisely Data Link Program:*
+=== *Precisely Data Link Program:*
 
 Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. 
 
