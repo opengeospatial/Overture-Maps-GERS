@@ -18,7 +18,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <2025-mm-dd>
 |Approval Date:   <2025-mm-dd>
-|Internal reference number of this OGC(R) document:    25-nnnrx
+|Internal reference number of this OGC(R) document:    25-024
 |Category: OGC(R) Community Standard Work Item Justification
 |Authors:   Carl Reed, PhD
 |===
