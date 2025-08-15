@@ -65,6 +65,10 @@ GERS changes this equation by providing persistent, unique identifiers for every
 
 Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference amp that is maintained by the Overture Map Foundation. The proposed OGC GERS Community Standard has a more limited focus that includes the model as documented in the data and registry schema, and the generation of the GERS ID. This focus results in a  standard that can be implemented by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the precisely implementation (See below).
 
+==== Registry Schema
+
+With each data release, Overture publishes a GERS Registry that serves as the single source of truth for all entities that are part of the Global Entity Reference System. It serves as a comprehensive catalog that tracks every stable ID ever published across all Overture data releases.
+
 === Benefits of implementing GERS
 
 The key benefits of implementing GERS as identified by the Overture Foundation community are:
