@@ -63,7 +63,7 @@ GERS changes this equation by providing persistent, unique identifiers for every
 
 === What will be standardized?
 
-Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical Overture Map that is maintained by the Overture Map Foundation. The proposed OGC GERS Community Standard has a more limited focus that includes the model as documented in the data and registry schema, and the generation of the GERS ID. This focus results in a  standard that can be implemented by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the precisely implementation (See below).
+Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference amp that is maintained by the Overture Map Foundation. The proposed OGC GERS Community Standard has a more limited focus that includes the model as documented in the data and registry schema, and the generation of the GERS ID. This focus results in a  standard that can be implemented by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the precisely implementation (See below).
 
 === Benefits of implementing GERS
 
@@ -89,17 +89,20 @@ NOTE: Many of the Overture Foundation members are also OGC Members, including: E
 Provide a brief paragraph from one or more supporting OGC members that describes why they are supporting this submission and how they feel it helps the geospatial community.
 ////
 
-== Relationship to other OGC Standards
-
-////
-State whether this proposed Community standard has any dependencies on OGC standards or is itself normatively referenced by an OGC standard and list those standards, as applicable.
-////
-
 == Alignment with OGC and other International Standards
 
 The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC including:
 
-The GERS ID is generated following the rules as defined in IETF https://datatracker.ietf.org/doc/html/rfc4122[RFC 4122] A Universally Unique IDentifier (UUID) URN Namespace.
+- The GERS ID is generated following the rules as defined in IETF https://datatracker.ietf.org/doc/html/rfc4122[RFC 4122] A Universally Unique IDentifier (UUID) URN Namespace.
+- The GERS geometry model is consistent with ISO 19107 as instantiated by the recommended use of GeoJSON as the encoding format for geometry in the GERS reference map data store.
+- JSON Schema is used for defining all GERS schema including the ID registry and the structure of the foundation maps in the GERS reference map data store.
+- GeoParquet is the recommended distribution format for geospatial content contained in the reference map data store.
+
+NOTE: A GERS referance map data store is a set of validated datasets that connect GERS IDs to real-world entities. The Overture GERS implementation provides a reference map with monthly open map data updaetes. These data updates are carefully validated, consistently structured collections that describe billions of real-world entities. Each entity in these datasets carries a unique GERS ID. These IDs represent actual physical entities in the world.
+
+NOTE: Overture Maps Foundation provides global data across six data themes (addresses, base, buildings, divisions, places, and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This referebce map consists of billions of features across hundreds of gigabytes. 
+
+=== Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
 
 A POI can be as simple as a set of coordinates and an identifier.
 
