@@ -101,6 +101,23 @@ The GERS model and framework is based on the following international standards f
 
 The GERS ID is generated following the rules as defined in IETF https://datatracker.ietf.org/doc/html/rfc4122[RFC 4122] A Universally Unique IDentifier (UUID) URN Namespace.
 
+A POI can be as simple as a set of coordinates and an identifier.
+
+Abstract Feature class in POI model: identifer «property»	ScopedName [0..*]	Specifies the unique identifier of the feature that is valid globally.
+
+/req/core/geometry
+
+The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in ISO 19107
+The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes:
+
+    GM_Point
+
+    GM_LineString
+
+    GM_Polygon
+
+/req/core/abstractfeature-identifier
+An encoding of the AbstractFeature class SHALL include zero or one identifier attributes.
 
 ////
 Describe where this proposed standard fits with respect to the existing OGC standards baseline and standards in development in the OGC and whether this proposed standard may compete with or enhance an existing OGC standard.
