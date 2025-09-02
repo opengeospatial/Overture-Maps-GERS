@@ -64,15 +64,37 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 
 == Purpose of the Standards Working Group
 
-////
-Proposers will describe the purpose of the Standards Working Group and its overall mission in relation to OGC processes, the OGC Standards baseline, and OGC’s business plan.
-////
+The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
+and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different 
+datasets and platforms, fostering collaboration and innovation in the geospatial industry.
+
+Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, 
+tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Standard will haves a more limited focus 
+that includes the model as documented in the current Overture data and registry schema, and the generation of the GERS ID. This focus results in a standard that can be implemented 
+by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this 
+approach is the precisely implementation (See below).
 
 == Business value proposition
 
-////
-This section provides a statement describing the value of this standards activity in relation to the OGC Membership, the geospatial community, and the wider IT community. This statement can be in terms of the interoperability problem being solved, processing Change requests to meet market (and Member requirements), a policy requirement and/or some other business value proposition. The proposition described in this section does not have to be in economic terms.
-////
+Organizations can spend amount of time and resources on data preparation and integration rather than value-adding analysis. For organizations using geospatial data, 
+the challenge is even more acute: Different data producers describe the same real-world entities in different ways, use different reference systems, and different 
+ontologies. The combinations of these differences make it expensive and time-consuming to combine datasets from these different sources. 
+
+Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation tax – a hidden cost 
+that affects everyone working with data obtained from multiple sources.
+
+GERS changes this equation by providing persistent, unique identifiers for every geospatial entity – from buildings and roads to places and addresses. 
+With GERS, what once took weeks of complex geospatial conflation can now be accomplished in minutes with simple column joins.
+
+=== Benefits of implementing GERS
+
+The key benefits of implementing GERS as identified by the Overture Foundation community are:
+
+- Simplified Data Integration: GERS IDs allow developers to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
+- Reduced Costs: By streamlining data integration, GERS helps reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
+- Increased Interoperability: GERS promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
+- Enhanced Data Richness: With GERS, it becomes easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
+- Innovation in Geospatial: GERS is expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
 
 == Scope of work
 
@@ -92,26 +114,45 @@ In all cases, the SWG Charter shall provide a basic timeline plan for their acti
 
 === Statement of relationship of planned work to the current OGC Standards baseline
 
-////
-This section describes the relationship of the proposed standards activity to the existing Standards baseline. For the 3 cases:
-If defining a new Standard, a statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth.
+The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC including:
 
-If processing change requests and performing a revision to an existing Standard, a simple statement to this effect shall be made.
+- The GERS ID is generated following the rules as defined in IETF https://datatracker.ietf.org/doc/html/rfc4122[RFC 4122] A Universally Unique IDentifier (UUID) URN Namespace.
+- The GERS geometry model is consistent with https://www.iso.org/standard/26012.html[ISO 19107] as instantiated by the recommended use of GeoJSON as the encoding format for geometry in the GERS reference map data store.
+- https://json-schema.org/[JSON Schema] is used for defining all GERS schema including the ID registry and the structure of the foundation maps in the GERS reference map data store.
+- https://github.com/opengeospatial/geoparquet[GeoParquet] is the recommended distribution format for geospatial content contained in the reference map data store.
 
-If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
-////
+NOTE: A GERS referance map data store is a set of validated datasets that connect GERS IDs to real-world entities. The Overture GERS implementation provides a reference map with monthly open map data updaetes. These data updates are carefully validated, consistently structured collections that describe billions of real-world entities. Each entity in these datasets carries a unique GERS ID. These IDs represent actual physical entities in the world.
+
+NOTE: Overture Maps Foundation provides global data across six data themes (addresses, base, buildings, divisions, places, and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This referebce map consists of billions of features across hundreds of gigabytes. 
+
+=== Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
+
+The OGC docs.ogc.org/is/21-049/21-049.html[Points of Interest] (POI) Conceptual Model is an open data model for representing information about POI. 
+A POI can be as simple as a set of coordinates and an identifier. The model specifically states that "An encoding of the AbstractFeature class SHALL 
+include zero or one identifier attributes" (Requirement 6) and that if an identifier is specified that the identifier of the feature is unique and valid globally.
+
+NOTE: From PoI Standard - Abstract Feature class in POI model: identifer «property»	ScopedName [0..*]	Specifies the unique identifier of the feature that is valid globally.
+
+Further, the geometry model specified in the GERS Model is consistent with the PoI geometry model (/req/core/geometry):
+
+-The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in ISO 19107
+- The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes: GM_Point, GM_LineString, GM_Polygon
+
+=== Relationship to existing OGC standards baseline and standards in development in the OGC
+
+The proposed GERS Community Standard does not conflict with or overlap functionalty defined in the current OGC Standards baseline or new standards being developed.
+The GERS Model and implementations build on the existing OGC/ISO Standards baseline. Further, implementations of various OGC API Standards could be used to access
+a GERS reference map data store.
+
 
 === What is out of scope?
 
-////
-A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
-////
+The SWG will not extend the GERS framework beyond the capabilities and functions defined in the initial submission of GERS by the Overture Maps Foundation to the OGC.
+Further, the SWG will not consider or standardize the current content in the Overture Maps datastore, the Overture processing tools, or any other implementation specific technology.
 
 === Specific existing work used as starting point
 
-////
-This section provides reference information relevant to the work of the SWG. For example, a document reference for a draft submission or a list of CRPs for a SWG focused on revision to an adopted specification.
-////
+The GERS SWG will use the GERS framework, model, and schema as defined, in general, https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
 
 === Is this a persistent SWG
 
@@ -135,21 +176,15 @@ This section also includes a preliminary schedule of activities. For example, an
 
 === Initial deliverables
 
-////
-Describe the initial Standard(s) to be developed by the SWG.
-////
+The initial deliverable will be a candidate OGC Global Entity Reference System Implementation Standard. 
 
 === Additional SWG tasks
 
-////
-Describe each additional Standard to be developed by the SWG as an additional task after the deliverables from the initial charter have been completed. This section is blank in a new charter, then is populated with each task approval request per the OGC TC Policies and Procedures.
-////
+Not applicable
 
 == IPR Policy for this SWG
 
 [x] RAND-Royalty Free
-
-[ ] RAND for fee
 
 == Anticipated audience / participants
 
@@ -203,8 +238,9 @@ The work of the SWG will be carried out primarily by email and conference calls,
 The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. Extend the table as necessary.
 
 |===
-|Name |Organization
-| |
+|Name |Organization| Membership Level
+| Amy |Overture Maps| Principal    |
+| Carl Reed | Carl Reed & Associates | Individual
 |===
 
 === Conveners
