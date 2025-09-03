@@ -116,6 +116,12 @@ Key value points:
 
 == Scope of work
 
+BridgeFiles: Bridge files connect the unique GERS IDs to the IDs from the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features
+ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
+guide decisions about data matching, better understand data stability, and help detect data errors.
+ReferenceMap:
+Registry: A GERS Registry serves as the single source of truth for all entities that are part of the Global Entity Reference System.
+
 ////
 This section describes the scope of work (SOW) for the work of the SWG. There are typically at least three (3) cases that justify the formation of a SWG: A group of members decide to develop a new OGC candidate Standard from scratch, there is a draft submission being discussed by OGC members, or there are outstanding Change Requests for an existing OGC Standard and a revision is required.
 
@@ -139,9 +145,14 @@ The GERS model and framework is based on the following international standards f
 - https://json-schema.org/[JSON Schema] is used for defining all GERS schema including the ID registry and the structure of the foundation maps in the GERS reference map data store.
 - https://github.com/opengeospatial/geoparquet[GeoParquet] is the recommended distribution format for geospatial content contained in the reference map data store.
 
-NOTE: A GERS referance map data store is a set of validated datasets that connect GERS IDs to real-world entities. The Overture GERS implementation provides a reference map with monthly open map data updaetes. These data updates are carefully validated, consistently structured collections that describe billions of real-world entities. Each entity in these datasets carries a unique GERS ID. These IDs represent actual physical entities in the world.
+NOTE: A GERS referance map data store is a set of validated datasets that connect GERS IDs to real-world entities. 
+The Overture GERS implementation provides a reference map with monthly open map data updaetes. These data updates are 
+carefully validated, consistently structured collections that describe billions of real-world entities. Each entity in 
+these datasets carries a unique GERS ID. These IDs represent actual physical entities in the world.
 
-NOTE: Overture Maps Foundation provides global data across six data themes (addresses, base, buildings, divisions, places, and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This referebce map consists of billions of features across hundreds of gigabytes. 
+NOTE: Overture Maps Foundation provides global data across six data themes (addresses, base, buildings, divisions, places, 
+and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This 
+referebce map consists of billions of features across hundreds of gigabytes. 
 
 === Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
 
