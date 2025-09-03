@@ -116,25 +116,18 @@ Key value points:
 
 == Scope of work
 
-BridgeFiles: Bridge files connect the unique GERS IDs to the IDs from the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features
-ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
+The following components of the Global Entity Reference System will be addressed by the GERS SWG. These components will be documented in 
+the draft OGC GERS Standard. The source of the content for the draft is the July 2025 of the Overture GERS release.
+
+- BridgeFiles: Bridge files connect the unique GERS IDs to the IDs from the source data. These files are a key component of GERS and 
+offer two critical capabilities: reverse lookup of source features
+- ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
 guide decisions about data matching, better understand data stability, and help detect data errors.
-ReferenceMap:
-Registry: A GERS Registry serves as the single source of truth for all entities that are part of the Global Entity Reference System.
+- GERS ID: A GERS ID is a unique identifier for real-world geospatial entities across data releases and maintains consistency when the same entity appears in multiple source datasets.
+- ReferenceMap: A reference map of all entities that have been assigned a unique GERS ID.
+- Registry: A GERS Registry serves as the single source of truth for all entities that are part of the Global Entity Reference System.
 
-////
-This section describes the scope of work (SOW) for the work of the SWG. There are typically at least three (3) cases that justify the formation of a SWG: A group of members decide to develop a new OGC candidate Standard from scratch, there is a draft submission being discussed by OGC members, or there are outstanding Change Requests for an existing OGC Standard and a revision is required.
-
-The following describes the characteristics of a SOW for each of these cases.
-
-For a SWG focused on defining and documenting a new OGC candidate Standard from “scratch,” the SOW SHALL include a statement of the requirements and use cases for the candidate Standard being developed. The SOW SHALL also include a justification statement for developing a new candidate OGC Standard. The SOW SHALL also describe how the new candidate Standard is related to the existing OGC Standards baseline and the OGC Reference Model. The final deliverable of a “from scratch” focused SWG SHALL be a candidate Standard ready for submission using the OGC standards process.
-
-For a SWG focused on processing a draft submission such as a specification developed outside the OGC and submitted into the OGC for consideration, the SOW would include evaluation of the submission in terms of the relationship to the existing OGC Standards baseline (see section below). The final deliverable of such a SWG SHALL be a candidate Standard for consideration by the membership for adoption.
-
-For a SWG focused on revisions to an existing adopted Standard, the SOW should include a statement that the SWG will collect all outstanding Change Request Proposals (CRPs), evaluate each of the proposals, and make edits to the Standard based on CRPs and related decisions of the SWG membership. The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous submitted. Again, the final deliverable of a revision focused SWG SHALL be a revision of the candidate Standard for consideration by the membership for adoption.
-
-In all cases, the SWG Charter shall provide a basic timeline plan for their activities.
-////
+Each of these components are defined using JSON Schema that will clearly and fully documented in the draft OGC GERS Standard. 
 
 === Statement of relationship of planned work to the current OGC Standards baseline
 
