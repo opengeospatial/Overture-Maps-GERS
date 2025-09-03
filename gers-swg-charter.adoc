@@ -64,7 +64,10 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 
 == Purpose of the Standards Working Group
 
-The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
+The purpose of the Global Entity Reference System (GERS) Standards Working Group is to write a draft GERS Standard and move this document through the OGC RFC Process to become 
+an official OGC adopted Standard. The work of the SWG will be based on the existing, operational Overture Maps GERS Framework. 
+
+GERS was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
 and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different 
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
@@ -72,11 +75,13 @@ Overture provides a complete and operational implementation of the GERS Model th
 tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Standard will haves a more limited focus 
 that includes the model as documented in the current Overture data and registry schema, and the generation of the GERS ID. This focus results in a standard that can be implemented 
 by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this 
-approach is the precisely implementation (See below).
+approach is the `precisely` implementation (See below).
 
 == Business value proposition
 
-Organizations can spend amount of time and resources on data preparation and integration rather than value-adding analysis. For organizations using geospatial data, 
+=== Overview
+
+Organizations can spend a tremendous amount of time and resources on geospatial data preparation and integration rather than focusing resources on value-adding analysis. For organizations using geospatial data, 
 the challenge is even more acute: Different data producers describe the same real-world entities in different ways, use different reference systems, and different 
 ontologies. The combinations of these differences make it expensive and time-consuming to combine datasets from these different sources. 
 
@@ -86,7 +91,7 @@ that affects everyone working with data obtained from multiple sources.
 GERS changes this equation by providing persistent, unique identifiers for every geospatial entity – from buildings and roads to places and addresses. 
 With GERS, what once took weeks of complex geospatial conflation can now be accomplished in minutes with simple column joins.
 
-=== Benefits of implementing GERS
+=== Key Benefits of implementing GERS
 
 The key benefits of implementing GERS as identified by the Overture Foundation community are:
 
@@ -95,6 +100,15 @@ The key benefits of implementing GERS as identified by the Overture Foundation c
 - Increased Interoperability: GERS promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
 - Enhanced Data Richness: With GERS, it becomes easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
 - Innovation in Geospatial: GERS is expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
+
+=== GERS Value Proposition - Summary
+
+Key value points:
+
+- Data integration: Simplifies the exchange and integration of map data by using a universal system of consistent identifiers (GERS IDs) for entities.
+- Reliability: Provides persistent IDs and changelogs for geospatial entities, improving data traceability, auditability, and accuracy.
+- Accessibility: As a free and open backbone, GERS provides a no-cost path to global identifiers and prevents vendor lock-in.
+- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training and operating accurate AI system
 
 == Scope of work
 
