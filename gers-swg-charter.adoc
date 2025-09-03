@@ -81,7 +81,7 @@ approach is the `precisely` implementation (See below).
 
 Value statement from community focused on https://www.inhotel.io/[the AI-augmented hospitality future].
 
-GGERS provides a free, open backbone for identifiers and <map data> joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
+GERS provides a free, open backbone for identifiers and <map data> joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
 
 === Overview
 
@@ -156,12 +156,13 @@ Further, the geometry model specified in the GERS Model is consistent with the P
 -The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in ISO 19107
 - The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes: GM_Point, GM_LineString, GM_Polygon
 
+== Additional characteristics of the GERS SWG
+
 === Relationship to existing OGC standards baseline and standards in development in the OGC
 
 The proposed GERS Community Standard does not conflict with or overlap functionalty defined in the current OGC Standards baseline or new standards being developed.
 The GERS Model and implementations build on the existing OGC/ISO Standards baseline. Further, implementations of various OGC API Standards could be used to access
-a GERS reference map data store.
-
+a GERS reference map data store. The CDB Standard could include a GERS requirements class that would define how a CDB Profile to incorporate unique identifiers for features in a CDB datastore.
 
 === What is out of scope?
 
@@ -174,15 +175,13 @@ The GERS SWG will use the GERS framework, model, and schema as defined, in gener
 
 === Is this a persistent SWG
 
-[x] YES
-
-[ ] NO
+[X] NO
 
 === When can the SWG be inactivated
 
 When the OGC GERS candidate standards is approved by the TC and the PC as an adopted OGC Standard.
 
-== Description of deliverables
+=== Description of deliverables
 
 An OGC Global Entity Reference System Implementation Standard including relevant JSON schema. 
 
@@ -196,11 +195,11 @@ The initial deliverable will be a candidate OGC Global Entity Reference System I
 
 Not applicable
 
-== IPR Policy for this SWG
+=== IPR Policy for this SWG
 
 [x] RAND-Royalty Free
 
-== Anticipated audience / participants
+=== Anticipated audience / participants
 
 The target audience for a GERS Standard are the developers, companies, and organizations that build or use geospatial data and applications that require geospatial content from 
 multiple datastores to be "joined" (fused). Particpants in the SWG activity would be any member that has digital twin, modelling, simulation, analytics, or AI training application requirements.
@@ -226,8 +225,7 @@ primary work item will be defining a timeline and work agenda.
 
 === Projected on-going meeting schedule
 
-The work of the SWG will be carried out primarily by email and conference calls, possibly every two weeks, with face-to-face meetings perhaps at each of the OGC TC meetings. All content for the GERS standard will be maintained 
-on an https://github.com/opengeospatial/Overture-Maps-GERS/tree/main[OGC Git repository]. 
+The work of the SWG will be carried out primarily by email and conference calls, possibly every two weeks, with face-to-face meetings perhaps at each of the OGC TC meetings. All content for the GERS standard will be maintained on an https://github.com/opengeospatial/Overture-Maps-GERS/tree/main[OGC Git repository]. 
 
 === Supporters of this Charter
 
@@ -241,13 +239,9 @@ The following people support this proposal and are committed to the Charter and 
 
 === Conveners
 
-////
-Name of individual(s) who started the SWG process. Could be the lead for an RFC submission, an OGC staff person, or an individual who believes it is time for a revision to an adopted Standard.
-////
+Amy Rose, Overture Maps Foundation
 
 == References
 
-////
-Optional list of references.
-////
-https://www.inhotel.io/ GERS provides a free, open backbone for identifiers and joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
+https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[Understanding GERS]
+
