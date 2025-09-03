@@ -79,6 +79,10 @@ approach is the `precisely` implementation (See below).
 
 == Business value proposition
 
+Value statement from community focused on https://www.inhotel.io/[the AI-augmented hospitality future].
+
+GGERS provides a free, open backbone for identifiers and <map data> joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
+
 === Overview
 
 Organizations can spend a tremendous amount of time and resources on geospatial data preparation and integration rather than focusing resources on value-adding analysis. For organizations using geospatial data, 
@@ -246,4 +250,4 @@ Name of individual(s) who started the SWG process. Could be the lead for an RFC 
 ////
 Optional list of references.
 ////
-
+https://www.inhotel.io/ GERS provides a free, open backbone for identifiers and joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
