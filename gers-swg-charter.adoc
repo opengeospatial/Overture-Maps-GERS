@@ -70,10 +70,10 @@ and interoperable identifiers for geospatial entities such as buildings, places,
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
 Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, 
-tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Standard will haves a more limited focus 
+tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Standard will have a more limited focus 
 that includes the model as documented in the current Overture data and registry schema, and the generation of the GERS ID. This focus results in a standard that can be implemented 
 by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this 
-approach is the `precisely` implementation (See below).
+approach is the `precisely` implementation (See Annex A).
 
 == Business value proposition
 
@@ -127,7 +127,8 @@ guide decisions about data matching, better understand data stability, and help 
 - JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet. 
 GeoJSON is used as the default canonical geospatial format. GeoJSON provides a "mental model and language" to express data constructions in the schema. 
 The OGC GERS Standrd schema reference docs will describe key schema concepts for each theme and definitions and examples for each feature type.
-- Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Standard will define how all theenumarations ontained in the schema can be extended while maintaining backwards compatability.
+- Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Standard will 
+define how all the enumarations contained in the schema can be extended while maintaining backwards compatibility.
 
 Each of the above components are defined using JSON Schema that will clearly and fully documented in the draft OGC GERS Standard. 
 
@@ -140,14 +141,14 @@ The GERS model and framework is based on the following international standards f
 - https://json-schema.org/[JSON Schema] is used for defining all GERS schema including the ID registry and the structure of the foundation maps in the GERS reference map data store.
 - https://github.com/opengeospatial/geoparquet[GeoParquet] is the recommended distribution format for geospatial content contained in the reference map data store.
 
-NOTE: A GERS referance map data store is a set of validated datasets that connect GERS IDs to real-world entities. 
-The Overture GERS implementation provides a reference map with monthly open map data updaetes. These data updates are 
+NOTE: A GERS reference map data store is a set of validated datasets that connect GERS IDs to real-world entities. 
+The Overture GERS implementation provides a reference map with monthly open map data updates. These data updates are 
 carefully validated, consistently structured collections that describe billions of real-world entities. Each entity in 
 these datasets carries a unique GERS ID. These IDs represent actual physical entities in the world.
 
 NOTE: Overture Maps Foundation provides global data across six data themes (addresses, base, buildings, divisions, places, 
 and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This 
-referebce map consists of billions of features across hundreds of gigabytes. 
+reference map consists of billions of features across hundreds of gigabytes. 
 
 === Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
 
@@ -166,7 +167,7 @@ Further, the geometry model specified in the GERS Model is consistent with the P
 
 === Relationship to existing OGC standards baseline and standards in development in the OGC
 
-The proposed GERS Community Standard does not conflict with or overlap functionalty defined in the current OGC Standards baseline or new standards being developed.
+The proposed GERS Community Standard does not conflict with or overlap functionality defined in the current OGC Standards baseline or new standards being developed.
 The GERS Model and implementations build on the existing OGC/ISO Standards baseline. Further, implementations of various OGC API Standards could be used to access
 a GERS reference map data store. The CDB Standard could include a GERS requirements class that would define how a CDB Profile to incorporate unique identifiers for features in a CDB datastore.
 
@@ -208,7 +209,7 @@ Not applicable
 === Anticipated audience / participants
 
 The target audience for a GERS Standard are the developers, companies, and organizations that build or use geospatial data and applications that require geospatial content from 
-multiple datastores to be "joined" (fused). Particpants in the SWG activity would be any member that has digital twin, modelling, simulation, analytics, or AI training application requirements.
+multiple datastores to be "joined" (fused). Participants in the SWG activity would be any member that has digital twin, modelling, simulation, analytics, or AI training application requirements.
 
 
 == Domain Working Group endorsement
@@ -249,3 +250,22 @@ Amy Rose, Overture Maps Foundation
 
 https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[Understanding GERS]
 
+= Annex A: Precisely GERS implementation
+
+*Date of most recent version:*
+
+June 2025
+
+*Implementation description:*
+
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
+
+Precisely solutions leverage their broader ID system and the PreciselyID, a unique and persistent identifier assigned to addresses through validation and geocoding services. By creating link tables between GERS IDs and Precisely’s unique IDs, they’ve eliminated the need for complex spatial operations.
+
+*Implementation URL:*
+
+https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS
+
+*Is implementation complete?*
+
+* [x] Yes
