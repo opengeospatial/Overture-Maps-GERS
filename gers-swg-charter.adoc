@@ -23,8 +23,6 @@
 |Authors:   Carl Reed, PhD
 |===
 
-
-
 [cols = "^", frame = "none"]
 |===
 |[big]*{titletext}*
@@ -215,15 +213,13 @@ multiple datastores to be "joined" (fused). Particpants in the SWG activity woul
 
 == Domain Working Group endorsement
 
-////
-The SWG will list all Domain Working Groups (DWGs) in which the SWG formation was discussed and/or chartered. If a DWG has specifically endorsed the formation of the SWG, then a statement of endorsement should be included.
-////
+The OGC Points of Interest SWG has been briefed on this work. 
 
 == Other informative information about the work of this SWG
 
 === Collaboration
 
-Overture Maps Foundation is a https://jointdevelopment.org/[Joint Development Foundation Project], an affiliate of the Linux Foundation.
+Overture Maps Foundation is a https://jointdevelopment.org/[Joint Development Foundation Project], an affiliate of the Linux Foundation. They are an OGC Principal Member
 
 === Details of first meeting
 
@@ -237,7 +233,7 @@ The work of the SWG will be carried out primarily by email and conference calls,
 
 === Supporters of this Charter
 
-The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. Extend the table as necessary.
+The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. 
 
 |===
 |Name |Organization| Membership Level
