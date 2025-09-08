@@ -31,7 +31,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) <year> Open Geospatial Consortium
+|Copyright (C) 2025 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
 |===
 
@@ -63,10 +63,12 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 == Purpose of the Standards Working Group
 
 The purpose of the Global Entity Reference System (GERS) Standards Working Group is to write a draft GERS Standard and move this document through the OGC RFC Process to become 
-an official OGC adopted Standard. The work of the SWG will be based on the existing, operational Overture Maps GERS Framework. 
+an official OGC adopted Standard. The work of the SWG will be based on the existing, operational https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[Overture Maps GERS Framework]. 
 
 GERS was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
-and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different 
+and interoperable identifiers for geospatial entities such as buildings, places, and road segments. The GERS framework also provides schema and a framework
+to register and maintain a persistent registery of these unique IDs. This includes a change log so that changes to
+geographic entiries over time can be captured and persisted. This system aims to simplify data integration and sharing across different 
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
 Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, 
@@ -77,7 +79,7 @@ approach is the `precisely` implementation (See Annex A).
 
 == Business value proposition
 
-Value statement from community focused on https://www.inhotel.io/[the AI-augmented hospitality future].
+The following is a value statement from the community focused on https://www.inhotel.io/[AI-augmented hospitality future].
 
 GERS provides a free, open backbone for identifiers and <map data> joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
 
