@@ -67,8 +67,8 @@ an official OGC adopted Standard. The work of the SWG will be based on the exist
 
 GERS was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
 and interoperable identifiers for geospatial entities such as buildings, places, and road segments. The GERS framework also provides schema and a framework
-to register and maintain a persistent registery of these unique IDs. This includes a change log so that changes to
-geographic entiries over time can be captured and persisted. This system aims to simplify data integration and sharing across different 
+to register and maintain a persistent registry of these unique IDs. This includes a change log so that changes to
+geographic entities over time can be captured and persisted. This system aims to simplify data integration and sharing across different 
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
 Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, 
@@ -112,7 +112,7 @@ Key value points:
 - Data integration: Simplifies the exchange and integration of map data by using a universal system of consistent identifiers (GERS IDs) for entities.
 - Reliability: Provides persistent IDs and changelogs for geospatial entities, improving data traceability, auditability, and accuracy.
 - Accessibility: As a free and open backbone, GERS provides a no-cost path to global identifiers and prevents vendor lock-in.
-- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training and operating accurate AI system
+- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training and operating accurate AI system.
 
 == Scope of work
 
@@ -128,9 +128,9 @@ guide decisions about data matching, better understand data stability, and help 
 - Registry: A GERS Registry serves as the single source of truth for all entities that are part of an implementation of a Global Entity Reference System.
 - JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet. 
 GeoJSON is used as the default canonical geospatial format. GeoJSON provides a "mental model and language" to express data constructions in the schema. 
-The OGC GERS Standrd schema reference docs will describe key schema concepts for each theme and definitions and examples for each feature type.
+The OGC GERS Standard schema reference docs will describe key schema concepts for each theme and definitions and examples for each feature type.
 - Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Standard will 
-define how all the enumarations contained in the schema can be extended while maintaining backwards compatibility.
+define how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
 
 Each of the above components are defined using JSON Schema that will clearly and fully documented in the draft OGC GERS Standard. 
 
