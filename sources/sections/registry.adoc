@@ -1,0 +1,30 @@
+== Registry
+
+////
+Source: https://docs.overturemaps.org/gers/registry/
+////
+
+With each data release, a GERS Registry is published. This registry serves as the single source of truth for all 
+entities that are part of an implementation of a Global Entity Reference System. 
+It serves as a comprehensive catalog that tracks every stable ID ever published across all data releases.
+
+There is only ever one GERS Registry in any deployment/implementation of a GERS framework. The registry is not versioned. 
+The registry is updated with each release by comparing the last published GERS Registry with the current data release.
+
+=== Registry schema
+The GERS Registry files have the following schema:
+
+|===
+|Column	| Data type	|Description
+|id	|string	|GERS identifier (UUID)
+|version	|integer	|current version number
+|first_seen	|string	|Release when entity first appeared
+|last_seen	|string|	Most recent release containing entity
+|last_changed	|string	|Last release the entity was changed, sourced from changelog
+|path	|string	|Relative path to feature in release data
+|bbox	|struct(xmin float, xmax float, ymin float, ymax float)	|bounding box coordinates
+|===
+
+=== Example
+An application or user can use the GERS Registry to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added. 
+For example, if the user or application "knows" the GERS ID, a request (query) such as, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS?" can be asked. 
