@@ -152,7 +152,9 @@ NOTE: Overture Maps Foundation provides global data across six data themes (addr
 and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This 
 reference map consists of billions of features across hundreds of gigabytes. 
 
-=== Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
+=== Relationship to specific OGC Standards and on-going work
+
+==== OGC Points of Interest (PoI) Conceptual Model Standard
 
 The OGC docs.ogc.org/is/21-049/21-049.html[Points of Interest] (POI) Conceptual Model is an open data model for representing information about POI. 
 A POI can be as simple as a set of coordinates and an identifier. The model specifically states that "An encoding of the AbstractFeature class SHALL 
@@ -164,6 +166,14 @@ Further, the geometry model specified in the GERS Model is consistent with the P
 
 -The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in ISO 19107
 - The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes: GM_Point, GM_LineString, GM_Polygon
+
+The PoI SWG was briefed on the proposed GERS SWG activity in August 2025.
+
+==== OGC CDB 2.0 Standard
+
+The CDB Version 2.0: Core Standard specifies requirements (rules) defining a standardized model and structure for a single, versionable, virtual representation of the earth. Conceptually, the GERS model and the CDB model are very similar. As such, key elements of the GERS framework such as the generation of unique IDs and the Registry easily fit the CDB model. Further, incorporation of these elements would increase the utility and useability of implementations of the CDB Standard.
+
+The CDB 2.0 SWG was briefed on the planned GERS SWG activity September 25, 2025.
 
 == Additional characteristics of the GERS SWG
 
