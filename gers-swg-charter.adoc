@@ -250,8 +250,9 @@ The following people support this proposal and are committed to the Charter and 
 
 |===
 |Name |Organization| Membership Level
-| Amy |Overture Maps| Principal    |
+| Amy Rose |Overture Maps| Principal    
 | Carl Reed | Carl Reed & Associates | Individual
+| Deane Kensok | Esri | Principal
 |===
 
 === Conveners
