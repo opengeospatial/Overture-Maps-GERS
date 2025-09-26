@@ -12,6 +12,7 @@ There is only ever one GERS Registry in any deployment/implementation of a GERS 
 The registry is updated with each release by comparing the last published GERS Registry with the current data release.
 
 === Registry schema
+
 The GERS Registry files have the following schema:
 
 |===
@@ -26,5 +27,5 @@ The GERS Registry files have the following schema:
 |===
 
 === Example
-An application or user can use the GERS Registry to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added. 
+An application or user can use the GERS Registry to verify that an entity exists in in the overview map, track the history of that entity, and find new entities that have been added. 
 For example, if the user or application "knows" the GERS ID, a request (query) such as, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS?" can be asked. 
