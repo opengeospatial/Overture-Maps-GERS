@@ -1,5 +1,5 @@
 :CSname: Global Entity Reference System (GERS)
-:Title: {CSname} SWG Charter
+:Title: Draft {CSname} SWG Charter
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
