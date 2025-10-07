@@ -39,7 +39,7 @@
 
 To: OGC members & interested parties
 
-A new OGC Standards Working Group is being formed. The OGC members listed below have proposed the OGC <Name of SWG>.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
+A new OGC Standards Working Group (SWG) is being formed. The OGC members listed below have proposed the OGC Global Entity Reference System (GERS) SWG.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
 
 The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
 
@@ -62,7 +62,7 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 
 == Purpose of the Standards Working Group
 
-The purpose of the Global Entity Reference System (GERS) Standards Working Group is to write a draft GERS Standard and move this document through the OGC RFC Process to become 
+The purpose of the GERS SWG is to write a draft GERS Standard and move this document through the OGC RFC Process to become 
 an official OGC adopted Standard. The work of the SWG will be based on the existing, operational https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[Overture Maps GERS Framework]. 
 
 GERS was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
@@ -81,7 +81,7 @@ approach is the `precisely` implementation (See Annex A).
 
 The following is a value statement from the community focused on https://www.inhotel.io/[AI-augmented hospitality future].
 
-GERS provides a free, open backbone for identifiers and <map data> joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
+GERS provides a free, open backbone for identifiers and map data joining that any vendor or hotel can use. That means hotels and vendors have a no-cost path to global identifiers and can choose to build domain services on top of it without mandatory subscription lock-in to an industry-only identifier. The economic choice is significant: choose open commons plus optional value-added services, not forced dependency.
 
 === Overview
 
@@ -97,7 +97,7 @@ With GERS, what once took weeks of complex geospatial conflation can now be acco
 
 === Key Benefits of implementing GERS
 
-The key benefits of implementing GERS as identified by the Overture Foundation community are:
+The key benefits of implementing GERS as identified by the Overture Foundation community are as follow.
 
 - Simplified Data Integration: GERS IDs allow developers to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
 - Reduced Costs: By streamlining data integration, GERS helps reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
@@ -107,7 +107,7 @@ The key benefits of implementing GERS as identified by the Overture Foundation c
 
 === GERS Value Proposition - Summary
 
-Key value points:
+Key value points include the following.
 
 - Data integration: Simplifies the exchange and integration of map data by using a universal system of consistent identifiers (GERS IDs) for entities.
 - Reliability: Provides persistent IDs and changelogs for geospatial entities, improving data traceability, auditability, and accuracy.
@@ -136,7 +136,7 @@ Each of the above components are defined using JSON Schema that will clearly and
 
 === Statement of relationship of planned work to the current OGC Standards baseline
 
-The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC including:
+The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC.
 
 - The GERS ID is generated following the rules as defined in IETF https://datatracker.ietf.org/doc/html/rfc4122[RFC 4122] A Universally Unique IDentifier (UUID) URN Namespace.
 - The GERS geometry model is consistent with https://www.iso.org/standard/26012.html[ISO 19107] as instantiated by the recommended use of GeoJSON as the encoding format for geometry in the GERS reference map data store.
@@ -160,14 +160,14 @@ The OGC docs.ogc.org/is/21-049/21-049.html[Points of Interest] (POI) Conceptual 
 A POI can be as simple as a set of coordinates and an identifier. The model specifically states that "An encoding of the AbstractFeature class SHALL 
 include zero or one identifier attributes" (Requirement 6) and that if an identifier is specified that the identifier of the feature is unique and valid globally.
 
-NOTE: From PoI Standard - Abstract Feature class in POI model: identifer «property»	ScopedName [0..*]	Specifies the unique identifier of the feature that is valid globally.
+NOTE: From POI Standard - Abstract Feature class in POI model: identifer «property»	ScopedName [0..*]	Specifies the unique identifier of the feature that is valid globally.
 
 Further, the geometry model specified in the GERS Model is consistent with the PoI geometry model (/req/core/geometry):
 
 -The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in ISO 19107
 - The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes: GM_Point, GM_LineString, GM_Polygon
 
-The PoI SWG was briefed on the proposed GERS SWG activity in August 2025.
+The POI SWG was briefed on the proposed GERS SWG activity in August 2025.
 
 ==== OGC CDB 2.0 Standard
 
@@ -226,7 +226,7 @@ multiple datastores to be "joined" (fused). Participants in the SWG activity wou
 
 == Domain Working Group endorsement
 
-The OGC Points of Interest SWG has been briefed on this work. 
+The OGC POI SWG has been briefed on this work. 
 
 == Other informative information about the work of this SWG
 
