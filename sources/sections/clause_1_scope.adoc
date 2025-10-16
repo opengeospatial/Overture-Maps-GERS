@@ -1,6 +1,6 @@
 == Scope
 
-The OGC GERS Stadnard defines requirements and guidance for the following components of a Global Entity Reference System are .
+The OGC GERS Standard defines requirements and guidance for the following components of a Global Entity Reference System are .
 
 - BridgeFiles: Bridge files connect the unique GERS IDs to the features identifiers used in the source data. These files are a key component of GERS and 
 offer two critical capabilities: reverse lookup of source features and the ability to join content from multipoe geospatial data repositories.
