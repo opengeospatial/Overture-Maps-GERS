@@ -18,7 +18,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <2025-10-16>
 |Approval Date:   <2025-mm-dd>
-|Internal reference number of this OGC(R) document:    25-024
+|Internal reference number of this OGC(R) document:    25-037
 |Category: OGC(R) Standards Working Group Charter
 |Authors:   Carl Reed, PhD
 |===
@@ -39,7 +39,7 @@
 
 To: OGC members & interested parties
 
-A new OGC Standards Working Group (SWG) is being formed. The OGC members listed below have proposed the OGC Global Entity Reference System (GERS) SWG.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
+A new OGC Standards Working Group (SWG) is being formed. The OGC members listed below (Clause 6.4) have proposed the OGC Global Entity Reference System (GERS) SWG.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
 
 The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
 
