@@ -1,0 +1,10 @@
+[obligation=informative]
+
+== Global Entity Reference System Concepts
+
+This clause provides information on the concepts essential to the GERS model or framework. The discussion begins with a model of the GERS framework.
+
+=== The GERS Model - High Level
+
+
+
