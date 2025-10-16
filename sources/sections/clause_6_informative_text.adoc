@@ -6,5 +6,22 @@ This clause provides information on the concepts essential to the GERS model or 
 
 === The GERS Model - High Level
 
+==== GERS Registry
+
+A GERS registry is a comprehensive database documenting every GERS ID created in a given GERS implementation.
+
+Think of the GERS Registry as the authoritative phonebook for GERS IDs. It maintains:
+
+* Complete lifecycle information for every ID
+* Current location data for active entities
+* Historical records for deprecated IDs
+* Quick lookup capabilities for ID verification
+
+Why it matters:
+
+* Validation: Instantly verify if a UUID is a legitimate GERS ID
+* History: Access the complete lifecycle of any GERS ID
+* Efficiency: Quickly “catch up” if you haven’t updated for several releases
+* Location services: Find where entities exist both geographically and within file structures
 
 
