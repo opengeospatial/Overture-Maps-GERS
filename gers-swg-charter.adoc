@@ -16,7 +16,7 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <2025-mm-dd>
+|Submission Date: <2025-10-16>
 |Approval Date:   <2025-mm-dd>
 |Internal reference number of this OGC(R) document:    25-024
 |Category: OGC(R) Standards Working Group Charter
