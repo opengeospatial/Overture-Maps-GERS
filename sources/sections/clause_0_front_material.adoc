@@ -55,20 +55,38 @@ approach is the `precisely` implementation (See Annex D).
 
 NOTE: The security measures discussed above to not provide confentiality. This is outside the scope of this document.
 
-== Submitters
+[.preface]
+== Document editors
 
-All questions regarding this submission should be directed to the editor or the submitters:
+The following OGC Members participated in editing this document:
+
+[%unnumbered]
+|===
+^h| Person ^h| Organization Represented
+| Carl Reed | Carl Reed & Associates
+|===
+
+== Submitting organizations
+
+The following OGC Member organizations support the CDB 2.0 Physical Materials Extension submission.
 
 |===
-|*Name* |*Affiliation*
-| Carl Reed | Carl Reed & Associates
+|*Organization name*
+| Overture Maps Foundation |
+| Esri |
+| Carl Reed & Associates |
 |===
 
 == Contributors
 
-//This clause is optional.
-
 Additional contributors to this Standard include the following:
 
-Individual name(s), Organization
+|===
+|*Name* |*Affiliation*
+| |
+|===
 
+[.preface]
+== Future work
+
+Improvements to this Standard will be made based on implementation and changing technical requirements. 
