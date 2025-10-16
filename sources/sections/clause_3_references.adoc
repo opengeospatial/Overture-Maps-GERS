@@ -10,14 +10,9 @@ Insert References here. If there are no references, leave this section empty.
 References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.
 ====
 
-* [[[Smith81,Identification of Common Molecular Subsequences]]],
-_Identification of Common Molecular Subsequences_.
-Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)
-
 * [[[RFC4122, IETF RFC 4122:2005]]], A Universally Unique IDentifier (UUID) URN Namespace
 
 * [[[RFC7946, IETF RFC 7946:2016]]], The GeoJSON Format
 
 * [[[ISO19107,ISO 19107-1:2003]]], Geographic information -- Spatial Schema
 
-* [[[OGC15-097,OGC 15-097]]], OGC Geospatial User Feedback Standard: Conceptual Model_ (2016)
