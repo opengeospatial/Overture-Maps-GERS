@@ -53,7 +53,7 @@ approach is the `precisely` implementation (See Annex D).
    object.  Humans do not have the ability to easily check the integrity
    of a GERS ID by simply glancing at it.
 
-NOTE: The security measures discussed above to not provide confentiality. This is outside the scope of this document.
+NOTE: The security measures discussed above do not provide confidentiality. This is outside the scope of this document.
 
 [.preface]
 == Document editors
