@@ -49,15 +49,14 @@ Why it matters:
 
 ==== GERS Reference Map
 
-A GERS reference map contains validated feature data that connect GERS IDs to real-world entities. 
+A GERS reference map contains feature data that connect GERS IDs to real-world entities. 
 
-These data releases are carefully validated, consistently structured collections that describe potentially billions of real-world entities. 
+Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. 
 
-Each entity in these datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the highway you take to work.
+Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the roads in a navigation route.
 
 Why it matters:
 
-    Open and free: GERS IDs reference elements in a global, open, free, and accessible. There is no risk of lock-in because any ID system can also match with GERS.
-    Trusted reference: GERS is supported by a diverse community of nearly 40 organizations, including Amazon, Meta, Microsoft, TomTom, and Esri. These companies have committed to and are dependent upon Overture data.
-    Regular updates: Monthly releases ensure your data stays current with real-world changes
+* Open and free: GERS IDs reference elements in a global, open, free, and accessible. There is no risk of lock-in because any ID system can also match with GERS.
+
 
