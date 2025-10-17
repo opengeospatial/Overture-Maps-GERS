@@ -23,11 +23,11 @@ Why it matters:
 * No collisions: Guaranteed uniqueness across all systems
 * Standard tooling: Leverage existing UUID libraries and utilities
 
-## OGC Draft of the Standard
+## OGC Draft of the Charter
 
-A version of the document can be viewed here:
+A draft version of the SWG charter document can be viewed here:
 
-* https://opengeospatial.github.io/ogc-gers/documents/document.html[GERS-Justification.html (HTML)]
+* https://github.com/opengeospatial/Overture-Maps-GERS/blob/main/gers-swg-charter.adoc[GERS SWG Charter]
 
 ## General
 
