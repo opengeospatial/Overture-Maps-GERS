@@ -10,7 +10,7 @@ GERS is supported by a diverse community of over 40 organizations, including Ama
 
 ## What does a GERS ID look like?
 
-GERS IDs use the https://en.wikipedia.org/wiki/Universally_unique_identifier[UUID] (Universally Unique Identifier) format. Every GERS ID follows the standard UUID format (e.g., 12345678-1234-5678-1234-567812345678), making them:
+GERS IDs use the https://en.wikipedia.org/wiki/Universally_unique_identifier[UUID - Universally Unique Identifier)] format. Every GERS ID follows the standard UUID format (e.g., 12345678-1234-5678-1234-567812345678), making them:
 
 * Globally unique
 * System-agnostic
