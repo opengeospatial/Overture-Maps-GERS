@@ -1,10 +1,12 @@
-== GERS Core Requirements Class
+== GERS Framework Requirements Clasess
 
-This Clause defines the GERS Core Requirements Class. Requirements are focused on the elements required to implement the GERS model. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
+This Clause defines requirements classes with a standardization target of an implementation of the GERS Model. Specifically, requirements defined in this clause are focused on the elements of the model required to implement the GERS model. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
 
-=== Requirement Class A or Requirement A Example
+=== Requirement Class Coordinate Reference System
 
-Paragraph – intro text for the requirement class.
+The CRS Requriements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the GERS model must be in the same (consistent) coordinate reference system.
+
+NOTE: This requirements class is identical (except for informative wording) to the CDB 2.0 CRS Requirements Class.
 
 Use the following table for Requirements Classes.
 
