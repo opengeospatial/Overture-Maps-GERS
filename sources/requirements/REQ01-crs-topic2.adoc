@@ -5,6 +5,6 @@
 ====
 [%metadata]
 name:: CRS consistent with OGC Topic 2
-identifier:: req/crs/topic2
+identifier:: req/crs-topic2
 statement:: Any GERS Framework implementation, profile, extension, or application profile SHALL be consistent with and conform to the terms and definitions and logical models as defined in OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019) 
 ====
