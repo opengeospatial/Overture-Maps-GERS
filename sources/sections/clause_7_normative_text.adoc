@@ -18,6 +18,12 @@ The following requirement states that any metadata used in a GERS implementation
 
 include::../requirements/REQ01-crs-topic2.adoc[]
 
+==== Requirement 2: CRS Throughout
+
+The following requirement states that any implementatin of the GERS Framework compliant with this standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
+
+include::../requirements/REQ02-crs-storage.adoc[]
+
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
 [width="90%",options="header"]
