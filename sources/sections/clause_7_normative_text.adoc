@@ -10,7 +10,7 @@ NOTE: This requirements class is identical (except for informative wording) to t
 
 Use the following table for Requirements Classes.
 
-include::../requirements/requirements_class.adoc[]
+include::../requirements/requirements_class-gers-crs.adoc[]
 
 ==== Requirement 1
 
@@ -18,7 +18,7 @@ Paragraph - intro text for the requirement.
 
 Use the following table for Requirements, number sequentially.
 
-include::../requirements/requirement001.adoc[]
+include::../requirements/REC01-gers-crs-topic2.adoc[]
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
