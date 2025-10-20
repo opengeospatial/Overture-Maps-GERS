@@ -16,7 +16,7 @@ include::../requirements/requirements_class-gers-crs.adoc[]
 
 The following requirement states that any metadata used in a GERS implementation be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
 
-include::../requirements/REC01-crs-topic2.adoc[]
+include::../requirements/REQ01-crs-topic2.adoc[]
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
