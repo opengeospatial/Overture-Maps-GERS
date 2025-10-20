@@ -1,11 +1,11 @@
-[[req_class_a]]
+[[req_class_gers-crs]]
 
 [requirements_class]
-.Requirements Class 'A'
+.Requirements Class CRS
 ====
 [%metadata]
-identifier:: http://www.opengis.net/spec/ABCD/m.n/req/req-class-a
-subject:: Web API
-requirement:: /req/req-class-a/req-name-1
-requirement:: /req/req-class-a/req-name-2
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-crs
+subject:: Coordinate Reference System (CRS)
+requirement:: /req/req-class-gers-crs/req-crs-topic2
+requirement:: /req/req-class-gers-gersid/req-crs-crsStorage
 ====
