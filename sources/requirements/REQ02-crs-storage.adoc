@@ -4,7 +4,7 @@
 
 ====
 [%metadata]
-name:: CRS consistent throughout CERS framework
+name:: CRS consistent throughout GERS framework
 identifier:: req/crs-storage
 part:: Only one CRS _SHALL_ be specified for a given implementation of the GERS Framework. 
 part:: All coordinate tuples in a coordinate set _SHALL_ be referenced to the same coordinate reference system. 
