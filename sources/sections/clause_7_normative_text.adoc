@@ -12,13 +12,11 @@ Use the following table for Requirements Classes.
 
 include::../requirements/requirements_class-gers-crs.adoc[]
 
-==== Requirement 1
+==== Requirement 1: CRS definition
 
-Paragraph - intro text for the requirement.
+The following requirement states that any metadata used in a GERS implementation be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
 
-Use the following table for Requirements, number sequentially.
-
-include::../requirements/REC01-gers-crs-topic2.adoc[]
+include::../requirements/REC01-crs-topic2.adoc[]
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
