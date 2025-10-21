@@ -4,14 +4,19 @@ This document uses the terms defined in OGC Policy Directive 49, which is based 
 
 For the purposes of this document, the following additional terms and definitions apply.
 
-=== example term
+=== GERS Framework
 
-term used for exemplary purposes
+a framework for structuring, discovering, and matching data across systems via the GERS ID. 
+
+NOTE: The GERS framework is made up of several components – Reference Map, Changelogs, Registry, and Bridge Files.
+
+=== GERS ID
+
+a globally unique entity ID generated using the UUID (Universally Unique Identifier) format
 
 [.source]
 <<ISO19101-1>>
 
-NOTE: An example note.
 
 [example]
 Here's an example of an example term.
