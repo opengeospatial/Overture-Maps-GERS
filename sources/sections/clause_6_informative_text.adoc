@@ -33,19 +33,45 @@ A GERS registry is a comprehensive database documenting every GERS ID created in
 
 Think of the GERS Registry as the authoritative phonebook for GERS IDs. It maintains:
 
-* Complete lifecycle information for every ID
-* Current location data for active entities
-* Historical records for deprecated IDs
-* Quick lookup capabilities for ID verification
+* Complete lifecycle information for every ID.
+* Current location data for active entities.
+* Historical records for deprecated IDs.
+* Quick lookup capabilities for ID verification.
 
 Why it matters:
 
-* Validation: Instantly verify if a UUID is a legitimate GERS ID
-* History: Access the complete lifecycle of any GERS ID
-* Efficiency: Quickly “catch up” if you haven’t updated for several releases
-* Location services: Find where entities exist both geographically and within file structures
+* Validation: Instantly verify if a UUID is a legitimate GERS ID.
+* History: Access the complete lifecycle of any GERS ID.
+* Efficiency: Quickly “catch up” if you haven’t updated for several releases.
+* Location services: Find where entities exist both geographically and within file structures.
 
-==== GERS Bridge Files
+==== GERS Bridge File
+
+A bridge file contains mappings between GERS IDs and identifiers used other (source) geospatial datasets. A bridge file can be thought of as join tables .
+
+Why it matters:
+
+* Instant integration: Using a dataset with a bridge file supports quick connection(s) between a GERS implementation and the source geospatial repositories.
+* Transparency: See exactly which geospatial data sources were used used to build the reference data.
+* Flexibility: You can create your own bridge files to share with the community.
+
+==== GERS Change Log
+
+A GERS change log contains detailed records of all changes made to data referenced in an implementation of the GERS framework. In the OMF implementation, updates to the change log occur between data releases
+
+Why a chnage log? The physical world is constantly changing – new buildings are constructed, businesses move, roads are rerouted. The metadata maintained in a GERS change log documents these changes at the ID level: 
+
+* What new entities were added.
+* What entities were removed.
+* What modifications to existing entities.
+
+Why it matters:
+
+* Efficient updates: Only process what’s changed instead of reprocessing entire datasets.
+* Time savings: If only 200 of your 1,000 matched records have changed, update just those 200.
+* Transparency: Understand exactly how and why data evolved between releases.
+
+Examples of using and accessing change logs are available on the OMF web site. Use this information to update only the affected portions of your data pipeline.
 
 ==== GERS Reference Map
 
