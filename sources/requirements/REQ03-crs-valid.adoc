@@ -1,0 +1,11 @@
+[req-gers-crs-valid]
+
+[requirement]
+
+====
+[%metadata]
+name:: Only non-projected CRS valid
+identifier:: req/crs-valid
+part:: Only non-projected (geodetic or geographic) coordinate reference systems _SHALL_ be used. 
+guidance:: In simple terms: A geographic coordinate system defines where the data is located on the earth. A projected coordinate "tells" how data is to be drawn on a flat surface, such as on a paper map or a computer screen. 
+====
