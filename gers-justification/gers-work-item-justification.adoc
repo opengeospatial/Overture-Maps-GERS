@@ -82,6 +82,10 @@ define how an enumeration contained in the schema can be extended while maintain
 
 Each of the above components are defined using JSON Schema that will clearly and fully documented in the OGC GERS Community Standard. 
 
+=== What will not be in the Community Standard
+
+No Overture mantained data, registry content, maps, tools, or workflow processes will be part of the OGC Community Standard.
+
 === Benefits of implementing a GERS Framework
 
 he key benefits of implementing a GERS framework as identified by the Overture Foundation community are as follow.
@@ -143,7 +147,9 @@ The CDB User Community has, for years, asked for better indexing and discovery c
 
 ==== Relationship to OGC API Standards
 
-An OGC API Records endpoint could
+An OGC API Records endpoint could being uses to access and maintain a GERS Registry instance.
+
+An OGC API Features endpoint could being uses to search, access and maintain a GERS reference map. GeoJSON is the default GERS format for exchange of geospatial content.
 
 === Relationship to existing OGC standards baseline and standards summary
 
@@ -155,8 +161,6 @@ The GERS Model and implementations build on the existing OGC/ISO Standards basel
 
 === Overview of implementations
 
-The following implementations use the proposed Community Standard.
-
 Organizations that support and rely on Overture data, and therefore are effectively "implementing" or leveraging GERS, include:
 
 - Amazon Web Services (AWS)
@@ -166,6 +170,28 @@ Organizations that support and rely on Overture data, and therefore are effectiv
 - Esri
 - Precisely (using GERS IDs to integrate with their data products)
 - Addresscloud (leveraging GERS for geospatial risk analysis)
+
+Specifically, the following applications implement the proposed GERS Community Standard.
+
+=== Overture Maps Foundation
+
+*Date of most recent version:*
+
+June 2025
+
+*Implementation description:*
+
+The Global Entity Reference System (GERS) is a universal framework for structuring and matching map data across systems. GERS, coupled with Overture datasets, is a potential standard for identifying and referencing the physical and conceptual entities we've defined in our world. It is also a mechanism that can simplify the integration and exchange of data layers.
+
+GERS provides stable identifiers called GERS IDs for real-world geospatial entities across data releases and maintains consistency when entities appear in multiple source datasets.
+
+*Implementation URL:*
+
+https://overturemaps.org/gers/
+
+*Is implementation complete?*
+
+* [x] Yes
 
 === *Precisely Data Link Program:*
 
