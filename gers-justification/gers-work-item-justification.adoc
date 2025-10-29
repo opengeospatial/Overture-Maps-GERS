@@ -49,7 +49,7 @@ More information on the Overture Maps GERS framework can be found https://overtu
 
 == Overview of proposed submission
 
-This section provides an overview of the proposed submission, benefits of implementing GERS, a summary of the GERS Model, and an overview of the organization submitting this Community Standard: Overture Maps Foundation.
+This section provides an overview of the proposed submission, benefits of implementing GERS and a summary of the GERS Model.
 
 The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation]. The latest version launched in June 2025 as a way to provide unique, open, and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry
 
