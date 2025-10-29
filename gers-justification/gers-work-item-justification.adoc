@@ -39,13 +39,13 @@
 
 == Introduction
 
-This document provides a justification to the OGC Technical Committee (TC) for consideration of the Global Entity Reference System (GERS) framework as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for TC review and vote to approve the start of a Work Item as the first step in the Community Standard process for this standard.
+This document provides a justification as why the OGC Technical Committee (TC) should consider the Global Entity Reference System (GERS) framework as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for TC review and vote to approve the start of a Work Item as the first step in the Community Standard process for this standard.
 
 The submitters agree to abide by the TC Policies and Procedures and OGC http://www.opengeospatial.org/ogc/policies[Intellectual Property Rights Policy] during the processing of this submission.
 
 Once approved, the GERS Community Standard Work Item defined by this document is valid for a period of six (6) months from the approval date.
 
-More information on the Overture Maps GERS framework can be found here: https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/
+More information on the Overture Maps GERS framework can be found https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
 
 == Overview of proposed submission
 
