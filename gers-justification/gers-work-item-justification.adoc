@@ -1,4 +1,4 @@
-:CSname: Global Entity Reference System (GERS)
+:CSname: Global Entity Reference System (GERS) Framework
 :Title: {CSname} Community Standard Work Item Justification
 :titletext: {Title}
 :doctype: book
@@ -16,7 +16,7 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <2025-mm-dd>
+|Submission Date: <2025-10-28>
 |Approval Date:   <2025-mm-dd>
 |Internal reference number of this OGC(R) document:    25-024
 |Category: OGC(R) Community Standard Work Item Justification
