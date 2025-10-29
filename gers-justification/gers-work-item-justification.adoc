@@ -213,16 +213,23 @@ https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case
 
 * [x] Yes
 
-////
-Repeat for each implementation. Place a "x" in the appropriate box regarding complete implementation.
-Optionally, provide a narrative description of the extent of implementation of the proposed Community standard for those proposed standards that are very widely used.
-////
+=== inHotel: Global Property IDs for Hospitality and Travel
 
-== Information on adoption
+*Date of most recent version:*
 
-////
-Describe the breadth of adoption of the proposed Community Standard. For example, are the implementations widely used in the geospatial community or subsets of the community? Are implementations limited, but used by most organizations that need the capabilities of the proposed Community Standard? Does the proposed Community Standard serve an emerging part of the geospatial community?
-////
+Spring 2025
+
+*Implementation description:*
+
+Aligned with our mission to support people in travel and hospitality through AI, we provide a GERS management service for hotels, hostels, restaurants, cafes, bars, car rental stations, golf courses, spas, tour operators and other venues. We help companies discover their GERS ID, map and verify property records, maintain authoritative metadata, associate AI agent endpoints and manage change so partners and AI agents can join reliably. We do this because geospatial grounding is essential for AI agents to truly represent a property, anchor answers to the correct location and preserve authoritative context for transactions and recommendations.
+
+*Implementation URL:*
+
+https://www.inhotel.io/docs/gers-global-property-ids-for-hospitality-and-travel/
+
+*Is implementation complete?*
+
+* [x] Yes
 
 == Public availability
 
