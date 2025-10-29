@@ -51,9 +51,11 @@ More information on the Overture Maps GERS information can be found here: https:
 
 This section provides an overview of the proposed submission, benefits of implementing GERS, a summary of the GERS Model, and an overview of the organization submitting this Community Standard: Overture Maps Foundation.
 
-=== Overview of the GERS Model and Reference System
-
 The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry
+
+Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Standard will have a more limited focus  that includes the model as documented in the current Overture data and registry schema, and the generation of the GERS ID. This focus results in a standard that can be implemented  by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization.
+
+=== Overview of the GERS Model and Reference System
 
 Organizations can spend amount of time and resources on data preparation and integration rather than value-adding analysis. For organizations using geospatial data, the challenge is even more acute: Different data producers describe the same real-world entities in different ways, use different reference systems, and different ontologies. The combinations of these differences make it expensive and time-consuming to combine datasets from these different sources. 
 
@@ -63,15 +65,26 @@ GERS changes this equation by providing persistent, unique identifiers for every
 
 === What will be standardized?
 
-Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Community Standard has a more limited focus that includes the model as documented in the data and registry schema, and the generation of the GERS ID. This focus results in a  standard that can be implemented by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the precisely implementation (See below).
+The following components of the Global Entity Reference System will be addressed in the GERS Community Standard. The source of the content for the draft Community Standard is the July 2025 of the Overture GERS release.
 
-==== Registry Schema
+- BridgeFiles: Bridge files connect the unique GERS IDs to the features identifiers used in the source data. These files are a key component of GERS and 
+offer two critical capabilities: reverse lookup of source features and the ability to join content from multipoe geospatial data repositories.
+- ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
+guide decisions about data matching, better understand data stability, and help detect data errors.
+- GERS ID: A GERS ID is a unique identifier for real-world geospatial entities across data releases and maintains consistency when the same entity appears in multiple source datasets.
+- ReferenceMap: A reference map of all entities that have been assigned a unique GERS ID. The content in the reference map is defined by a set of JSON schema.
+- Registry: A GERS Registry serves as the single source of truth for all entities that are part of an implementation of a Global Entity Reference System.
+- JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet. 
+GeoJSON is used as the default canonical geospatial format. GeoJSON provides a "mental model and language" to express data constructions in the schema. 
+The OGC GERS Standard schema reference docs will describe key schema concepts for each theme and definitions and examples for each feature type.
+- Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Standard will 
+define how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
 
-With each data release, Overture publishes a GERS Registry that serves as the single source of truth for all entities that are part of the Global Entity Reference System. It serves as a comprehensive catalog that tracks every stable ID ever published across all Overture data releases.
+Each of the above components are defined using JSON Schema that will clearly and fully documented in the OGC GERS Community Standard. 
 
-=== Benefits of implementing GERS
+=== Benefits of implementing a GERS Framework
 
-The key benefits of implementing GERS as identified by the Overture Foundation community are:
+he key benefits of implementing a GERS framework as identified by the Overture Foundation community are as follow.
 
 - Simplified Data Integration: GERS IDs allow developers to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
 - Reduced Costs: By streamlining data integration, GERS helps reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
@@ -79,13 +92,15 @@ The key benefits of implementing GERS as identified by the Overture Foundation c
 - Enhanced Data Richness: With GERS, it becomes easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
 - Innovation in Geospatial: GERS is expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
 
-=== What is the Overture Maps Foundation"
+=== GERS Value Proposition - Summary
 
-Overture is a collaborative open-data initiative led by software developers, data experts, cartographic engineers, and product managers from dozens of Overture Maps Foundation member companies. Since its launch in December 2022, Overture members have been working toward a shared vision: To create reliable, user-friendly, and interoperable open map data that supports both current and future map products. Overture Members envision a world where shared, open base layers drive collaboration and innovation across industries and communities.
+Key value points include the following.
 
-To achieve this, Overture’s core contributors have been developing our common schema, datasets, platform, and system of unique, stable IDs known as GERS. Member companies contribute data and engineering expertise to enable the creation of global datasets that are accurate, comprehensive, and regularly updated to reflect changes in the world. By combining multiple data sources and fostering cross-company collaboration, we are able to achieve results no single organization could accomplish alone.
+- Data integration: Simplifies the exchange and integration of map data by using a universal system of consistent identifiers (GERS IDs) for entities.
+- Reliability: Provides persistent IDs and changelogs for geospatial entities, improving data traceability, auditability, and accuracy.
+- Accessibility: As a free and open backbone, GERS provides a no-cost path to global identifiers and prevents vendor lock-in.
+- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training and operating accurate AI system. 
 
-NOTE: Many of the Overture Foundation members are also OGC Members, including: Esri, TomTom, con terra GmbH, Maxar, and CampToCamp. A number of past OGC Member organizations are also key supporters of the Overture Maps foundation, inluding AWS and Microsoft.
 
 == Motivation of supporting OGC Members for this submission
 
@@ -94,6 +109,8 @@ Provide a brief paragraph from one or more supporting OGC members that describes
 ////
 
 == Alignment with OGC and other International Standards
+
+=== Alignment with Non OGC International Standards
 
 The GERS model and framework is based on the following international standards from the IETF, ISO, and the OGC including:
 
@@ -106,24 +123,33 @@ NOTE: A GERS referance map data store is a set of validated datasets that connec
 
 NOTE: Overture Maps Foundation provides global data across six data themes (addresses, base, buildings, divisions, places, and transportation), using well-partitioned GeoParquet as their primary distribution format across multiple clouds. This referebce map consists of billions of features across hundreds of gigabytes. 
 
-=== Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
+===  Alignment with OGC Standards baseline
+
+==== Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
 
 The OGC docs.ogc.org/is/21-049/21-049.html[Points of Interest] (POI) Conceptual Model is an open data model for representing information about POI. 
-A POI can be as simple as a set of coordinates and an identifier. The model specifically states that "An encoding of the AbstractFeature class SHALL 
-include zero or one identifier attributes" (Requirement 6) and that if an identifier is specified that the identifier of the feature is unique and valid globally.
+A POI can be as simple as a set of coordinates and an identifier. The model specifically states that "An encoding of the AbstractFeature class SHALL include zero or one identifier attributes" (Requirement 6) and that if an identifier is specified that the identifier of the feature is unique and valid globally.
 
 NOTE: From PoI Standard - Abstract Feature class in POI model: identifer «property»	ScopedName [0..*]	Specifies the unique identifier of the feature that is valid globally.
 
 Further, the geometry model specified in the GERS Model is consistent with the PoI geometry model (/req/core/geometry):
 
 -The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in ISO 19107
-- The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes: GM_Point, GM_LineString, GM_Polygon
+- The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes: GM_Point, GM_LineString, GM_Polygon.
 
-=== Relationship to existing OGC standards baseline and standards in development in the OGC
+==== Relationship to OGC CDB 2.0 Standard
+
+The CDB User Community has, for years, asked for better indexing and discovery capabilities as part of a CDB structured datastore. Implementing components for the GERS Framework, such as a Registry, Change Log, and Bridge files. Further, having a unique ID for every entity in a CDB datastore would 1.) support cross LoD feature joins, 2.) enable easier and searchable change history (versioning), and 3.) enable joins with non-CDB geospatial repositories - such as the Overture Maps GERS members map contributions.
+
+==== Relationship to OGC API Standards
+
+An OGC API Records endpoint could
+
+=== Relationship to existing OGC standards baseline and standards summary
 
 The proposed GERS Community Standard does not conflict with or overlap functionalty defined in the current OGC Standards baseline or new standards being developed.
-The GERS Model and implementations build on the existing OGC/ISO Standards baseline. Further, implementations of various OGC API Standards could be used to access
-a GERS reference map data store.
+
+The GERS Model and implementations build on the existing OGC/ISO Standards baseline. Further, implementations of various OGC API Standards could be used to access a GERS reference map data store.
 
 == Evidence of implementation
 
@@ -183,11 +209,13 @@ URL: https://github.com/OvertureMaps
 
 == Supporting OGC Members
 
-The following OGC Members suppot this submission:
+The following OGC Members support this submission:
 
 |===
-| Organization | Member Level | URL
-| Overture Maps| Principal    |
+|Name |Organization| Membership Level
+| Amy Rose |Overture Maps| Principal    
+| Carl Reed | Carl Reed & Associates | Individual
+| Deane Kensok | Esri | Principal
 |===
 
 == Intellectual Property Rights
@@ -197,8 +225,15 @@ Will the contributor retain intellectual property rights?
 * [X] Yes
 * [ ] No
 
-
-
 Overture Maps
 
 The companies listed above have granted the Open Geospatial Consortium (OGC) a nonexclusive, royalty-free, paid up, worldwide license to copy and distribute this document and to modify this document and distribute copies of the modified version under a <<TBD>> license (see below).
+
+=== Additional Information: What is the Overture Maps Foundation"
+
+Overture is a collaborative open-data initiative led by software developers, data experts, cartographic engineers, and product managers from dozens of Overture Maps Foundation member companies. Since its launch in December 2022, Overture members have been working toward a shared vision: To create reliable, user-friendly, and interoperable open map data that supports both current and future map products. Overture Members envision a world where shared, open base layers drive collaboration and innovation across industries and communities.
+
+To achieve this, Overture’s core contributors have been developing common schema, datasets, platform, and system of unique, stable IDs known as GERS. Member companies contribute data and engineering expertise to enable the creation of global datasets that are accurate, comprehensive, and regularly updated to reflect changes in the world. By combining multiple data sources and fostering cross-company collaboration, we are able to achieve results no single organization could accomplish alone.
+
+NOTE: Many of the Overture Foundation members are also OGC Members, including: Esri, TomTom, con terra GmbH, Maxar, and CampToCamp. A number of past OGC Member organizations are also key supporters of the Overture Maps foundation, inluding AWS and Microsoft.
+
