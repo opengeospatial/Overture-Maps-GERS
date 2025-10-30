@@ -6,13 +6,11 @@ The OGC GERS Standard defines requirements and guidance for the following compon
 offer two critical capabilities: reverse lookup of source features and the ability to join content from multipoe geospatial data repositories.
 - ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
 guide decisions about data matching, better understand data stability, and help detect data errors.
-- GERS ID: A GERS ID is a unique identifier for real-world geospatial entities across data releases and maintains consistency when the same entity appears in multiple source datasets.
+- GERS ID: A GERS ID is a persistent, unique identifier for geospatial entities.  The ID remains stable across data updates and is the same when the same entity appears in multiple source datasets.
 - ReferenceMap: A reference map of all entities that have been assigned a unique GERS ID. The content in the reference map is defined by a set of JSON schema.
 - Registry: A GERS Registry serves as the single source of truth for all entities that are part of an implementation of a Global Entity Reference System.
-- JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet. 
-GeoJSON is used as the default canonical geospatial format. GeoJSON provides a "mental model and language" to express data constructions in the schema. 
-The OGC GERS Standard schema reference docs will describe key schema concepts for each theme and definitions and examples for each feature type.
-- Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Standard will 
-define how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
+- JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet.  GeoJSON is used as the default canonical geospatial format. 
+The OGC GERS Standard schema reference documentss describe key schema concepts for each theme and definitions and examples for each feature type.
+- Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Community Standard defines how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
 
 Each of the above components are defined using JSON Schema. 
