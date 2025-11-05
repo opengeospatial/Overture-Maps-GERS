@@ -175,6 +175,12 @@ The CDB Version 2.0: Core Standard specifies requirements (rules) defining a sta
 
 The CDB 2.0 SWG was briefed on the planned GERS SWG activity September 25, 2025.
 
+==== Relationship to OGC API Standards
+
+An OGC API Records endpoint could being uses to access and maintain a GERS Registry instance.
+
+An OGC API Features endpoint could being uses to search, access and maintain a GERS reference map. GeoJSON is the default GERS format for exchange of geospatial content
+
 == Additional characteristics of the GERS SWG
 
 === Relationship to existing OGC standards baseline and standards in development in the OGC
@@ -282,3 +288,204 @@ https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case
 *Is implementation complete?*
 
 * [x] Yes
+
+== Evidence of implementation
+
+=== Overview of implementations
+
+Organizations that support and rely on Overture data, and therefore are effectively "implementing" or leveraging GERS, include:
+
+- Amazon Web Services (AWS)
+- Meta
+- Microsoft
+- TomTom
+- Esri
+- Precisely (using GERS IDs to integrate with their data products)
+- Addresscloud (leveraging GERS for geospatial risk analysis)
+
+Specifically, the following applications implement the proposed GERS Community Standard.
+
+=== Overture Maps Foundation
+
+*Date of most recent version:*
+
+June 2025
+
+*Implementation description:*
+
+The Global Entity Reference System (GERS) is a universal framework for structuring and matching map data across systems. GERS, coupled with Overture datasets, is a potential standard for identifying and referencing the physical and conceptual entities we've defined in our world. It is also a mechanism that can simplify the integration and exchange of data layers.
+
+GERS provides stable identifiers called GERS IDs for real-world geospatial entities across data releases and maintains consistency when entities appear in multiple source datasets.
+
+*Implementation URL:*
+
+https://overturemaps.org/gers/
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== *TomTom: Integrating GERS into Global Mapping and Location Data Workflows:*
+
+*Date of most recent version:*
+
+October 2025
+
+*Implementation description:*
+
+TomTom has integrated the Global Entity Reference System (GERS) into its global mapping and location intelligence workflows to strengthen interoperability and consistency between its proprietary datasets, open map data, and third-party applications. By associating GERS identifiers with TomTom’s core geographic entities—such as buildings, places, and administrative areas—TomTom enables seamless data exchange and alignment across open and commercial data ecosystems.
+
+Within its Orbis Maps platform, TomTom incorporates GERS identifiers as part of its traffic and mobility data model. The integration of GERS into the Intermediate Traffic API ensures that map and traffic information can be reliably cross-referenced across datasets, supporting improved data fusion and dynamic location referencing. This interoperability allows partners and developers to connect live traffic feeds, map tiles, and analytics systems using consistent, persistent global identifiers.
+
+TomTom has also implemented GERS alignment within its Global Entity Matcher (GEM) service, which automatically reconciles customer datasets with standardized GERS entities. Through GEM, organizations can maintain accurate and synchronized entity references across their internal databases and GERS-enabled datasets.
+
+*Implementation URLs:*
+
+https://www.tomtom.com/
+
+https://developer.tomtom.com/intermediate-traffic-service/documentation/tomtom-orbis-maps/product-information/introduction
+
+https://www.tomtom.com/products/tomtom-gem/
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== *Precisely Data Link Program:*
+
+*Date of most recent version:*
+
+June 2025
+
+*Implementation description:*
+
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
+
+Precisely solutions leverage their broader ID system and the PreciselyID, a unique and persistent identifier assigned to addresses through validation and geocoding services. By creating link tables between GERS IDs and Precisely’s unique IDs, they’ve eliminated the need for complex spatial operations.
+
+*Implementation URL:*
+
+https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== inHotel: Global Property IDs for Hospitality and Travel
+
+*Date of most recent version:*
+
+Spring 2025
+
+*Implementation description:*
+
+Aligned with our mission to support people in travel and hospitality through AI, we provide a GERS management service for hotels, hostels, restaurants, cafes, bars, car rental stations, golf courses, spas, tour operators and other venues. We help companies discover their GERS ID, map and verify property records, maintain authoritative metadata, associate AI agent endpoints and manage change so partners and AI agents can join reliably. We do this because geospatial grounding is essential for AI agents to truly represent a property, anchor answers to the correct location and preserve authoritative context for transactions and recommendations.
+
+*Implementation URL:*
+
+https://www.inhotel.io/docs/gers-global-property-ids-for-hospitality-and-travel/
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== *Regrid: Integration of GERS with U.S. Parcel Data:*
+
+*Date of most recent version:*
+
+Fall 2025
+
+*Implementation description:*
+
+Regrid has implemented the Global Entity Reference System (GERS) to establish persistent, identifier-based linkages between its nationwide parcel dataset and external geospatial data describing real-world entities such as points of interest, addresses, and property features. Regrid’s database includes over 155 million property boundaries across the United States, each with a unique Regrid ID. By associating these parcel records with GERS identifiers, Regrid provides a standardized bridge between local property information and globally referenced entities.
+
+Regrid maintains and distributes a crosswalk file linking millions of parcel records to corresponding GERS IDs representing nearby or associated real-world features—such as commercial establishments, institutions, or civic facilities. This linkage allows data users to integrate parcel-level information with other datasets containing location-based attributes, such as business characteristics, land use, or infrastructure details. The GERS-based connection supports deterministic joins between data from different providers, eliminating dependence on approximate spatial or textual matching methods.
+
+This implementation demonstrates a large-scale, production application of GERS within a national parcel data system. By embedding GERS IDs directly in its APIs and downloadable datasets, Regrid operationalizes the identifier as an interoperability mechanism, enabling consistent data integration across public, commercial, and open geospatial sources.
+
+*Implementation URLs:*
+
+https://regrid.com/blog/introducing-enhanced-land-use-insights-through-the-regrid-id-and-overture-maps-foundations-gers-id-match
+
+https://support.regrid.com/parcel-data/gers-faq
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== *CARTO: Use of GERS for Scalable Data Integration in Cloud Environments:*
+
+*Date of most recent version:*
+
+Summer 2025
+
+*Implementation description:*
+
+CARTO has implemented the Global Entity Reference System (GERS) within its spatial analytics and data integration platform to support standardized, identifier-based joins across distributed geospatial datasets. The company demonstrated this capability through examples running on cloud data warehouses such as Databricks, where GERS IDs were used to align spatial tables representing buildings, address locations, and activity points sourced from multiple providers.
+
+In these workflows, GERS identifiers serve as persistent join keys for linking heterogeneous data sources directly in SQL, removing the need for computationally intensive spatial joins or manual conflation. CARTO’s integration shows that GERS can operate effectively as a stable reference key within scalable, columnar databases and analytical engines that process millions of location records.
+
+This implementation provides concrete operational evidence that GERS functions as a reliable interoperability mechanism in production-grade, cloud-based data environments. It demonstrates that GERS can underpin efficient, repeatable integration workflows across diverse geospatial data providers without dependency on geometry or coordinate matching.
+
+*Implementation URLs:*
+
+https://carto.com/blog/pain-free-data-integration-with-overture-maps-gers-databricks?utm_source=chatgpt.com
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== *Joint Research Centre (JRC): Evaluation of GERS for Cross-Boundary Data Harmonization:*
+
+*Date of most recent version:*
+
+Fall 2025
+
+*Implementation description:*
+
+The European Commission’s Joint Research Centre (JRC) has evaluated the Global Entity Reference System (GERS) as part of research on improving interoperability among European spatial datasets. In a 2025 Data in Brief publication, JRC scientists documented the use of GERS identifiers to match administrative units, address points, and built environment features from multiple open and institutional sources across European countries.
+
+The study compared GERS-based entity linking against traditional spatial overlay and text-based matching, finding that GERS reduced ambiguity and improved reproducibility of cross-dataset joins. The experiment demonstrated that GERS can act as a stable reference key for integrating heterogeneous datasets conforming to INSPIRE data models and the European Data Strategy framework.
+
+This peer-reviewed analysis provides independent, quantitative evidence of GERS performance in a multi-jurisdictional context. It confirms that GERS can facilitate data harmonization across administrative boundaries—an essential requirement for European spatial data infrastructures and other federated data ecosystems.
+
+*Implementation URLs:*
+
+https://www.sciencedirect.com/science/article/pii/S2352340925004780?via%3Dihub
+
+*Is implementation complete?*
+
+* [x] Yes
+
+=== *Fused: Use of GERS IDs in Data Enrichment and Tile Services:*
+
+*Date of most recent version:*
+
+Summer 2025
+
+*Implementation description:*
+
+Fused has implemented the Global Entity Reference System (GERS) across its hosted map-tiling and enrichment APIs to maintain consistent, globally unique identifiers for geographic features such as buildings, roads, and places. GERS identifiers are preserved through Fused’s vector tile pipelines, enabling users to request and enrich map features by their persistent IDs across data updates and service layers.
+
+Fused demonstrates this integration through public technical documentation showing API-based enrichment using GERS IDs as keys to attach user-defined attributes—such as business metadata, analytics outputs, or risk assessments—to base geographic entities. These examples confirm that GERS can operate as a durable feature identifier within real-time, developer-facing geospatial infrastructure.
+
+By exposing GERS IDs through its APIs and map tiles, Fused provides a functioning model for how GERS can support interoperability and data consistency across distributed geospatial systems. This implementation demonstrates that GERS performs effectively in automated, high-frequency data pipelines where feature persistence and identifier stability are critical.
+
+*Implementation URLs:*
+
+https://docs.fused.io/blog/overture-tiles/
+
+https://docs.fused.io/blog/enhance-your-data-with-gers-ids/
+
+*Is implementation complete?*
+
+* [x] Yes
+
+== Public availability
+
+Is the proposed Community standard currently publicly available?
+
+* [x] Yes
+* [ ] No
+
+URL: https://github.com/OvertureMaps
