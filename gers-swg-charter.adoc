@@ -229,10 +229,10 @@ Not applicable
 The target audience for a GERS Standard are the developers, companies, and organizations that build or use geospatial data and applications that require geospatial content from 
 multiple datastores to be "joined" (fused). Participants in the SWG activity would be any member that has digital twin, modelling, simulation, analytics, or AI training application requirements.
 
-
 == Domain Working Group endorsement
 
-The OGC POI SWG has been briefed on this work. 
+The OGC POI SWG has been briefed on this work and see no conflicts. 
+The OGC CDB SWG has been briefed on this work and considers a GERS extension/Part as desireable.
 
 == Other informative information about the work of this SWG
 
@@ -242,7 +242,7 @@ Overture Maps Foundation is a https://jointdevelopment.org/[Joint Development Fo
 
 === Details of first meeting
 
-The first ad-hoc meeting of the SWG will be held at the Boulder Meetings, October 2025. Once the charter is approved, participation information will be provided to the 
+The first ad-hoc meeting of the SWG was held at the Boulder Meetings, October 2025. Once the charter is approved, participation information will be provided to the 
 SWG's e-mail list and on the Agora calendar in advance of the meeting. During the first meeting, the SWG Chair and co-chair will be nominated and voted on. The other 
 primary work item will be defining a timeline and work agenda.
 
@@ -260,10 +260,6 @@ The following people support this proposal and are committed to the Charter and 
 | Carl Reed | Carl Reed & Associates | Individual
 | Deane Kensok | Esri | Principal
 |===
-
-=== Conveners
-
-Amy Rose, Overture Maps Foundation
 
 == References
 
@@ -289,7 +285,7 @@ https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case
 
 * [x] Yes
 
-== Evidence of implementation
+= Annex B Evidence of implementation
 
 === Overview of implementations
 
