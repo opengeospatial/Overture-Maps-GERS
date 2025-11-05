@@ -75,9 +75,9 @@ Overture provides a complete and operational implementation of the GERS Model th
 tools, and the physical foundation reference map maintained by the Overture Map Foundation. The proposed OGC GERS Standard will have a more limited focus 
 that includes the model as documented in the current Overture data and registry schema, and the generation of the GERS ID. This focus results in a standard that can be implemented 
 by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this 
-approach is the `precisely` implementation (See <<Annex A>>).
+approach is the `precisely` implementation (See <<annex-a,Annex A>>).
 
-A more extensive list of implementations of the GERS framework/approach are provided in <<Annex B>>.
+A more extensive list of implementations of the GERS framework/approach are provided in <<annex-b,Annex B>>.
 
 == Business value proposition
 
@@ -267,6 +267,7 @@ The following people support this proposal and are committed to the Charter and 
 
 https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[Understanding GERS]
 
+[[annex-a]]
 = Annex A: Precisely GERS implementation
 
 *Date of most recent version:*
@@ -287,6 +288,7 @@ https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case
 
 * [x] Yes
 
+[[annex-b]]
 = Annex B Evidence of implementation
 
 === Overview of implementations
