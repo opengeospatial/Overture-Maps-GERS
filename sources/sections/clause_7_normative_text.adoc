@@ -45,7 +45,7 @@ NOTE: The above recommendation is for backwards compatibility with existing GERS
 
 === Requirements Class Bridge Files
 
-Bridge files connect GERS IDs to the IDs from the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into Overture's conflation process. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
+Bridge files connect GERS IDs to the feature IDs from the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
 
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
