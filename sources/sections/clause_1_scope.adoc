@@ -2,7 +2,7 @@
 
 The OGC GERS Standard defines requirements and guidance for the following components of a Global Entity Reference System are:
 
-- The model as documented in the current Overture data and registry schema, 
+- Logical Model: The model as documented in the current Overture Maps Foundation (OMF) data and registry schema. 
 - BridgeFiles: Bridge files connect the unique GERS IDs to the features identifiers used in the source data. These files are a key component of GERS and 
 offer two critical capabilities: reverse lookup of source features and the ability to join content from multipoe geospatial data repositories.
 - ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
