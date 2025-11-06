@@ -21,6 +21,8 @@ to register and maintain a persistent registry of these unique IDs. This include
 geographic entities over time can be captured and persisted. This system aims to simplify data integration and sharing across different 
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
+The current implementations of GERS support a limited set of foundation data themes: Addresses, Buildings, Base (Layers), Divisions, Places, and Transportation. Each of these foundation themes also have an enumeration of subtypes. For example, the Base Layer theme enumeration of subtypes includes bathymetry, infrastructure, land, land cover, landuse, and water. These enumerations could be extended.
+
 == Security considerations
 
    Do not assume that the GERS IDs (UUIDs) are hard to guess. For example the IDs should not be used
