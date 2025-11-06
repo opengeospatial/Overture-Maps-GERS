@@ -17,6 +17,6 @@ a globally unique entity ID generated using the UUID (Universally Unique Identif
 [.source]
 <<ISO19101-1>>
 
+=== Source data
 
-[example]
-Here's an example of an example term.
+External geospatial data repository for which GERS IDs have been generated and corresponding entries/updates incorporated into the GERS Registry, Bridge Files, ChangeLog, and Reference Map. Open STreet Map is an example of an external repository.
