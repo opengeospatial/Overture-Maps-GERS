@@ -108,6 +108,21 @@ Key value points include the following.
 Provide a brief paragraph from one or more supporting OGC members that describes why they are supporting this submission and how they feel it helps the geospatial community.
 ////
 
+=== Overture Maps Foundation
+
+=== Esri
+
+=== Sparkgeo
+As a geospatial consultancy, Sparkgeo works extensively with diverse datasets across multiple domains, including climate, infrastructure, mobility, and remote sensing. A recurring challenge is the lack of a consistent, open, and persistent identifier for real-world geospatial entities. This gap creates unnecessary complexity in data integration, slows the development of interoperable solutions, and increases the cost of building reliable location-based products. These issues incur a cost associated with using geospatial data. The so-called conflation tax.
+
+GERS addresses this need by establishing a globally unique, stable, and open identifier system for geospatial entities. GERS provides a reference fabric that significantly reduces the burden of feature conflation and supports enrichment across datasets and providers. This aligns closely with Sparkgeo’s commitment to open standards, reproducible workflows, and scalable cloud-native geospatial practices.
+
+We believe that advancing GERS through the OGC standards process is the right path. The governance, transparency, and technical rigour provided by OGC are essential for broad adoption and long-term stewardship. Elevating GERS to an OGC Community Standard will strengthen the geospatial ecosystem as a whole and provide a foundation that benefits both data producers and consumers.
+
+Sparkgeo supports the inclusion of GERS as an OGC community standard. We look forward to the continued impact GERS will have on the interoperability and reliability of global geospatial data.
+
+=== Precisely
+
 == Alignment with OGC and other International Standards
 
 === Alignment with Non OGC International Standards
@@ -342,6 +357,23 @@ https://docs.fused.io/blog/overture-tiles/
 https://docs.fused.io/blog/enhance-your-data-with-gers-ids/
 
 *Is implementation complete?*
+
+* [x] Yes
+
+=== *Wherobots:*
+
+*Date of most recent version:*
+
+June 2025
+
+*Implementation description:*
+
+Wherobots integrates Overture Maps’ Global Entity Reference System (GERS) across its cloud-native geospatial platform, enabling users to match, enrich, and analyze location data using persistent global identifiers. Users can match non-GERS datasets to Overture’s Places and Buildings datasets through spatial and name-based joins, automatically attaching GERS IDs and enabling consistent referencing across releases and data providers.
+This functionality allows organizations to unify fragmented location data under a single global reference system and power large-scale enrichment workflows directly within a scalable spatial compute platform. Supporting entity resolution, spatial conflation, and data fusion workflows across industries such as retail, mobility, and insurance; reducing duplication, ensuring spatial consistency, and simplifying integration with other GERS-enabled data sources.
+
+*Implementation URL:*
+
+https://wherobots.com/blog/overtures-global-entity-reference-system-generally-available/
 
 * [x] Yes
 
