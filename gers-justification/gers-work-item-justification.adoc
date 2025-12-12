@@ -110,9 +110,15 @@ Provide a brief paragraph from one or more supporting OGC members that describes
 
 === Overture Maps Foundation
 
+
 === Esri
 
+Esri joined the Overture Maps Foundation as a General Member in 2023, actively participating in working groups to help create a global open database. Their goals include enhancing visualization, geocoding, and analysis capabilities while integrating authoritative GIS data such as buildings, addresses, and roads to support their users.
+
+The use of GERS significantly improved Esri’s data integration process, making it easier to access information from related datasets. The enriched datasets facilitated better visualization and analysis, enabling further exploration and understanding of the data. Esri plans to continue leveraging GERS IDs in future data releases, expanding their coverage and enabling more use cases. This includes integrating GERS IDs into other themes such as transportation and places, further enhancing their mapping capabilities and supporting a wide range of applications.
+
 === Sparkgeo
+
 As a geospatial consultancy, Sparkgeo works extensively with diverse datasets across multiple domains, including climate, infrastructure, mobility, and remote sensing. A recurring challenge is the lack of a consistent, open, and persistent identifier for real-world geospatial entities. This gap creates unnecessary complexity in data integration, slows the development of interoperable solutions, and increases the cost of building reliable location-based products. These issues incur a cost associated with using geospatial data. The so-called conflation tax.
 
 GERS addresses this need by establishing a globally unique, stable, and open identifier system for geospatial entities. GERS provides a reference fabric that significantly reduces the burden of feature conflation and supports enrichment across datasets and providers. This aligns closely with Sparkgeo’s commitment to open standards, reproducible workflows, and scalable cloud-native geospatial practices.
@@ -120,8 +126,6 @@ GERS addresses this need by establishing a globally unique, stable, and open ide
 We believe that advancing GERS through the OGC standards process is the right path. The governance, transparency, and technical rigour provided by OGC are essential for broad adoption and long-term stewardship. Elevating GERS to an OGC Community Standard will strengthen the geospatial ecosystem as a whole and provide a foundation that benefits both data producers and consumers.
 
 Sparkgeo supports the inclusion of GERS as an OGC community standard. We look forward to the continued impact GERS will have on the interoperability and reliability of global geospatial data.
-
-=== Precisely
 
 == Alignment with OGC and other International Standards
 
