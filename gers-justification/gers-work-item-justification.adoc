@@ -119,9 +119,11 @@ The use of GERS significantly improved Esri’s data integration process, making
 
 === Precisely Software
 
-Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their Data Link program. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
 
 By pre-linking GERS IDs across Places, Addresses, and Buildings themes with their own unique IDs, Precisely transformed what traditionally required months of complex geospatial processing into instant, ID-based data connections. The results demonstrate how open, persistent, and connected ID systems can unlock value across the entire mapping ecosystem.
+
+The link to the Precisely implementation is here: https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS
 
 === Sparkgeo
 
@@ -248,9 +250,7 @@ June 2025
 
 *Implementation description:*
 
-Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
-
-Precisely solutions leverage their broader ID system and the PreciselyID, a unique and persistent identifier assigned to addresses through validation and geocoding services. By creating link tables between GERS IDs and Precisely’s unique IDs, they’ve eliminated the need for complex spatial operations.
+See above
 
 *Implementation URL:*
 
