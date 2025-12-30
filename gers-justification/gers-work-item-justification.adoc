@@ -16,11 +16,11 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <2025-10-28>
+|Submission Date: <2025-12-16>
 |Approval Date:   <2025-mm-dd>
 |Internal reference number of this OGC(R) document:    25-024
 |Category: OGC(R) Community Standard Work Item Justification
-|Authors:   Carl Reed, PhD
+|Authors:   Carl Reed, PhD, Amy Rose
 |===
 
 [cols = "^", frame = "none"]
@@ -113,6 +113,7 @@ The Overture Maps Foundation submits and supports GERS as an OGC Community Stand
 
 OGC governance provides a durable home for the logical GERS framework, separate from any single implementation, and allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and transparent change processes. The Foundation affirms that elevating GERS into the OGC Standards Program is essential to establishing a common, interoperable identifier fabric for the world’s geospatial data.
 
+
 === Esri
 Esri supports the submission of the Global Entity Reference System (GERS) as an OGC Community Standard because globally unique, open identifiers are foundational to interoperable GIS workflows. Persistent identifiers enable scalable joins, efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as organizations integrate larger and more diverse datasets.
 
@@ -123,7 +124,20 @@ By developing the GERS Community Standard through OGC, Esri believes the framewo
 
 
 
+Esri joined the Overture Maps Foundation as a General Member in 2023, actively participating in working groups to help create a global open database. Their goals include enhancing visualization, geocoding, and analysis capabilities while integrating authoritative GIS data such as buildings, addresses, and roads to support their users.
+
+The use of GERS significantly improved Esri’s data integration process, making it easier to access information from related datasets. The enriched datasets facilitated better visualization and analysis, enabling further exploration and understanding of the data. Esri plans to continue leveraging GERS IDs in future data releases, expanding their coverage and enabling more use cases. This includes integrating GERS IDs into other themes such as transportation and places, further enhancing their mapping capabilities and supporting a wide range of applications.
+
+=== Precisely Software
+
+Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
+
+By pre-linking GERS IDs across Places, Addresses, and Buildings themes with their own unique IDs, Precisely transformed what traditionally required months of complex geospatial processing into instant, ID-based data connections. The results demonstrate how open, persistent, and connected ID systems can unlock value across the entire mapping ecosystem.
+
+The link to the Precisely implementation is here: https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS
+
 === Sparkgeo
+
 As a geospatial consultancy, Sparkgeo works extensively with diverse datasets across multiple domains, including climate, infrastructure, mobility, and remote sensing. A recurring challenge is the lack of a consistent, open, and persistent identifier for real-world geospatial entities. This gap creates unnecessary complexity in data integration, slows the development of interoperable solutions, and increases the cost of building reliable location-based products. These issues incur a cost associated with using geospatial data. The so-called conflation tax.
 
 GERS addresses this need by establishing a globally unique, stable, and open identifier system for geospatial entities. GERS provides a reference fabric that significantly reduces the burden of feature conflation and supports enrichment across datasets and providers. This aligns closely with Sparkgeo’s commitment to open standards, reproducible workflows, and scalable cloud-native geospatial practices.
@@ -253,9 +267,7 @@ June 2025
 
 *Implementation description:*
 
-Precisely, a global leader in data integrity with over 12,000 customers, including 93 of the Fortune 100, has integrated Overture Maps’ Global Entity Reference System (GERS) into their https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS[Data Link program]. Data Link streamlines integrating datasets from multiple providers by connecting data from Precisely and other organizations via unique identifier systems. The connection Data Link establishes between GERS and Precisely’s unique IDs dramatically reduces the time and cost of integrating Overture Maps’ standardized and interoperable datasets with Precisely’s comprehensive data portfolio spanning properties, locations, markets, and more.
-
-Precisely solutions leverage their broader ID system and the PreciselyID, a unique and persistent identifier assigned to addresses through validation and geocoding services. By creating link tables between GERS IDs and Precisely’s unique IDs, they’ve eliminated the need for complex spatial operations.
+See above
 
 *Implementation URL:*
 
