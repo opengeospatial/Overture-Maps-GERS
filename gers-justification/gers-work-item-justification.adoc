@@ -109,9 +109,20 @@ Provide a brief paragraph from one or more supporting OGC members that describes
 ////
 
 === Overture Maps Foundation
+The Overture Maps Foundation submits and supports GERS as an OGC Community Standard to ensure long-term, open, and vendor-neutral stewardship of the framework. Overture’s goal in advancing GERS through OGC is to encourage broad, global adoption of a consistent reference system that benefits commercial, government, research, and open-source communities.
+
+OGC governance provides a durable home for the logical GERS framework, separate from any single implementation, and allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and transparent change processes. The Foundation affirms that elevating GERS into the OGC Standards Program is essential to establishing a common, interoperable identifier fabric for the world’s geospatial data.
 
 
 === Esri
+Esri supports the submission of the Global Entity Reference System (GERS) as an OGC Community Standard because globally unique, open identifiers are foundational to interoperable GIS workflows. Persistent identifiers enable scalable joins, efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as organizations integrate larger and more diverse datasets.
+
+Esri has already integrated GERS identifiers into key workflows to demonstrate the practical value of an open entity reference system, including using GERS IDs to join the Overture Buildings dataset with FEMA’s USA Structures dataset. By using GERS IDs as join keys, Esri achieved high match rates (≈ 98 %) and enabled enriched visualization and analytic workflows in ArcGIS, including enhanced 3D scene layers and thematic mapping. This example highlights how GERS can significantly reduce reliance on complex geoprocessing and spatial conflation, improving efficiency and accuracy in real-world GIS operations. 
+
+By developing the GERS Community Standard through OGC, Esri believes the framework will gain wider adoption across the geospatial ecosystem, strengthening interoperability and reducing barriers to data integration across public, private, and research domains. Standardization in OGC also helps ensure that implementations of GERS remain aligned with complementary OGC API standards and other elements of the international geospatial standards baseline.
+
+
+
 
 Esri joined the Overture Maps Foundation as a General Member in 2023, actively participating in working groups to help create a global open database. Their goals include enhancing visualization, geocoding, and analysis capabilities while integrating authoritative GIS data such as buildings, addresses, and roads to support their users.
 
@@ -134,6 +145,12 @@ GERS addresses this need by establishing a globally unique, stable, and open ide
 We believe that advancing GERS through the OGC standards process is the right path. The governance, transparency, and technical rigour provided by OGC are essential for broad adoption and long-term stewardship. Elevating GERS to an OGC Community Standard will strengthen the geospatial ecosystem as a whole and provide a foundation that benefits both data producers and consumers.
 
 Sparkgeo supports the inclusion of GERS as an OGC community standard. We look forward to the continued impact GERS will have on the interoperability and reliability of global geospatial data.
+
+=== Precisely
+Precisely supports this submission because the Global Entity Reference System provides a practical and scalable framework for integrating heterogeneous datasets, which is an essential requirement for organizations working with high-volume, multi-source geospatial information. The linkage between GERS identifiers and Precisely’s own persistent identifiers has demonstrated measurable reductions in integration effort and greater accuracy in data matching.
+
+By establishing GERS as an OGC Community Standard, Precisely expects wider industry alignment on a trusted global identifier system, lowering barriers to data interoperability and supporting consistent enrichment of location-based datasets. A standardized GERS framework will enhance the reliability and utility of geospatial data products across multiple domains, from property intelligence to market analytics.
+
 
 == Alignment with OGC and other International Standards
 
@@ -224,7 +241,7 @@ October 2025
 
 *Implementation description:*
 
-TomTom has integrated the Global Entity Reference System (GERS) into its global mapping and location intelligence workflows to strengthen interoperability and consistency between its proprietary datasets, open map data, and third-party applications. By associating GERS identifiers with TomTom’s core geographic entities—such as buildings, places, and administrative areas—TomTom enables seamless data exchange and alignment across open and commercial data ecosystems.
+TomTom has integrated the Global Entity Reference System (GERS) into its global mapping and location intelligence workflows to strengthen interoperability and consistency between its proprietary datasets, open map data, and third-party applications. By associating GERS identifiers with TomTom’s core geographic entities, such as buildings, places, and administrative areas, TomTom enables seamless data exchange and alignment across open and commercial data ecosystems.
 
 Within its Orbis Maps platform, TomTom incorporates GERS identifiers as part of its traffic and mobility data model. The integration of GERS into the Intermediate Traffic API ensures that map and traffic information can be reliably cross-referenced across datasets, supporting improved data fusion and dynamic location referencing. This interoperability allows partners and developers to connect live traffic feeds, map tiles, and analytics systems using consistent, persistent global identifiers.
 
