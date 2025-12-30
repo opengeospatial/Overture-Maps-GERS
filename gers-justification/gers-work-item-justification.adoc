@@ -16,8 +16,8 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <2025-12-16>
-|Approval Date:   <2025-mm-dd>
+|Submission Date: <2025-12-28>
+|Approval Date:   <2026-mm-dd>
 |Internal reference number of this OGC(R) document:    25-024
 |Category: OGC(R) Community Standard Work Item Justification
 |Authors:   Carl Reed, PhD, Amy Rose
@@ -31,7 +31,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) 2025 Open Geospatial Consortium
+|Copyright (C) 2026 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
 |===
 
