@@ -134,7 +134,9 @@ Precisely, a global leader in data integrity with over 12,000 customers, includi
 
 By pre-linking GERS IDs across Places, Addresses, and Buildings themes with their own unique IDs, Precisely transformed what traditionally required months of complex geospatial processing into instant, ID-based data connections. The results demonstrate how open, persistent, and connected ID systems can unlock value across the entire mapping ecosystem.
 
-The link to the Precisely implementation is here: https://www.precisely.com/solution/data-link?utm_source=Overture&utm_medium=Case+Study&utm_id=GERS
+Precisely supports this submission because the Global Entity Reference System provides a practical and scalable framework for integrating heterogeneous datasets, which is an essential requirement for organizations working with high-volume, multi-source geospatial information. The linkage between GERS identifiers and Precisely’s own persistent identifiers has demonstrated measurable reductions in integration effort and greater accuracy in data matching.
+
+By establishing GERS as an OGC Community Standard, Precisely expects wider industry alignment on a trusted global identifier system, lowering barriers to data interoperability and supporting consistent enrichment of location-based datasets. A standardized GERS framework will enhance the reliability and utility of geospatial data products across multiple domains, from property intelligence to market analytics.
 
 === Sparkgeo
 
@@ -145,12 +147,6 @@ GERS addresses this need by establishing a globally unique, stable, and open ide
 We believe that advancing GERS through the OGC standards process is the right path. The governance, transparency, and technical rigour provided by OGC are essential for broad adoption and long-term stewardship. Elevating GERS to an OGC Community Standard will strengthen the geospatial ecosystem as a whole and provide a foundation that benefits both data producers and consumers.
 
 Sparkgeo supports the inclusion of GERS as an OGC community standard. We look forward to the continued impact GERS will have on the interoperability and reliability of global geospatial data.
-
-=== Precisely
-Precisely supports this submission because the Global Entity Reference System provides a practical and scalable framework for integrating heterogeneous datasets, which is an essential requirement for organizations working with high-volume, multi-source geospatial information. The linkage between GERS identifiers and Precisely’s own persistent identifiers has demonstrated measurable reductions in integration effort and greater accuracy in data matching.
-
-By establishing GERS as an OGC Community Standard, Precisely expects wider industry alignment on a trusted global identifier system, lowering barriers to data interoperability and supporting consistent enrichment of location-based datasets. A standardized GERS framework will enhance the reliability and utility of geospatial data products across multiple domains, from property intelligence to market analytics.
-
 
 == Alignment with OGC and other International Standards
 
