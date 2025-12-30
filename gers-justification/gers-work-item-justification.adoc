@@ -227,7 +227,7 @@ October 2025
 
 *Implementation description:*
 
-TomTom has integrated the Global Entity Reference System (GERS) into its global mapping and location intelligence workflows to strengthen interoperability and consistency between its proprietary datasets, open map data, and third-party applications. By associating GERS identifiers with TomTom’s core geographic entities—such as buildings, places, and administrative areas—TomTom enables seamless data exchange and alignment across open and commercial data ecosystems.
+TomTom has integrated the Global Entity Reference System (GERS) into its global mapping and location intelligence workflows to strengthen interoperability and consistency between its proprietary datasets, open map data, and third-party applications. By associating GERS identifiers with TomTom’s core geographic entities, such as buildings, places, and administrative areas, TomTom enables seamless data exchange and alignment across open and commercial data ecosystems.
 
 Within its Orbis Maps platform, TomTom incorporates GERS identifiers as part of its traffic and mobility data model. The integration of GERS into the Intermediate Traffic API ensures that map and traffic information can be reliably cross-referenced across datasets, supporting improved data fusion and dynamic location referencing. This interoperability allows partners and developers to connect live traffic feeds, map tiles, and analytics systems using consistent, persistent global identifiers.
 
