@@ -6,7 +6,7 @@ This clause provides information on the concepts essential to the GERS model or 
 
 === Use cases
 
-In terms of implementation, the GERS framework described below is very flexible and extensible. Following are implementation some use cases ranging from the very simple to more complete implementation of the framework.
+In terms of implementation, the GERS framework described below is very flexible and extensible. Following are some use cases ranging from the very simple to more complete implementation of the framework.
 
 At the simplist, an implementation could consist of using an existing deployed framework, such as that provided by Overture Maps Foundation (OMF). In this use case, the end user provides their source data to OMF. OMF processes the data and updates their implementation and then provides the end user information of the GERS IDs associated with each entity (feature) in the source map dataset.
 
