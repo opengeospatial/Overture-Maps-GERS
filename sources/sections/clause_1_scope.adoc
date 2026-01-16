@@ -1,6 +1,6 @@
 == Scope
 
-The OGC GERS Standard defines requirements and guidance for the following components of a Global Entity Reference System are:
+The OGC GERS Community Standard defines requirements and guidance for the following components of a Global Entity Reference System (GERS):
 
 - Logical Model: The model as documented in the current Overture Maps Foundation (OMF) data and registry schema. 
 - BridgeFiles: Bridge files connect the unique GERS IDs to the features identifiers used in the source data. These files are a key component of GERS and 
@@ -14,6 +14,8 @@ guide decisions about data matching, better understand data stability, and help 
 The OGC GERS Standard schema reference documentss describe key schema concepts for each theme and definitions and examples for each feature type.
 - Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Community Standard defines how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
 
-Each of the above components are defined using JSON Schema that are clearly and fully documented. 
+Each of the above components are defined in this Community Standard using JSON Schema that are clearly and fully documented. 
 
 This focus that any implementation by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the `precisely` implementation (See Annex D). 
+
+This Community Standard DOES NOT specify how the the GERS IDs, bridge files, registry and so forth are physically stored. Current implementatins use storage and communication formats such as GeoParquet and GeoJSON and storage technologies such as Azure blob storage.
