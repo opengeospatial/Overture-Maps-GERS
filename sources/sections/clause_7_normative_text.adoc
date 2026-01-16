@@ -43,12 +43,15 @@ NOTE: The above recommendation is for backwards compatibility with existing GERS
 
 === Requirements Class GERS ID
 
+As of the June 2025 release, all GERS IDs are UUIDs: 128-bit, randomly-generated identifiers (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[UUID v4]) that are kept stable across data releases and updates. These IDs are stored as strings with dashes: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx . UUID v4 is meant for generating UUIDs from truly random or pseudorandom numbers.
 
+The following is the GERS ID Requirements Class
+
+include::../requirements/requirements_class-gers-id.adoc[]
 
 === Requirements Class Bridge Files
 
 Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
-
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
