@@ -2,7 +2,19 @@
 
 == Global Entity Reference System Concepts
 
-This clause provides information on the concepts essential to the GERS model or framework. The discussion begins with a model of the GERS framework.
+This clause provides information on the concepts essential to the GERS model or framework. 
+
+=== Use cases
+
+In terms of implementation, the GERS framework described below is very flexible and extensible. Following are implementation some use cases ranging from the very simple to more complete implementation of the framework.
+
+At the simplist, an implementation could consist of using an existing deployed framework, such as that provided by Overture Maps Foundation (OMF). In this use case, the end user provides their source data to OMF. OMF processes the data and updates their implementation and then provides the end user information of the GERS IDs associated with each entity (feature) in the source map dataset.
+
+The above use case may meet the needs of some organizations. However, there are many situations that require complete implementations of the framework with no external links to "outside" implementations. These situations include, for example, companies that deal with confidential data that cannot be shared outside their organization. Another situation is where the geospatial data are classified and must remain within a classified environment.
+
+There are also hybrid solutions where some of the data in the application or organization are classfied and/or confidential and other geospatial data may be shared (open data, public domain, etc).
+
+The model of the GERS framework is now described at a high level. Specific details are contained in the normative clause of this Community Standard.
 
 === The GERS Model - High Level
 
@@ -80,6 +92,8 @@ A GERS reference map contains feature data that connect GERS IDs to real-world e
 Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. 
 
 Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the roads in a navigation route.
+
+Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature geometry and some metadata, content contained in the reference map is not a duplication of the source data. 
 
 Why it matters:
 
