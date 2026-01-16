@@ -1,14 +1,14 @@
-= OGC Global Entity Reference System (GERS)Standard
-:doctype: draft OGC Standard
+= OGC Global Entity Reference System (GERS) Community Standard
+:doctype: draft OGC Community Standard
 :docsubtype: model
 :status: Draft
 :committee: technical
 :docnumber: xx-xxx
 :edition: 1.0
-:received-date: 2025-xx-xx
+:received-date: 2026-xx-xx
 :issued-date: 2026-xx-xx
 :published-date: 2026-xx-xx
-:copyright-year: 2025
+:copyright-year: 2026
 :fullname: Carl Reed
 :role: editor
 :submitting-organizations: TBD
