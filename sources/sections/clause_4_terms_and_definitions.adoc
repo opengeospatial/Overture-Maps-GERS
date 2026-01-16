@@ -3,20 +3,37 @@
 This document uses the terms defined in OGC Policy Directive 49, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
 
 For the purposes of this document, the following additional terms and definitions apply.
+=== GERS Bridge Files
+
+bridge files connect GERS IDs to the IDs contained in the source data. 
+
+NOTE: These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into any conflation process used to process source feature.
+
+=== GERS ChangeLog
+
+a changelog documents/captures changes in the data from the previous release to the current release of a GERS reference map. 
+
+NOTE: This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
 
 === GERS Framework
 
-a framework for structuring, discovering, and matching data across systems via the GERS ID. 
+a framework for generating, structuring, discovering, and matching data across systems via the GERS ID. 
 
 NOTE: The GERS framework is made up of several components – Reference Map, Changelogs, Registry, and Bridge Files.
 
 === GERS ID
 
-a globally unique entity ID generated using the UUID (Universally Unique Identifier) format
+a globally unique entity ID generated using the IETF UUID (Universally Unique Identifier) format
 
 [.source]
 <<ISO19101-1>>
 
+=== GERS Registry
+
+a GERS Registry serves as the single source of truth for all entities that are registered with and part of a Global Entity Reference System framework implementation. 
+
+NOTE: The Registry is a comprehensive catalog that tracks every stable ID ever published across all data releases in a given implementation of the GERS framework.
+
 === Source data
 
-External geospatial data repository for which GERS IDs have been generated and corresponding entries/updates incorporated into the GERS Registry, Bridge Files, ChangeLog, and Reference Map. Open STreet Map is an example of an external repository.
+external geospatial data repository for which GERS IDs were generated and corresponding entries/updates incorporated into the GERS Registry, Bridge Files, ChangeLog, and Reference Map. Open Street Map is an example of an external geospatial repository.
