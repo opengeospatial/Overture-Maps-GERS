@@ -1,7 +1,7 @@
 [[req_class_gers-crs]]
 
 [requirements_class]
-.Requirements Class CRS
+
 ====
 [%metadata]
 identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-crs
