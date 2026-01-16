@@ -16,12 +16,12 @@ Recipients of this document are requested to submit, with their comments, notifi
 == Abstract
 
 GERS was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
-and interoperable identifiers for geospatial entities such as buildings, places, and road segments. The GERS framework also provides schema and a framework
+persistent, and interoperable identifiers for geospatial entities such as buildings, places (e.g. PoI), and road segments. The GERS framework also provides schema and a framework
 to register and maintain a persistent registry of these unique IDs. This includes a change log so that changes to
 geographic entities over time can be captured and persisted. This system aims to simplify data integration and sharing across different 
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
-The current implementations of GERS support a limited set of foundation data themes: Addresses, Buildings, Base (Layers), Divisions, Places, and Transportation. Each of these foundation themes also have an enumeration of subtypes. For example, the Base Layer theme enumeration of subtypes includes bathymetry, infrastructure, land, land cover, landuse, and water. These enumerations could be extended.
+The current implementations of GERS support a limited set of foundation data themes: Addresses, Buildings, Base (Layers), Divisions, Places, and Transportation. Each of these foundation themes also have an enumeration of subtypes. For example, the Base Layer theme enumeration of subtypes includes bathymetry, infrastructure, land, land cover, landuse, and water. These enumerations can be extended.
 
 == Security considerations
 
@@ -49,7 +49,7 @@ The following OGC Members participated in editing this document:
 
 == Submitting organizations
 
-The following OGC Member organizations support the CDB 2.0 Physical Materials Extension submission.
+The following OGC Member organizations support the GERS submission.
 
 |===
 |*Organization name*
@@ -60,7 +60,7 @@ The following OGC Member organizations support the CDB 2.0 Physical Materials Ex
 
 == Contributors
 
-Additional contributors to this Standard include the following:
+Additional contributors to this Community Standard include the following:
 
 |===
 |*Name* |*Affiliation*
@@ -70,4 +70,4 @@ Additional contributors to this Standard include the following:
 [.preface]
 == Future work
 
-Improvements to this Standard will be made based on implementation and changing technical requirements. 
+Improvements to this Community Standard will be made based on implementation and changing technical requirements. 
