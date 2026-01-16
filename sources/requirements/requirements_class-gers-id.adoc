@@ -1,7 +1,7 @@
 [[req_class_gers-id]]
 
 [requirements_class]
-.Requirements Class GERS ID
+
 ====
 [%metadata]
 identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-id
