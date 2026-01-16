@@ -8,7 +8,7 @@ This Clause defines requirements classes with a standardization target of an imp
 
 The CRS Requirements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the GERS framework and model must be in the same (consistent) coordinate reference system.
 
-NOTE: This requirements class is based on and is consistent with the CDB 2.0 CRS Requirements Class.
+NOTE: This requirements class is based on and is consistent with the CDB 2.0 and OGC API - Common CRS Requirements Classes.
 
 include::../requirements/requirements_class-gers-crs.adoc[]
 
