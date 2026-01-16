@@ -1,0 +1,12 @@
+[[req_class_gers-id]]
+
+[requirements_class]
+.Requirements Class GERS ID
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-id
+subject:: GERS Identifiers
+requirement:: /req/id-uuid
+requirement:: /req/crs-variety
+requirement:: /req/crs-version
+====
