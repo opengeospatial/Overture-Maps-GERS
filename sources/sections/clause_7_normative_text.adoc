@@ -6,11 +6,9 @@ This Clause defines requirements classes with a standardization target of an imp
 
 === Requirement Class Coordinate Reference System
 
-The CRS Requirements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the GERS model must be in the same (consistent) coordinate reference system.
+The CRS Requirements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the GERS framework and model must be in the same (consistent) coordinate reference system.
 
 NOTE: This requirements class is based on and is consistent with the CDB 2.0 CRS Requirements Class.
-
-Use the following table for Requirements Classes.
 
 include::../requirements/requirements_class-gers-crs.adoc[]
 
@@ -22,7 +20,7 @@ include::../requirements/REQ01-crs-topic2.adoc[]
 
 ==== Requirement 2: Use same CRS Throughout
 
-The following requirement states that any implementatin of the GERS Framework compliant with this standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
+The following requirement states that any implementatin of the GERS Framework compliant with this community standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
 
 include::../requirements/REQ02-crs-storage.adoc[]
 
@@ -34,7 +32,7 @@ include::../requirements/REQ03-crs-valid.adoc[]
 
 ==== Recommendation 1
 
-In order to be consistent and compatible with existing GERS framework implementations, the following recommendation states that a WGS84 2d CRS be used. Further, if a CRS is not specified then the default is WGS84 2d with axis order longitude/latitude. This is known as CRS84.
+In order to be consistent and compatible with existing GERS framework implementations, the following recommendation states that a WGS84 2d CRS be used. Further, if a CRS is not specified then the default is WGS84 2d with axis order longitude/latitude. This is known as OGC CRS84.
 
 |===
 |*Recommendation* | */rec/crs-definition* +
@@ -43,9 +41,13 @@ Coordinates - such as for geometry - in an implementation of the GERS framework 
 NOTE: The above recommendation is for backwards compatibility with existing GERS framework implementations.
 |===
 
+=== Requirements Class GERS ID
+
+
+
 === Requirements Class Bridge Files
 
-Bridge files connect GERS IDs to the feature IDs from the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
+Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
 
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
