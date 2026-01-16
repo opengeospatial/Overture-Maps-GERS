@@ -28,6 +28,10 @@ a globally unique entity ID generated using the IETF UUID (Universally Unique Id
 [.source]
 <<ISO19101-1>>
 
+=== GERS Reference Map
+
+validated map datasets that connect GERS IDs to real-world entities.
+
 === GERS Registry
 
 a GERS Registry serves as the single source of truth for all entities that are registered with and part of a Global Entity Reference System framework implementation. 
