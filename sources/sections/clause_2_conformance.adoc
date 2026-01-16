@@ -1,6 +1,8 @@
 == Conformance
 
-The OGC Global Entity Reference System defines the following requirements classes and associated target types: 
+The Standardization Goal for the GERS Community Standard is to define an interoperable framework for the storage and maintenance of unique and persistent feature identifiers.
+
+The OGC Global Entity Reference System Community Standard defines the following requirements classes and associated target types: 
 
 The standardization target are implementations that comply with the above requirements classes.
 
