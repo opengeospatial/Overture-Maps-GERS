@@ -1,0 +1,10 @@
+[req-gers-id-uuid]
+
+[requirement]
+
+====
+[%metadata]
+name:: Every entity has GERS ID
+identifier:: req/id-uuid
+All GERS IDs are UUIDs _SHALL_ be 128-bit, randomly-generated identifiers as per (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[IETF RFC 9562 - UUID v4])
+====
