@@ -1,0 +1,10 @@
+[[rec-1]]
+
+[recommendation]
+====
+[%metadata]
+identifier:: /rec/schema-recommended
+part:: Case - Snake case instead of camel case _SHOULD_ be used for all property names, string enumeration members, and string-valued enumeration equivalents. This is due to case sensitivity and transformation issues in different databases and query engines. 
+part:: Measurements of real-world objects and features _SHOULD_ follow The International System of Units (SI): heights, widths, lengths, etc. In the Overture schema, these values are provided as scalar numeric value without units such as feet or meters. Overture does this to maximize consistency and predictability.
+part:: Quantities specified in regulatory rules, norms and customs _SHOULD_ follow local specifications wherever possible. These values _SHOULD_ be specified as two-element arrays where the first element is the scalar numeric value and the second value is the units.
+====
