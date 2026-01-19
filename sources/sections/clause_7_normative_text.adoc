@@ -20,9 +20,15 @@ https://docs.overturemaps.org/schema/concepts/names/
 
 ==== Bounding Box recommendation
 
-bounding box
+GeoJSON: The value of the bbox member MUST be an array of
+   length 2*n where n is the number of dimensions represented in the
+   contained geometries, with all axes of the most southwesterly point
+   followed by all axes of the more northeasterly point.  The axes order
+   of a bbox follows the axes order of geometries.
+
 
 ==== Date Time recommendation
+
 time
 
 === Requirement Class Coordinate Reference System
