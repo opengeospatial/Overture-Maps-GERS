@@ -16,6 +16,10 @@ There are also hybrid solutions where some of the data in the application or org
 
 The model of the GERS framework is now described at a high level. Specific details are contained in the normative clause of this Community Standard.
 
+=== GERS Release Concept
+
+A key concept for any operational implementation of the GERS Framework/Model is `release`. A `release` contains information on updates, such as additions and/or changes, to the geospatial data content referenced in a GERS implementation. A `release` is conceptually similar to a checkpoint in database technology. A checkpoint is a point in time in the log when a known and consistent state for the database system is established. In the case of a GERS implementation, the checkpoint is the content of the Registry as published at a given date. Periodically, the Registry (and other GERS files) are updated with updated or added content. Such updates could occur daily, weekly, monthly or whatever time period is deemed appropriate. When the Regsitry update occurs, this becomes the new `release` (checkpoint). In a GERS implementation, each `release` has a unique version number.
+
 === The GERS Model - High Level
 
 The following is a high level view of the GERS framework.
