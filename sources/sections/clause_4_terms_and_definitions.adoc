@@ -15,6 +15,10 @@ a changelog documents/captures changes in the data from the previous release to 
 
 NOTE: This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
 
+=== GERS Entity
+
+refers to a physical feature such as a building, address, or road segment. 
+
 === GERS Framework
 
 a framework for generating, structuring, discovering, and matching data across systems via the GERS ID. 
@@ -37,6 +41,10 @@ validated map datasets that connect GERS IDs to real-world entities.
 a GERS Registry serves as the single source of truth for all entities that are registered with and part of a Global Entity Reference System framework implementation. 
 
 NOTE: The Registry is a comprehensive catalog that tracks every stable ID ever published across all data releases in a given implementation of the GERS framework.
+
+=== GERS Themes
+
+geographic feature types for which schema and rules have been documented for inclusion in an implementation of a GERS Framework. 
 
 === Source data
 
