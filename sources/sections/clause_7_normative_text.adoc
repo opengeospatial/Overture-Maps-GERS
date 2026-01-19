@@ -44,6 +44,12 @@ The following is the GERS ID Requirements Class
 
 include::../requirements/requirements_class-gers-id.adoc[]
 
+==== Every GERS entiry has a GERS ID
+
+The following requirement states that every entity in a GER compliant implementation has a unique ID
+
+include::../requirements/REQ005-id-uuid.adoc[]
+
 === Requirements Class Bridge Files
 
 Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
