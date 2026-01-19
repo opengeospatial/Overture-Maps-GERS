@@ -8,6 +8,12 @@ This Clause defines requirements classes with a standardization target of an imp
 
 The following requirements class specifies "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. Examples include the specification of language for properties of a name, specification of a bounding box, and time.
 
+==== Recommended Schema Conventions
+
+The following recommendations are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026) implementation instances.
+
+include::../recommendations/REC001-schema.adoc[]
+
 https://docs.overturemaps.org/schema/concepts/names/
 
 bounding box
@@ -44,7 +50,7 @@ include::../requirements/REQ003-crs-valid.adoc[]
 
 In order to be consistent and compatible with existing GERS framework implementations (as of 2026), the following recommendation states that a WGS84 2d CRS be used. Further, if a CRS is not specified then the default is WGS84 2d with axis order longitude/latitude. This is known as OGC CRS84.
 
-include::../recommendations/REC001-CRS.adoc[]
+include::../recommendations/REC002-CRS.adoc[]
 
 === Requirements Class GERS ID (Mandatory)
 
