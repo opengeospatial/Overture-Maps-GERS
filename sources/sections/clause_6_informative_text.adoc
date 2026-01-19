@@ -99,14 +99,14 @@ Data contained in the reference map should be carefully validated, consistently 
 
 The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in a GERS implementation,  Currently, existing GERS implementations reference/include the following themes and feature types:
 
-===
+|===
 |*Theme*    |	*Feature types*
 |Addresses	| address
 |Base	      | bathymetry, infrastructure, land, land_cover, land_use, water
 |Buildings	| building, building_part
 |Divisions	| division, division_area, division_boundary
 |Places	    | place
-Transportation	| segment, connector
-===
+|Transportation	| segment, connector
+|===
 
-This the current (2026) theme enumeration. Additional themes may be added and used as long as extensions to the theme enumeration complies with requirements as stated in this Community Standard 
+The above is the current (2026) theme enumeration. Additional themes may be added and used as long as extensions to the theme enumeration complies with requirements as stated in this Community Standard 
