@@ -109,4 +109,4 @@ The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of r
 |Transportation	| segment, connector
 |===
 
-The above is the current (2026) theme enumeration. Additional themes may be added and used as long as extensions to the theme enumeration complies with requirements as stated in this Community Standard 
+The above is the current (2026) theme enumeration. Additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard 
