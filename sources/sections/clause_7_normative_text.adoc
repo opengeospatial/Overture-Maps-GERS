@@ -10,14 +10,19 @@ The following requirements class specifies "global" requirements pertinent to al
 
 ==== Recommended Schema Conventions
 
-The following recommendations are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026) implementation instances.
+The following recommendations for schema conventions are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026) implementation instances.
 
 include::../recommendations/REC001-schema.adoc[]
 
+==== Names recommnedation
+
 https://docs.overturemaps.org/schema/concepts/names/
+
+==== Bounding Box recommendation
 
 bounding box
 
+==== Date Time recommendation
 time
 
 === Requirement Class Coordinate Reference System
