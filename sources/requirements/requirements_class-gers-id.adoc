@@ -6,6 +6,7 @@
 [%metadata]
 identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-id
 subject:: GERS Identifiers
+requirement:: /req/must-have-id
 requirement:: /req/id-uuid
 requirement:: /req/crs-variety
 requirement:: /req/crs-version
