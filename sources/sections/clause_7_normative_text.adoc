@@ -48,6 +48,12 @@ include::../requirements/requirements_class-gers-id.adoc[]
 
 The following requirement states that every entity in a GER compliant implementation has a unique ID
 
+include::../requirements/REQ004-must-have-id.adoc[]
+
+==== ID is generated using UUID v4
+
+The following requirement states that a GERS ID is generated using the rules as defined in UUID v4
+
 include::../requirements/REQ005-id-uuid.adoc[]
 
 === Requirements Class Bridge Files
