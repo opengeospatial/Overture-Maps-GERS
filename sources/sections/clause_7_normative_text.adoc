@@ -14,7 +14,7 @@ The following recommendations for schema conventions are suggested so that any n
 
 include::../recommendations/REC001-schema.adoc[]
 
-==== Names recommnedation
+==== Names recommendation
 
 https://docs.overturemaps.org/schema/concepts/names/
 
