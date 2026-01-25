@@ -45,7 +45,7 @@ GeoJSON: The value of the bbox member MUST be an array of
 
 time
 
-[req-class-crs]
+[[req-class-crs]]
 
 === Requirement Class Coordinate Reference System
 
