@@ -11,7 +11,7 @@ The following table lists the mandatory and optional requirements classes for an
 |===
 | *Requirements class* | Description | Optional/Conditional/mandatory
 | <<req-class-crs,requirements_class-gers-crs>> | Requirements for Coordinate Reference SYstems | Conditional
-| requirements_class-gers-id  | Requirements for generation of a GERS ID      | Mandatory
+| <<req-class-id,requirements_class-gers-id>>  | Requirements for generation of a GERS ID      | Mandatory
 | requirements_class-gers-bridge | Requirements for Bridge Files              | Mandatory
 | requirements_class-gers-registry | Requirements for the Registry File       | Optional
 |===
@@ -79,6 +79,7 @@ In order to be consistent and compatible with existing GERS framework implementa
 
 include::../recommendations/REC002-CRS.adoc[]
 
+[[req-class-id]]
 === Requirements Class GERS ID (Mandatory)
 
 As of the June 2025 release of the GERS schema and model, all GERS IDs are UUIDs: 128-bit, randomly-generated identifiers (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[UUID v4]) that are kept stable across data releases and updates. These IDs are stored as strings with dashes: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx . UUID v4 is meant for generating UUIDs from truly random or pseudorandom numbers.
