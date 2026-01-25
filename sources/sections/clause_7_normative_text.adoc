@@ -9,7 +9,11 @@ This Clause defines requirements classes with a standardization target of an imp
 The following table lists the mandatory and optional requirements classes for an implementation of the GERS Framework.
 
 |===
-| *Requirements class* | Description | Optional/mandatory
+| *Requirements class* | Description | Optional/Conditional/mandatory
+| <<req-class-crs,requirements_class-gers-crs>> | Requirements for Coordinate Reference SYstems | Conditional
+| requirements_class-gers-id  | Requirements for generation of a GERS ID      | Mandatory
+| requirements_class-gers-bridge | Requirements for Bridge Files              | Mandatory
+| requirements_class-gers-registry | Requirements for the Registry File       | Optional
 |===
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
@@ -40,6 +44,8 @@ GeoJSON: The value of the bbox member MUST be an array of
 ==== Date Time recommendation
 
 time
+
+[req-class-crs]
 
 === Requirement Class Coordinate Reference System
 
