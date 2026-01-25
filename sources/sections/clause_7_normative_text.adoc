@@ -4,6 +4,16 @@
 
 This Clause defines requirements classes with a standardization target of an implementation of the GERS Model and framework. Specifically, requirements defined in this clause are focused on the elements of the model required or recommended to implement a GERS framework consistent with the existing GERS implementation community. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
 
+=== Summary of GERS Framework Requirements Classes
+
+The following table lists the mandatory and optional requirements classes for an implementation of the GERS Framework.
+
+|===
+| *Requirements class* | Description | Optional/mandatory
+|===
+
+NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
+
 === General requirements
 
 The following requirements class specifies "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. Examples include the specification of language for properties of a name, specification of a bounding box, and time.
