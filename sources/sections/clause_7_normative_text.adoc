@@ -12,8 +12,8 @@ The following table lists the mandatory and optional requirements classes for an
 | *Requirements class* | Description | Optional/Conditional/mandatory
 | <<req-class-crs,requirements_class-gers-crs>> | Requirements for Coordinate Reference SYstems | Conditional
 | <<req-class-id,requirements_class-gers-id>>  | Requirements for generation of a GERS ID      | Mandatory
-| requirements_class-gers-bridge | Requirements for Bridge Files              | Mandatory
-| requirements_class-gers-registry | Requirements for the Registry File       | Optional
+| <<req-class-bridge,requirements_class-gers-bridge>> | Requirements for Bridge Files              | Mandatory
+| <<req-class-registry,requirements_class-gers-registry>> | Requirements for the Registry File       | Optional
 |===
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
@@ -47,7 +47,7 @@ time
 
 [[req-class-crs]]
 
-=== Requirement Class Coordinate Reference System
+=== Requirement Class Coordinate Reference System (Conditional)
 
 The CRS Requirements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the GERS framework and model must be in the same (consistent) coordinate reference system.
 
@@ -102,6 +102,8 @@ The following requirement states that a GERS ID is generated using the rules as 
 
 include::../requirements/REQ005-id-uuid.adoc[]
 
+[[req-class-registry]]
+
 === Requirements Class Registry (Optional)
 
 With each data update, the GERS Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of a GERS implementation. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
@@ -109,6 +111,8 @@ With each data update, the GERS Registry is also updated. A data update could be
 If an implementation of the GERS framework requires a Registry, then the following requirements class is mandatory.
 
 include::../requirements/requirements-class-gers-registry.adoc[]
+
+[[req-class-bridge]]
 
 === Requirements Class Bridge Files
 
