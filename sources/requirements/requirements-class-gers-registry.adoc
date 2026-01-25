@@ -1,0 +1,11 @@
+[[req_class_gers-registry]]
+
+[requirements_class]
+
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-registry
+subject:: GERS Registry
+requirement:: /req/gers-registry-name
+requirement:: /req/gers-registry-schema
+====
