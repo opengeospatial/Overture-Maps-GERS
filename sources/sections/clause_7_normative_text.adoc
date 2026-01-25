@@ -87,7 +87,7 @@ include::../requirements/REQ005-id-uuid.adoc[]
 
 === Requirements Class Registry (Optional)
 
-With each data update, the GERS Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of a GERS implementation. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates.
+With each data update, the GERS Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of a GERS implementation. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
 
 
 
