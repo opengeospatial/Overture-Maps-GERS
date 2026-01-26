@@ -140,3 +140,5 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 |path	| string	| relative path to feature in release data
 |bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| bounding box coordinates in the CRS of the GERS implementation.
 |===
+
+NOTE: The GERS Registry can be used to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added.
