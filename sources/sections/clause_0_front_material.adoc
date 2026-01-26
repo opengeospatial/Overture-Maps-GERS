@@ -2,11 +2,13 @@
 
 == Preface
 
-The OGC Global Entity Reference System Standard (GERS) framework defines:
+The OGC Global Entity Reference System Community Standard (GERS) framework defines:
 
 . A model and system for exchanging and enriching geospatial data.
 . A services architecture comprised of components that can be implemented as an operational GERS frameowk.
-. The schema to structure geospatial data into a datastore that includes the GERS id and that is consistent with other OGC/ISO Standards.
+. The schema to structure geospatial data into a datastore that includes the unique GERS IDs and that is consistent with other OGC/ISO Standards.
+
+In summary, GERS defines/provides a universal framework for structuring and matching map data across different geospatial technologies and systems.
 
 Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
 
