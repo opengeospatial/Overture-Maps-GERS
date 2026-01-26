@@ -1,0 +1,11 @@
+[[req_class_gers-bridge]]
+
+[requirements_class]
+
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-bridge
+subject:: GERS Bridge Files
+requirement:: /req/gers-bridge-name
+requirement:: /req/gers-registry-schema
+====
