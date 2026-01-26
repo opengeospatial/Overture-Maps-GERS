@@ -84,7 +84,7 @@ include::../recommendations/REC002-CRS.adoc[]
 
 As of the June 2025 release of the GERS schema and model, all GERS IDs are UUIDs: 128-bit, randomly-generated identifiers (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[UUID v4]) that are kept stable across data releases and updates. These IDs are stored as strings with dashes: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx . UUID v4 is meant for generating UUIDs from truly random or pseudorandom numbers.
 
-NOTE: This community standrd does not specify how the GERS ID is generated. This is up to the organization implementing the GERS framework/model. The following requirements also do not preclude the organization from using an existing GERS implementation, such as from Overture Maps, as the source of a GERS ID. 
+NOTE: This community standard does not specify how the GERS ID is generated. This is up to the organization implementing the GERS framework/model. The following requirements also do not preclude the organization from using an existing GERS implementation, such as from Overture Maps, as the source of a GERS ID. 
 
 The following is the GERS ID Requirements Class
 
@@ -106,7 +106,7 @@ include::../requirements/REQ005-id-uuid.adoc[]
 
 === Requirements Class Bridge Files
 
-Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
+Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of a GERS implementation and offer two critical capabilities: Reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
 
 include::../requirements/requirements-class-gers-bridge.adoc[]
 
@@ -130,4 +130,13 @@ If an implementation of the GERS framework requires a Registry, then the followi
 
 include::../requirements/requirements-class-gers-registry.adoc[]
 
-
+|===
+|Column	| Data type	| Description
+|id	| string	| GERS identifier (UUID)
+|version	| integer	| current version number
+|first_seen	| string	| release when entity first appeared
+|last_seen	| string	| most recent release containing entity
+|last_changed	| string	| last release the entity was changed, sourced from changelog
+|path	| string	| relative path to feature in release data
+|bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| bounding box coordinates in the CRS of the GERS implementation.
+|===
