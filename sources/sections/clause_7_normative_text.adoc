@@ -102,21 +102,13 @@ The following requirement states that a GERS ID is generated using the rules as 
 
 include::../requirements/REQ005-id-uuid.adoc[]
 
-[[req-class-registry]]
-
-=== Requirements Class Registry (Optional)
-
-With each data update, the GERS Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of a GERS implementation. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
-
-If an implementation of the GERS framework requires a Registry, then the following requirements class is mandatory.
-
-include::../requirements/requirements-class-gers-registry.adoc[]
-
 [[req-class-bridge]]
 
 === Requirements Class Bridge Files
 
 Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
+
+include::../requirements/requirements-class-gers-bridge.adoc[]
 
 Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
 
@@ -127,4 +119,15 @@ Dictionary tables for requirements can be added as necessary. Modify the followi
 |name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
 |name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
 |===
+
+[[req-class-registry]]
+
+=== Requirements Class Registry (Optional)
+
+With each data update, the GERS Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of a GERS implementation. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
+
+If an implementation of the GERS framework requires a Registry, then the following requirements class is mandatory.
+
+include::../requirements/requirements-class-gers-registry.adoc[]
+
 
