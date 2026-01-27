@@ -10,6 +10,7 @@ The following table lists the mandatory and optional requirements classes for an
 
 |===
 | *Requirements class* | Description | Optional/Conditional/mandatory
+| <<req-gers-general,requirements_class-gers-general>> | General system wide requirements | Conditional
 | <<req-class-crs,requirements_class-gers-crs>> | Requirements for Coordinate Reference SYstems | Conditional
 | <<req-class-id,requirements_class-gers-id>>  | Requirements for generation of a GERS ID      | Mandatory
 | <<req-class-bridge,requirements_class-gers-bridge>> | Requirements for Bridge Files              | Mandatory
@@ -17,6 +18,8 @@ The following table lists the mandatory and optional requirements classes for an
 |===
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
+
+req-gers-general
 
 === General requirements
 
