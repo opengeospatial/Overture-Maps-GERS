@@ -130,13 +130,15 @@ The bridge file schema consists of the following columns:
 |Column	| Data type	| Description
 |id	| string |	A feature's GERS ID and is populated from the id column in the data schema
 |record_id	| string	| The ID (identifier) of the feature in the source data provider (e.g. n2757802019@9) and is populated by parsing the `sources` column in the data schema.
-|update_time	| string	| Represents the time the feature or dataset was updated, depending on the data provider. Populated by parsing the `sources` column in the Overture schema.
-|dataset	| string	| Represents the name of the dataset the feature was provided in. Populated by parsing the `sources` column in the primary data schema.
-|theme	| string |	Represents the theme the feature is a part of, provided by the creator of the bridge file itself.
-|type	| string	| Represents the type of the feature, either derived from the data or provided by the creator of the bridge file.
-|between	| array	| Represents the portion of the normalized length of the GERS feature the dataset way takes, represented by a range between 0 and 1.
-|dataset_between	| array	| Represents the portion of the normalized length of the dataset way the GERS feature takes, represented by a range between 0 and 1.
+|update_time	| string	| The time the feature or dataset was updated, depending on the data provider. Populated by parsing the `sources` column in the Overture schema.
+|dataset	| string	| The name of the source dataset in which the feature is contained. Populated by parsing the `sources` column in the primary data schema.
+|theme	| string |	The theme the feature is a part of, provided by the creator of the bridge file itself.
+|type	| string	| The type of the feature, either derived from the data or provided by the creator of the bridge file.
+|between	| array	| The portion of the normalized length of the GERS feature the dataset way takes, represented by a range between 0 and 1.
+|dataset_between	| array	| The portion of the normalized length of the dataset way the GERS feature takes, represented by a range between 0 and 1.
 |===
+
+NOTE: The `between` property is applicable to segments contained in a lineal feature dataset, such as Roads or Streams. The concept is similar to how a position on a linear segment is identified in a linear reference system.
 
 [[req-class-registry]]
 
