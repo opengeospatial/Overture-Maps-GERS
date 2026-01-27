@@ -1,7 +1,11 @@
-[[req-core-metadata-datetime]]
-[width="90%",cols="2,6"]
-|===
-^|*Requirement Metadata6* | */req/core/metadata-datetime*
-^| A | Searchable date and time. This may be a time instance or time period. The specification of date and time in any CDB metadata _SHALL_ be specified in UTC.
-^| B | Date and Time _SHALL_ be formatted according to https://datatracker.ietf.org/doc/html/rfc3339[RFC 3339], section 5.6. RFC 3339 is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.
-|===
+[[req_class_gers-general]]
+
+[requirements_class]
+
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-general
+subject:: GERS General requirements
+requirement:: /req/gers-date-time
+====
+
