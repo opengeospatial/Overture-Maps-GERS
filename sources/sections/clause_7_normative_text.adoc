@@ -70,13 +70,13 @@ include::../requirements/requirements_class-gers-crs.adoc[]
 
 ==== Requirement CRS definition
 
-The following requirement states that any metadata used in a GERS implementation be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
+The following requirement states that any CRS metadata used in a GERS implementation be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
 
 include::../requirements/REQ004-crs-topic2.adoc[]
 
 ==== Requirement Use same CRS Throughout
 
-The following requirement states that any implementatin of the GERS Framework compliant with this community standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
+The following requirement states that any implementation of the GERS Framework compliant with this community standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
 
 include::../requirements/REQ005-crs-storage.adoc[]
 
