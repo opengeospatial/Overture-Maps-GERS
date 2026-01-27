@@ -8,7 +8,7 @@ name:: Definition of a bounding box
 identifier:: req/gers-general-bbox
 part:: The bounding box _SHALL_ be in the Coordinate Reference System used for a given implementation of the GERS framework.
 part:: The bounding box is a rectalinear area that _SHALL_ be defined by values for xmin, xmax, ymin, ymax. latitude is a decimal number between -90.0 and 90.0; longitude is a decimal number between -180.0 and 180.0. 
-guidance: This bbox definition is different from most others as used, for example, in GeoJSON which is min_longitude, min_latitude, max_longitude, max_latitude. 
+guidance:: This bbox definition is different from most others as used, for example, in GeoJSON which is min_longitude, min_latitude, max_longitude, max_latitude. 
 ====
 
 
