@@ -19,7 +19,7 @@ The following table lists the mandatory and optional requirements classes for an
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
 
-req-gers-general
+[[req-gers-general]]
 
 === General requirements and recommendations
 
