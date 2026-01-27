@@ -7,5 +7,6 @@
 identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-general
 subject:: GERS General requirements
 requirement:: /req/gers-date-time
+requirement:: /req/gers-general-bbox
 ====
 
