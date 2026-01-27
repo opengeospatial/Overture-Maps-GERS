@@ -39,24 +39,23 @@ include::../recommendations/REC001-schema.adoc[]
 
 https://docs.overturemaps.org/schema/concepts/names/
 
-==== Bounding Box recommendation
+[[req-gers-datetime]]
 
-GeoJSON: The value of the bbox member MUST be an array of
-   length 2*n where n is the number of dimensions represented in the
-   contained geometries, with all axes of the most southwesterly point
-   followed by all axes of the more northeasterly point.  The axes order
-   of a bbox follows the axes order of geometries.
+==== Date Time Requirement
 
-
-[[req-gers-time]]
-
-==== Date Time recommendation
-
-The following is the requirement for expressing date and time in any GERS implementation, regardless of these, type, pr schema. This requirement is consistent with various OGC and ISO standards as well as with STAC.
+The following is the requirement for expressing date and time in any GERS implementation, regardless of theme, type, or schema. This requirement is consistent with various OGC and ISO standards as well as with STAC.
 
 include::../requirements/REQ001-gers-general-datetime.adoc[]
 
 An example of  a datetime string that complies with REQ001 is: `2024-10-15T00:00:00.000Z`
+
+req-gers-bbox]]
+
+==== Bounding Box requirement
+
+The following requirement defines how to express a bounding box in the CRS of an impementation of the GERS framework. 
+
+include::../requirements/REQ002-gers-general-bbox.adoc[]
 
 [[req-class-crs]]
 
