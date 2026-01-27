@@ -20,7 +20,9 @@ NOTE: A complete implementation of the GERS framework requires implementation of
 
 === General requirements
 
-The following requirements class specifies "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. Examples include the specification of language for properties of a name, specification of a bounding box, and time.
+The following requirements class and recommendations specify "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. Examples include the specification of language for properties of a name, specification of a bounding box, and time.
+
+include::../requirements/requirements_class-gers-general.adoc[]
 
 ==== Recommended Schema Conventions
 
@@ -41,9 +43,13 @@ GeoJSON: The value of the bbox member MUST be an array of
    of a bbox follows the axes order of geometries.
 
 
+[[req-gers-time]]
+
 ==== Date Time recommendation
 
-time
+The following is the requirement for expressing date and time in any GERS implementation, regardless of these, type, pr schema. This requirement is consistent with various OGC and ISO standards as well as with STAC.
+
+2024-10-15T00:00:00.000Z
 
 [[req-class-crs]]
 
