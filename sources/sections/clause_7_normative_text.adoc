@@ -110,14 +110,18 @@ Bridge files connect GERS IDs to the feature IDs used in the source data. These 
 
 include::../requirements/requirements-class-gers-bridge.adoc[]
 
-Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
+The bridge file schema consists of the following columns:
 
-[width="90%",options="header"]
 |===
-|Names |Definition |Data types and values |Multiplicity and use
-|name 1 |definition of name 1 |float |One or more (mandatory)
-|name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
-|name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
+|Column	| Data type	| Description
+|id	| string |	A feature's GERS ID and is populated from the id column in the data schema
+|record_id	| string	| The ID (identifier) of the feature in the source data provider (e.g. n2757802019@9) and is populated by parsing the `sources` column in the data schema.
+|update_time	| string	| Represents the time the feature or dataset was updated, depending on the data provider. Populated by parsing the `sources` column in the Overture schema.
+|dataset	| string	| Represents the name of the dataset the feature was provided in. Populated by parsing the `sources` column in the primary data schema.
+|theme	| string |	Represents the theme the feature is a part of, provided by the creator of the bridge file itself.
+|type	| string	| Represents the type of the feature, either derived from the data or provided by the creator of the bridge file.
+|between	| array	| Represents the portion of the normalized length of the GERS feature the dataset way takes, represented by a range between 0 and 1.
+|dataset_between	| array	| Represents the portion of the normalized length of the dataset way the GERS feature takes, represented by a range between 0 and 1.
 |===
 
 [[req-class-registry]]
@@ -133,12 +137,12 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 |===
 |Column	| Data type	| Description
 |id	| string	| GERS identifier (UUID)
-|version	| integer	| current version number
-|first_seen	| string	| release when entity first appeared
-|last_seen	| string	| most recent release containing entity
-|last_changed	| string	| last release the entity was changed, sourced from changelog
-|path	| string	| relative path to feature in release data
-|bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| bounding box coordinates in the CRS of the GERS implementation.
+|version	| integer	| Current version of the feature, incremented in each Overture release where the geometry or attributes of this feature changed.
+|first_seen	| string	| GERS release when entity first appeared in the GERS repository
+|last_seen	| string	| Most recent GERS release containing entity/feature
+|last_changed	| string	| Last GERS release in which the entity/feature was changed, sourced from ChangeLog
+|path	| string	| Relative path to entity/feature in release data (ReferenceMap?)
+|bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| Bounding box coordinates in the CRS of the GERS implementation.
 |===
 
 NOTE: The GERS Registry can be used to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added.
