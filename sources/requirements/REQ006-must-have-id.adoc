@@ -6,5 +6,5 @@
 [%metadata]
 name:: Every entity has GERS ID
 identifier:: req/must-have-id
-Every entity in a GERS compliant implementation _SHALL_ have a unique GERS ID 
+part:: Every entity in a GERS compliant implementation _SHALL_ have a unique GERS ID 
 ====
