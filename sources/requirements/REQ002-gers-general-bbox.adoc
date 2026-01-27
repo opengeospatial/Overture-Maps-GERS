@@ -1,0 +1,18 @@
+[req-gers-bbox]
+
+[requirement]
+
+====
+[%metadata]
+name:: Definition of a bounding box
+identifier:: req/gers-general-bbox
+part:: Only non-projected (geodetic or geographic) coordinate reference systems _SHALL_ be used. 
+guidance:: In simple terms: A geodetic/geographic coordinate reference system defines where the data is located on the earth. A projected coordinate "tells" how data is to be drawn on a flat surface, such as on a paper map or a computer screen. 
+====
+
+
+GeoJSON: The value of the bbox member MUST be an array of
+   length 2*n where n is the number of dimensions represented in the
+   contained geometries, with all axes of the most southwesterly point
+   followed by all axes of the more northeasterly point.  The axes order
+   of a bbox follows the axes order of geometries.
