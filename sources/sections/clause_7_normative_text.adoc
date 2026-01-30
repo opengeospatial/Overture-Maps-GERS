@@ -128,9 +128,9 @@ include::../requirements/requirements-class-gers-bridge.adoc[]
 
 include::../requirements/REQ008-gers-bridgefile-name.adoc[]
 
-==== Example of BridgeFile query
+==== BridgeFile Schema Content
 
-https://docs.overturemaps.org/gers/bridge-files/#example-examining-the-source-data-for-the-building-dataset[An example query of a bridge file maintained in the Overture Maps implementation]
+include::../requirements/REQ009-gers-bridgefile-schema.adoc[]
 
 The bridge file schema consists of the following columns:
 
@@ -147,6 +147,10 @@ The bridge file schema consists of the following columns:
 |===
 
 NOTE: The `between` property is applicable to segments contained in a lineal feature dataset, such as Roads or Streams. The concept is similar to how a position on a linear segment is identified in a linear reference system.
+
+==== Example of BridgeFile query
+
+https://docs.overturemaps.org/gers/bridge-files/#example-examining-the-source-data-for-the-building-dataset[An example query of a bridge file maintained in the Overture Maps implementation]. This query assumes that the BridgeFile information is maintained in an S3 GeoParquet structured bucket.
 
 [[req-class-registry]]
 
