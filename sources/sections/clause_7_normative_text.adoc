@@ -128,6 +128,10 @@ include::../requirements/requirements-class-gers-bridge.adoc[]
 
 include::../requirements/REQ008-gers-bridgefile-name.adoc[]
 
+==== Example of BridgeFile query
+
+https://docs.overturemaps.org/gers/bridge-files/#example-examining-the-source-data-for-the-building-dataset[An example query of a bridge file maintained in the Overture Maps implementation]
+
 The bridge file schema consists of the following columns:
 
 |===
