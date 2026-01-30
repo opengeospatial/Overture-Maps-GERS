@@ -1,0 +1,10 @@
+[req-gers-bridgefile-schema]
+
+[requirement]
+
+====
+[%metadata]
+name:: Bridge File schema
+identifier:: req/gers-bridgefile-schema
+part:: Every BridgeFile _SHALL_ be implemented using the schema defined in table <TBD>
+====
