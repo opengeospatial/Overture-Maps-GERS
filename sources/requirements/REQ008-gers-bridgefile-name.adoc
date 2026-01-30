@@ -1,0 +1,12 @@
+[req-gers-bridgefile-name]
+
+[requirement]
+
+====
+[%metadata]
+name:: Bridge File name
+identifier:: req/gers-bridgefile-name
+part:: Every BridgeFile _SHALL_ have the string `bridgefile` as the first component of the file name.
+part:: The first component of the BridgeFile name _SHALL_ be followed by `/release_number` where `release_number` is the release (version) number of deployed GERS content.
+part:: Each release (version) of the GERS content `SHALL_ have a unique file name based on the two above rules.
+====
