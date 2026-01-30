@@ -49,7 +49,7 @@ include::../requirements/REQ001-gers-general-datetime.adoc[]
 
 An example of  a datetime string that complies with REQ001 is: `2024-10-15T00:00:00.000Z`
 
-req-gers-bbox]]
+[[req-gers-bbox]]
 
 ==== Bounding Box requirement
 
@@ -123,6 +123,10 @@ include::../requirements/REQ007-id-uuid.adoc[]
 Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of a GERS implementation and offer two critical capabilities: Reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
 
 include::../requirements/requirements-class-gers-bridge.adoc[]
+
+==== Structure of the BridgeFile name
+
+include::../requirements/REQ008-gers-bridgefile-name.adoc[]
 
 The bridge file schema consists of the following columns:
 
