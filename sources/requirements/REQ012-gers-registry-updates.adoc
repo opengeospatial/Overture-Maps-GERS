@@ -1,0 +1,1 @@
+There is only ever one GERS Registry. It's not versioned. We update it with each release by comparing the last published GERS Registry with the current Overture data release.
