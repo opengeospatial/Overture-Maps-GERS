@@ -162,7 +162,11 @@ If an implementation of the GERS framework requires a Registry, then the followi
 
 include::../requirements/requirements-class-gers-registry.adoc[]
 
-==== Name of GERS registry file
+==== GERS registry file name
+
+The following requirement defines the name for a GERS regsitry file. Please note that this name can be included in a longer URI/URL path to the actual location of the regsitry file. 
+
+include::../requirements/REQ010-gers-registry-name.adoc
 
 ==== Schema for GERS registry file
 
