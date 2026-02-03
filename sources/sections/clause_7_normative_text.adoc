@@ -233,6 +233,14 @@ Examples might be:
 
 ==== ChangeLog Schema
 
-ChangeLog Release Dataset Structure
+The change_type property in the changelog includes these types of changes to the entities:
+
+- added: the entity with this ID is new in the current release and was not present in the previous release
+- removed: the entity with this ID is not present in the current release but was present in the previous release
+- data_changed: the entity with this ID in the current release contains a change in geometry or properties from the entity with this ID that was in the previous release
+- unchanged: the entity with this ID in the current release matches the geometry and properties of the entity with this ID that was in the previous release
+
+
+==== ChangeLog Release Dataset Structure
 
 part:: In the path definition, the property `release data` _SHALL_ be followed by the theme value.
