@@ -7,6 +7,6 @@
 [%metadata]
 name:: ChangeLog File/Path name
 identifier:: req/changelog-name
-part:: Every ChangeLog file/path _SHALL_ include the string `changelog` as part of the file name and/or path.
-part:: Every ChangeLog file/path _SHALL_ include the string `release` as a component of the file and/or path.
+part:: The path to a given changelog dataset _SHALL_ include the string `changelog` as part of the path.
+part:: In the path definition, the string `changelog  _SHALL_ be followed by the property `release date`.
 ====
