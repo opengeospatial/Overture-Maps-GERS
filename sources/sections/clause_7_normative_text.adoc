@@ -15,6 +15,7 @@ The following table lists the mandatory and optional requirements classes for an
 | <<req-class-id,requirements_class-gers-id>>  | Requirements for generation of a GERS ID      | Mandatory
 | <<req-class-bridge,requirements_class-gers-bridge>> | Requirements for Bridge Files              | Mandatory
 | <<req-class-registry,requirements_class-gers-registry>> | Requirements for the Registry File       | Optional
+| <<req-class-changelog,requirements-class-gers-changelog.adoc>> | Requirements for ChangeLog File | optional
 |===
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
@@ -207,7 +208,7 @@ WHERE id='fea28f69-7afa-460c-b270-61ef74cd340c';
 
 The query response will show that fea28f69-7afa-460c-b270-61ef74cd340c is a building first released in the Overture GERS i9plementation in June 2025 and last seen in August 2025 (2025-08-20.1), the current release. The exact bounding box of the feature is {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843} and the relative path to the feature is /theme=buildings/type=building/part-00149-8a741876-e04d-4e66-bc96-0171910fa1b1-c000.zstd.parquet.
 
-[[req-class-change-log]]
+[[req-class-changelog]]
 
 === Requirements Class ChangeLog (Optional)
 
