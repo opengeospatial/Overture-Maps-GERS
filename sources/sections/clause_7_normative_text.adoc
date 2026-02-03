@@ -212,14 +212,25 @@ The query response will show that fea28f69-7afa-460c-b270-61ef74cd340c is a buil
 
 === Requirements Class ChangeLog (Optional)
 
-The following defines the requirements class ChangeLog. With each data release, a *changelog* that capture changes in the data from the previous release to the current release is published. This information enables users to see changes over time for individual entities (features) or groups of entities (features). This information can also be used to guide decisions about data matching, better understand data stability, and help detect data errors.
+The following defines the requirements class `ChangeLog`. With each data release, a *changelog* that capture changes in the data from the previous release to the current release is published. This information enables users to see changes over time for individual entities (features) or groups of entities (features). This information can also be used to guide decisions about data matching, better understand data stability, and help detect data errors. There is a ChangeLog dataset for each release.
 
-The data changelog is made available in some file or database system. partitioned by theme, type, and change_type and sorted geospatially with a unique index on id. The changelog files are available at the following locations:
+The data contained in a `changelog` is made available in some file or database system. partitioned by theme, type, and change_type and sorted geospatially with a unique index on id. The changelog files are available at the following locations:
 
 include::../requirements/requirements-class-gers-changelog.adoc[]
 
 ==== ChangeLog file name
 
-The following requirement defines the naming ocnventions for the ChnageLog file/dataset.
+The following requirement defines the naming conventions for the ChangeLog file/dataset.
 
-include::../requirements/requirement-changelog-name.adoc[]
+include::../requirements/REC013-changelog-name.adoc[]
+
+Examples might be:
+
+For Amazon S3 bucket: s3://overturemaps-us-west-2/changelog/<RELEASE> where release is the latest release date, such as 2026-01-21.0/
+In a CDB 2.0 datastore, the path could be /global/changelog/2026-01-21.0
+
+==== ChangeLog Schema
+
+ChangeLog Release Dataset Structure
+
+part:: In the path definition, the property `release data` _SHALL_ be followed by the theme value.
