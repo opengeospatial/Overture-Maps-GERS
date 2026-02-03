@@ -162,6 +162,14 @@ If an implementation of the GERS framework requires a Registry, then the followi
 
 include::../requirements/requirements-class-gers-registry.adoc[]
 
+==== Name of GERS registry file
+
+==== Schema for GERS registry file
+
+==== Updates to GERS registry file
+
+There is only ever one GERS Registry. It's not versioned. We update it with each release by comparing the last published GERS Registry with the current Overture data release.
+
 |===
 |Column	| Data type	| Description
 |id	| string	| GERS identifier (UUID)
