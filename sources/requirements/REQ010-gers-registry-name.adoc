@@ -4,7 +4,8 @@
 
 ====
 [%metadata]
-name:: Regsitry File name
+name:: Registry File name
 identifier:: req/gers-registry-name
-part:: Every RegsitryFile _SHALL_ have the string `registry` as the file name.
+part:: There _SHALL_ only one GERS Registry in a given GERS Framework implementation.
+part:: Every RegistryFile _SHALL_ have the string `registry` as the file name.
 ====
