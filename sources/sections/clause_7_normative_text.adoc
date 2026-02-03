@@ -184,12 +184,31 @@ include::../requirements/REQ012-gers-registry-updates.adoc[]
 |===
 |Column	| Data type	| Description
 |id	| string	| GERS identifier (UUID)
-|version	| integer	| Current version of the feature, incremented in each Overture release whenever the geometry or attributes of this feature changed.
-|first_seen	| string	| GERS release when entity first appeared in the GERS repository
+|version	| integer	| Current version of the feature, incremented in each release whenever the geometry or attributes of this feature changed.
+|first_seen	| string	| GERS release number when entity first appeared in the GERS repository
 |last_seen	| string	| Most recent GERS release containing entity/feature
 |last_changed	| string	| Last GERS release in which the entity/feature was changed, sourced from ChangeLog
 |path	| string	| Relative path to entity/feature in release data (ReferenceMap?)
-|bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| Bounding box coordinates in the CRS of the GERS implementation.
+|bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| Bounding box coordinates in the CRS of the GERS framework implementation.
 |===
 
 NOTE: The GERS Registry can be used to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added.
+
+==== Example query of a GERS Registry (From Overture)
+
+You can use the GERS Registry to verify that an entity exists in the GERS framework data, track the history of that entity, and find new entities that have been added. For example, a user might ask, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS?" The user can query the GERS Registry to find out:
+
+SELECT 
+    *
+FROM read_parquet('s3://overturemaps-us-west-2/registry/*.parquet')
+WHERE id='fea28f69-7afa-460c-b270-61ef74cd340c';
+
+```
+The query response will show that fea28f69-7afa-460c-b270-61ef74cd340c is a building first released in the Overture GERS i9plementation in June 2025 and last seen in August 2025 (2025-08-20.1), the current release. The exact bounding box of the feature is {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843} and the relative path to the feature is /theme=buildings/type=building/part-00149-8a741876-e04d-4e66-bc96-0171910fa1b1-c000.zstd.parquet.
+```
+
+[[req-class-change-log]]
+
+=== Requirements Class ChangeLog (Optional)
+
+
