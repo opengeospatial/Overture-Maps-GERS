@@ -6,5 +6,5 @@
 [%metadata]
 name:: Registry File schema
 identifier:: req/gers-registry-schema
-part:: Every RegsitryFile _SHALL_ follow the schema as defined below.
+part:: Every RegsitryFile SHALL be implemented using the schema defined in table <TBD>
 ====
