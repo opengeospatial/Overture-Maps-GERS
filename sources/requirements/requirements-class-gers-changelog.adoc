@@ -1,1 +1,11 @@
-[req-gers-changelof]
+[[req-class-gers-changelog]]
+
+[requirements_class]
+
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-changelog
+subject:: GERS Identifiers
+requirement:: /req/changelog-name
+requirement:: /req/changelog-schema
+====
