@@ -7,5 +7,5 @@
 name:: Registry File name
 identifier:: req/gers-registry-name
 part:: There _SHALL_ only one GERS Registry in a given GERS Framework implementation.
-part:: Every RegistryFile _SHALL_ have the string `registry` as the file name.
+part:: Every RegistryFile _SHALL_ have the string `registry` as the file name or the end component of the path to the registry file.
 ====
