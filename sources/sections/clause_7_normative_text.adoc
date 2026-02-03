@@ -228,8 +228,8 @@ include::../requirements/REC013-changelog-name.adoc[]
 
 Examples might be:
 
-For Amazon S3 bucket: s3://overturemaps-us-west-2/changelog/<RELEASE> where release is the latest release date, such as 2026-01-21.0/
-In a CDB 2.0 datastore, the path could be /global/changelog/2026-01-21.0
+- For Amazon S3 bucket: s3://overturemaps-us-west-2/changelog/<RELEASE> where release is the latest release date, such as 2026-01-21.0/
+- In a CDB 2.0 datastore, the path could be /global_metadata/changelog/2026-01-21.0
 
 ==== ChangeLog Schema
 
