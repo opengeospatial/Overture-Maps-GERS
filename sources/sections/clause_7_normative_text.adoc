@@ -121,7 +121,9 @@ include::../requirements/REQ007-id-uuid.adoc[]
 
 === Requirements Class Bridge Files
 
-Bridge files connect GERS IDs to the feature IDs used in the source data. These files are a key component of a GERS implementation and offer two critical capabilities: Reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
+Bridge files connect GERS IDs to the feature IDs used in the source data. STated another way, a bridge file is essentially a join table, connecting GERS identifiers with another set of identifiers. 
+
+These files are a key component of a GERS implementation and offer two critical capabilities: Reverse lookup of source features and insight into the conflation process used. Bridge files should be updated whenever GERS content is updated with new, changed, ot deleted source data.
 
 include::../requirements/requirements-class-gers-bridge.adoc[]
 
@@ -212,9 +214,9 @@ The query response will show that fea28f69-7afa-460c-b270-61ef74cd340c is a buil
 
 === Requirements Class ChangeLog (Optional)
 
-The following defines the requirements class `ChangeLog`. With each data release, a *changelog* that capture changes in the data from the previous release to the current release is published. This information enables users to see changes over time for individual entities (features) or groups of entities (features). This information can also be used to guide decisions about data matching, better understand data stability, and help detect data errors. There is a ChangeLog dataset for each release.
+The following defines the requirements class `ChangeLog`. With each data release, a *changelog* that capture changes in the data from the previous release to the current release is published. The changes are tied to the GERS ID for each feature. This information enables users to see changes over time for individual entities (features) or groups of entities (features). This information can also be used to guide decisions about data matching, better understand data stability, and help detect data errors. There is a ChangeLog dataset for each release.
 
-The data contained in a `changelog` is made available in some file or database system. partitioned by theme, type, and change_type and sorted geospatially with a unique index on id. The changelog files are available at the following locations:
+The data contained in a `changelog` is made available in some file or database system and is partitioned by theme, type, and change_type and sorted geospatially with a unique index on id. The changelog files are available at the following locations:
 
 include::../requirements/requirements-class-gers-changelog.adoc[]
 
