@@ -166,18 +166,25 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 
 The following requirement defines the name for a GERS regsitry file. Please note that this name can be included in a longer URI/URL path to the actual location of the regsitry file. 
 
-include::../requirements/REQ010-gers-registry-name.adoc
+include::../requirements/REQ010-gers-registry-name.adoc[]
 
 ==== Schema for GERS registry file
 
+The following requirement states that using the registry schema defined in Table xyz below is mandatory.
+
+include::../requirements/REQ011-gers-registry-schema.adoc[]
+
 ==== Updates to GERS registry file
 
-There is only ever one GERS Registry. It's not versioned. We update it with each release by comparing the last published GERS Registry with the current Overture data release.
+The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
+
+include::../requirements/REQ012-gers-registry-updates.adoc[]
+
 
 |===
 |Column	| Data type	| Description
 |id	| string	| GERS identifier (UUID)
-|version	| integer	| Current version of the feature, incremented in each Overture release where the geometry or attributes of this feature changed.
+|version	| integer	| Current version of the feature, incremented in each Overture release whenever the geometry or attributes of this feature changed.
 |first_seen	| string	| GERS release when entity first appeared in the GERS repository
 |last_seen	| string	| Most recent GERS release containing entity/feature
 |last_changed	| string	| Last GERS release in which the entity/feature was changed, sourced from ChangeLog
