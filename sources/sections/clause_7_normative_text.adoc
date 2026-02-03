@@ -212,4 +212,14 @@ The query response will show that fea28f69-7afa-460c-b270-61ef74cd340c is a buil
 
 === Requirements Class ChangeLog (Optional)
 
+The following defines the requirements class ChangeLog. With each data release, a *changelog* that capture changes in the data from the previous release to the current release is published. This information enables users to see changes over time for individual entities (features) or groups of entities (features). This information can also be used to guide decisions about data matching, better understand data stability, and help detect data errors.
+
+The data changelog is made available in some file or database system. partitioned by theme, type, and change_type and sorted geospatially with a unique index on id. The changelog files are available at the following locations:
+
 include::../requirements/requirements-class-gers-changelog.adoc[]
+
+==== ChangeLog file name
+
+The following requirement defines the naming ocnventions for the ChnageLog file/dataset.
+
+include::../requirements/requirement-changelog-name.adoc[]
