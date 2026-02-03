@@ -1,0 +1,10 @@
+[req-gers-registry-name]
+
+[requirement]
+
+====
+[%metadata]
+name:: Regsitry File name
+identifier:: req/gers-registry-name
+part:: Every RegsitryFile _SHALL_ have the string `registry` as the file name.
+====
