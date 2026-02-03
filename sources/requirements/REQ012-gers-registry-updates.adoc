@@ -1,1 +1,13 @@
+[req-gers-registry-updates]
+
+[requirement]
+
+====
+[%metadata]
+name:: Registry File updates
+identifier:: req/gers-registry-updates
+part:: Every RegistryFile SHALL be implemented using the schema defined in table <TBD>
+====
+
+
 There is only ever one GERS Registry. It's not versioned. We update it with each release by comparing the last published GERS Registry with the current Overture data release.
