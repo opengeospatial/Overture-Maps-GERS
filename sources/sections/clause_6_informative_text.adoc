@@ -115,7 +115,7 @@ The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of r
 
 ==== GERS Theme (feature) Types
 
-Each theme can be semantically subtyped as shown in the following table.
+Each feature instance in a theme can have a feature `type` as shown in the following table.
 
 |===
 |*Theme*    |	*Feature types*
@@ -124,7 +124,9 @@ Each theme can be semantically subtyped as shown in the following table.
 |Buildings	| building, building_part
 |Divisions	| division, division_area, division_boundary
 |Places	    | place
-|Transportation	| segment, connector. Segment contains three subtypes - road, rail, and water which contain familiar categories of transportation data: highways, footways, cycleways, railways, ferry routes, and public transportation.
+|Transportation	| segment, connector. Segment contains three subtypes - road, rail, and water. These subtypes can further be https://docs.overturemaps.org/guides/transportation/#subtypes[subclassed].
 |===
+
+Definitions for each of the feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
 
 NOTE: The above theme and type  infromation is the current (January 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme.
