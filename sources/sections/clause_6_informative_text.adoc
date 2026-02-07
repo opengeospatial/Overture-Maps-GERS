@@ -93,11 +93,29 @@ Examples of using and accessing change logs are available on the OMF web site. U
 
 A GERS reference map contains feature data that connect GERS IDs to real-world entities. 
 
-Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the roads in a navigation route. Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature geometry and some metadata, content contained in the reference map is not a duplication of the source data. GERS IDs reference entities in a global, open, free, and accessible manner. There is no risk of lock-in because any ID system can also match with GERS.
+Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the roads in a navigation route. Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature geometry and some metadata, content contained in the reference map is not a duplication of the source data. GERS IDs reference entities in a global, open, free, and accessible manner. There is no risk of lock-in because any ID system can also be matched with a GERS ID.
 
-=== GERS Themes
+=== GERS Themes and types
 
-The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in a GERS implementation,  Currently, existing GERS implementations reference/include the following themes and feature types:
+Geospatial data registered in a GERS framework implementation are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GERS schema, such as for BridgeFiles, and in many query instances. Further, in some cases `type` can also have `sub-types`.
+
+==== GERS Themes
+
+The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in a GERS implementation,  Currently, existing GERS implementations reference/include the following themes: 
+
+|===
+|*Theme*    |	*Description*
+|Addresses	| A feature type that represents a physical place specified by its street number, street name, unit, address_level(s), postalcode and/or country. An address also has a Point geometry, which provides an approximate location of the position most commonly associated with the feature.
+|Base	      | Provides the land, water, infrastructure, and bathymetry features that are necessary to render a complete basemap.
+|Buildings	| Describes human-made structures with roofs or interior spaces that are permanently or semi-permanently in one place
+|Divisions	| A feature type that represents an official or non-official organization of people such as country, region, province, city, neighborhood, and so on as seen from a given political perspective. A division feature instance has a Point geometry which gives an approximate location of the position most commonly associated with the division feature.
+|Places	    | Point representations of real-world entities such as schools, businesses, hospitals, religious organizations, landmarks, mountain peaks, and more.
+|Transportation	| Describes the infrastructure and conventions of how people and objects travel around the world.
+|===
+
+==== GERS Theme (feature) Types
+
+Each theme can be semantically subtyped as shown in the following table.
 
 |===
 |*Theme*    |	*Feature types*
@@ -106,7 +124,7 @@ The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of r
 |Buildings	| building, building_part
 |Divisions	| division, division_area, division_boundary
 |Places	    | place
-|Transportation	| segment, connector
+|Transportation	| segment, connector. Segment contains three subtypes - road, rail, and water which contain familiar categories of transportation data: highways, footways, cycleways, railways, ferry routes, and public transportation.
 |===
 
-The above is the current (2026) theme enumeration. Additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard 
+NOTE: The above theme and type  infromation is the current (January 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme.
