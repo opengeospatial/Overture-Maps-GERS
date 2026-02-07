@@ -14,11 +14,11 @@ NOTE: In the GERS model, the feature ID is the unique ID used for a feature inst
 
 === feature instance
 
-individual of a given feature type having specified feature attribute values 
+individual of a given feature type having specified feature attribute values (see entity)
 
 [SOURCE: ISO 19101-1:2014]
 
-=== feature type (type)
+=== feature type (see type)
 
 class of features having common characteristics 
 
