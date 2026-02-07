@@ -4,6 +4,32 @@ This document uses the terms defined in OGC Policy Directive 49, which is based 
 
 For the purposes of this document, the following additional terms and definitions apply.
 
+=== feature identifier
+
+identifier that uniquely designates a feature instance
+
+[SOURCE: ISO 19142:2010]
+
+NOTE: In the GERS model, the feature ID is the unique ID used for a feature instance in a source dataset (see source data)
+
+=== feature instance
+
+individual of a given feature type having specified feature attribute values 
+
+[SOURCE: ISO 19101-1:2014]
+
+=== feature type (type)
+
+class of features having common characteristics 
+
+SOURCE: ISO 19156:2023] 
+
+=== geographic feature
+
+representation of real world phenomenon associated with a location relative to the Earth
+
+[SOURCE: ISO 19101-2:2018]
+
 === GERS Bridge Files
 
 bridge files connect GERS IDs to the IDs contained in the source data. 
@@ -16,7 +42,7 @@ a changelog documents/captures changes in the data from the previous release to 
 
 NOTE: This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
 
-=== GERS Entity
+=== GERS Entity (feature)
 
 refers to a physical feature such as a building, address, or road segment. 
 
@@ -46,6 +72,14 @@ NOTE: The Registry is a comprehensive catalog that tracks every stable ID ever p
 === GERS Themes
 
 geographic feature types for which schema and rules have been documented for inclusion in an implementation of a GERS Framework. 
+
+=== theme
+
+a specific set of related geographic features such as streets, buildings, or rivers) that share common feature attributes
+
+=== type (feature type)
+
+class of features having common characteristics
 
 === Source data
 
