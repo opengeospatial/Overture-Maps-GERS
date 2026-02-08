@@ -121,10 +121,10 @@ Each feature instance in a theme can have a feature `type` as shown in the follo
 |*Theme*    |	*Feature types* | Additional information on subtypes, classes etc.
 |Addresses	| address | 
 |Base	      | bathymetry, infrastructure, land, land_cover, land_use, water |
-|Buildings	| building, building_part |
+|Buildings	| building, building_part | 
 |Divisions	| division, division_area, division_boundary | https://docs.overturemaps.org/schema/reference/divisions/division/#subtypes[`division`] can be further subtyped.
-|Places	    | place | There are over 2100 subtypes, also know as https://github.com/OvertureMaps/schema/blob/main/docs/schema/concepts/by-theme/places/overture_categories.csv[categories], defined.
-|Transportation	| segment, connector. Segment contains three subtypes - road, rail, and water. These subtypes can further be https://docs.overturemaps.org/guides/transportation/#subtypes[subclassed].
+|Places	    | place | There are over 2100 subtypes, also known as https://github.com/OvertureMaps/schema/blob/main/docs/schema/concepts/by-theme/places/overture_categories.csv[categories], defined.
+|Transportation	| segment, connector. | Segment contains three subtypes - road, rail, and water. These subtypes can further be https://docs.overturemaps.org/guides/transportation/#subtypes[subclassed].
 |===
 
 Definitions for each of the feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
