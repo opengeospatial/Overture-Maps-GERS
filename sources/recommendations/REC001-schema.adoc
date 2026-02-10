@@ -5,6 +5,7 @@
 [%metadata]
 identifier:: /rec/schema-recommended
 part:: Case - Snake case instead of camel case _SHOULD_ be used for all property names, string enumeration members, and string-valued enumeration equivalents. This is due to case sensitivity and transformation issues in different databases and query engines. 
-part:: Measurements of real-world objects and features _SHOULD_ follow The International System of Units (SI): heights, widths, lengths, etc. In the Overture schema, these values are provided as scalar numeric value without units such as feet or meters. Overture does this to maximize consistency and predictability.
+part:: Measurements of real-world objects and features _SHOULD_ follow The International System of Units (SI): heights, widths, lengths, etc. In the reference Overture schema, these values are provided as scalar numeric value without units such as feet or meters. This is done to maximize consistency and predictability.
 part:: Quantities specified in regulatory rules, norms and customs _SHOULD_ follow local specifications wherever possible. These values _SHOULD_ be specified as two-element arrays where the first element is the scalar numeric value and the second value is the units.
+part:: To be consistent with existing GERS implementations, languages in any GERS schema _SHOULD_ be identified by https://en.wikipedia.org/wiki/IETF_language_tag[IETF BCP-47 language tags].
 ====
