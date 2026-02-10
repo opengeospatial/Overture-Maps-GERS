@@ -119,7 +119,7 @@ Each feature instance in a theme can have a feature `type` as shown in the follo
 
 |===
 |*Theme*    |	*Feature types* | Additional information on subtypes, properties, classes etc.
-|Addresses	| address | 
+|Addresses	| address | A detailed description of the address properties is https://docs.overturemaps.org/schema/reference/addresses/address/[here].
 |Base	      | bathymetry, infrastructure, land, land_cover, land_use, water | An example of subtypes and properties for https://docs.overturemaps.org/schema/reference/base/land/[land]. Such enumerations exist for each `base` feature type.
 |Buildings	| building, building_part | Current GERS implementations reference https://wiki.openstreetmap.org/wiki/Key:building[building feature types]
 |Divisions	| division, division_area, division_boundary | https://docs.overturemaps.org/schema/reference/divisions/division/#subtypes[`division`] can be further subtyped.
@@ -127,6 +127,6 @@ Each feature instance in a theme can have a feature `type` as shown in the follo
 |Transportation	| segment, connector. | Segment contains three subtypes - road, rail, and water. These subtypes can further be https://docs.overturemaps.org/guides/transportation/#subtypes[subclassed].
 |===
 
-Definitions for each of the feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
+Definitions for each of the current feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
 
 NOTE: The above theme and type  infromation is the current (January 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme.
