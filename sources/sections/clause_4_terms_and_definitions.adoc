@@ -75,7 +75,7 @@ geographic feature types for which schema and rules have been documented for inc
 
 === theme
 
-a specific set of related geographic features such as streets, buildings, or rivers) that share common feature attributes
+a specific set of related geographic features such as streets, buildings, or rivers that share common feature types
 
 === type (feature type)
 
