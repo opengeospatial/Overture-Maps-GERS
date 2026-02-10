@@ -101,7 +101,7 @@ Geospatial data registered in a GERS framework implementation are semantically o
 
 ==== GERS Themes
 
-The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in a GERS implementation,  Currently, existing GERS implementations reference/include the following themes: 
+The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in a GERS implementation.  Currently, existing GERS implementations reference/include the following themes: 
 
 |===
 |*Theme*    |	*Description*
@@ -118,10 +118,10 @@ The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of r
 Each feature instance in a theme can have a feature `type` as shown in the following table.
 
 |===
-|*Theme*    |	*Feature types* | Additional information on subtypes, classes etc.
+|*Theme*    |	*Feature types* | Additional information on subtypes, properties, classes etc.
 |Addresses	| address | 
-|Base	      | bathymetry, infrastructure, land, land_cover, land_use, water |
-|Buildings	| building, building_part | 
+|Base	      | bathymetry, infrastructure, land, land_cover, land_use, water | An example of subtypes and properties for https://docs.overturemaps.org/schema/reference/base/land/[land]. Such enumerations exist for each `base` feature type.
+|Buildings	| building, building_part | Current GERS implementations reference https://wiki.openstreetmap.org/wiki/Key:building[building feature types]
 |Divisions	| division, division_area, division_boundary | https://docs.overturemaps.org/schema/reference/divisions/division/#subtypes[`division`] can be further subtyped.
 |Places	    | place | There are over 2100 subtypes, also known as https://github.com/OvertureMaps/schema/blob/main/docs/schema/concepts/by-theme/places/overture_categories.csv[categories], defined.
 |Transportation	| segment, connector. | Segment contains three subtypes - road, rail, and water. These subtypes can further be https://docs.overturemaps.org/guides/transportation/#subtypes[subclassed].
