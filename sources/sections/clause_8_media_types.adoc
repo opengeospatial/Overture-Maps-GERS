@@ -1,0 +1,3 @@
+== Media Types
+
+There are currently no media types defined.
