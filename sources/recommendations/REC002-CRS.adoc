@@ -5,5 +5,5 @@
 [%metadata]
 identifier:: /rec/crs-recommended
 part:: Coordinates - such as for geometry - in an implementation of the GERS framework _SHOULD_ be expressed using WGS-84 (World Geodetic System 1984), equivalent to https://spatialreference.org/ref/ogc/CRS84/[OGC CRS 84]. This is equivalent to EPSG (European Petroleum Survey Group) code 4326 (2 dimensions) but with axis order longtidude/latitude. 
-part:: If a geographic location also has a height or depth, the height or depth _SHOULD_ be expressed relative to the WGS-84 reference ellipsoid.
+part:: If a geographic location also has a height or depth, the height or depth _SHOULD_ be expressed relative to the WGS-84 reference ellipsoid/geoid.
 ====
