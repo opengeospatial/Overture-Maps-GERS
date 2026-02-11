@@ -1,0 +1,8 @@
+[[rec-3]]
+
+[recommendation]
+====
+[%metadata]
+identifier:: /rec/gers-height-depth
+part:: Height and depth _SHOULD_ be expressed as orthometric height (also known as height/depth above/below mean sea level). Orthometric height is the vertical distance between the GNSS antenna and the geoid.
+====
