@@ -231,7 +231,7 @@ include::../requirements/requirements-class-gers-changelog.adoc[]
 
 The following requirement defines the naming conventions for the ChangeLog file/dataset.
 
-include::../requirements/REQ014-changelog-name.adoc[]
+include::../requirements/REQ014-gers-changelog-name.adoc[]
 
 Examples might be:
 
