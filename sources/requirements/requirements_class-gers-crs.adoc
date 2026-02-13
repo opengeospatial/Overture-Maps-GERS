@@ -8,5 +8,5 @@ identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-crs
 subject:: Coordinate Reference System (CRS)
 requirement:: /req/crs-topic2
 requirement:: /req/crs-crsStorage
-requirement:: /req/crs-valid
+requirement:: /req/gers-valid-crs
 ====
