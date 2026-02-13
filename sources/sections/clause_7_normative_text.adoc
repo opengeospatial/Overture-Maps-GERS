@@ -123,7 +123,7 @@ include::../requirements/REQ007-must-have-id.adoc[]
 
 The following requirement states that a GERS ID is generated using the rules as defined in UUID v4
 
-include::../requirements/REQ007-id-uuid.adoc[]
+include::../requirements/REQ008-id-uuid.adoc[]
 
 [[req-class-bridge]]
 
@@ -137,11 +137,11 @@ include::../requirements/requirements-class-gers-bridge.adoc[]
 
 ==== Structure of the BridgeFile name
 
-include::../requirements/REQ008-gers-bridgefile-name.adoc[]
+include::../requirements/REQ009-gers-bridgefile-name.adoc[]
 
 ==== BridgeFile Schema Content
 
-include::../requirements/REQ009-gers-bridgefile-schema.adoc[]
+include::../requirements/REQ010-gers-bridgefile-schema.adoc[]
 
 The bridge file schema consists of the following columns:
 
@@ -177,19 +177,19 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 
 The following requirement defines the name for a GERS regsitry file. Please note that this name can be included in a longer URI/URL path to the actual location of the regsitry file. 
 
-include::../requirements/REQ010-gers-registry-name.adoc[]
+include::../requirements/REQ011-gers-registry-name.adoc[]
 
 ==== Schema for GERS registry file
 
 The following requirement states that using the registry schema defined in Table xyz below is mandatory.
 
-include::../requirements/REQ011-gers-registry-schema.adoc[]
+include::../requirements/REQ012-gers-registry-schema.adoc[]
 
 ==== Updates to GERS registry file
 
 The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
 
-include::../requirements/REQ012-gers-registry-updates.adoc[]
+include::../requirements/REQ013-gers-registry-updates.adoc[]
 
 
 |===
@@ -232,7 +232,7 @@ include::../requirements/requirements-class-gers-changelog.adoc[]
 
 The following requirement defines the naming conventions for the ChangeLog file/dataset.
 
-include::../requirements/REC013-changelog-name.adoc[]
+include::../requirements/REC014-changelog-name.adoc[]
 
 Examples might be:
 
