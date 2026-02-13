@@ -96,7 +96,7 @@ The following requirement states that only non-projected coordinate reference sy
 
 include::../requirements/REQ006-crs-valid.adoc[]
 
-==== Recommendation 1
+==== Recommendation 2
 
 In order to be consistent and compatible with existing GERS framework implementations (as of 2026), the following recommendation states that a WGS84 2d CRS be used. Further, if a CRS is not specified then the default is WGS84 2d with axis order longitude/latitude. This is known as OGC CRS84.
 
