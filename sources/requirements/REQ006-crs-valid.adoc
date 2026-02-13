@@ -1,0 +1,10 @@
+[req-gers-valid-crs]
+
+[requirement]
+
+====
+[%metadata]
+name:: Only non-projected CRS can be used.
+identifier:: req/gers-valid-crs
+part:: Only non-projected coordinate reference systems _SHALL_ be used in any implementation of the  GERS framework.
+====
