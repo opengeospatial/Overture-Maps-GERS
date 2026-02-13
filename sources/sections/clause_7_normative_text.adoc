@@ -92,7 +92,7 @@ include::../requirements/REQ005-crs-storage.adoc[]
 
 ==== Requirement Valid CRS
 
-The following requirement states that only no-projected coordinate reference systems are used in an implementaiton of the GERS framework. The are several reasons for this requirement, one of which is the possible use of global tiled storage systems for a GERS reference map.
+The following requirement states that only non-projected coordinate reference systems are used in an implementaiton of the GERS framework. The are several reasons for this requirement, one of which is the possible use of global tiled storage systems for a GERS reference map.
 
 include::../requirements/REQ006-crs-valid.adoc[]
 
@@ -117,7 +117,7 @@ include::../requirements/requirements_class-gers-id.adoc[]
 
 The following requirement states that every entity in a GER compliant implementation has a unique ID
 
-include::../requirements/REQ006-must-have-id.adoc[]
+include::../requirements/REQ007-must-have-id.adoc[]
 
 ==== ID is generated using UUID v4
 
