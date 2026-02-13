@@ -5,5 +5,5 @@
 [%metadata]
 identifier:: /rec/gers-height-depth
 part:: Height and depth _SHOULD_ be expressed as orthometric height (also known as height/depth above/below mean sea level).
-guidance: Orthometric height (_*H*_) is the vertical distance along a plumb line from a point on the Earth's surface to the geoid, an equipotential gravity surface approximating mean sea level. It represents the traditional "elevation above sea level" used for engineering and mapping. It is calculated by subtracting the geoid height (*_N_*) from the ellipsoidal height (*_h_*), expressed as *_H_* = *_h_* - *_N_* where *_h_* is the ellipsoidal height from GPS/GNSS
+guidance:: Orthometric height (*_H_*) is the vertical distance along a plumb line from a point on the Earth's surface to the geoid, an equipotential gravity surface approximating mean sea level. It represents the traditional "elevation above sea level" used for engineering and mapping. It is calculated by subtracting the geoid height (*_N_*) from the ellipsoidal height (*_h_*), expressed as *_H_* = *_h_* - *_N_* where *_h_* is the ellipsoidal height from GPS/GNSS.
 ====
