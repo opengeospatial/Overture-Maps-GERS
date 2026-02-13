@@ -58,7 +58,15 @@ The following requirement defines how to express a bounding box in the CRS of an
 
 include::../requirements/REQ002-gers-general-bbox.adoc[]
 
-An example that follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843}
+An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843}
+
+[[req-gers-geometry]]
+
+==== Geometry requirement
+
+The following defines the requirements for expressing geometry in a GERS implementation including schemas and distributions.
+
+
 
 [[req-class-crs]]
 
