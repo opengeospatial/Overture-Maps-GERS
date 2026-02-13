@@ -185,13 +185,6 @@ The following requirement states that using the registry schema defined in Table
 
 include::../requirements/REQ012-gers-registry-schema.adoc[]
 
-==== Updates to GERS registry file
-
-The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
-
-include::../requirements/REQ013-gers-registry-updates.adoc[]
-
-
 |===
 |Column	| Data type	| Description
 |id	| string	| GERS identifier (UUID)
@@ -202,6 +195,12 @@ include::../requirements/REQ013-gers-registry-updates.adoc[]
 |path	| string	| Relative path to entity/feature in release data (ReferenceMap?)
 |bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| Bounding box coordinates in the CRS of the GERS framework implementation.
 |===
+
+==== Updates to GERS registry file
+
+The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
+
+include::../requirements/REQ013-gers-registry-updates.adoc[]
 
 NOTE: The GERS Registry can be used to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added.
 
