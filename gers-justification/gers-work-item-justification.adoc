@@ -51,11 +51,11 @@ More information on the Overture Maps GERS framework can be found https://overtu
 
 This section provides an overview of the proposed submission, benefits of implementing GERS and a summary of the GERS Model.
 
-The Global Entity Reference System (GERS) was developed by the https://overturemaps.org/[Overture Maps Foundation]. The latest version launched in June 2025 as a way to provide unique, open, and interoperable identifiers for geospatial entities such as buildings, places, and road segments. This system aims to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
+The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation]. The goal of the GERS Model and approach is to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
-Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. 
+NOTE: Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. However, the Community Standard does not specify or require using the OMF implementation or any other organization's implementation of components of the GERS fraemework.
 
-The proposed OGC GERS Community Standard will have a more limited focus the logical model for a GERS framework as documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a standard that can be implemented by any organization that will be 100% consistent with the existing Overture Maps Foundation reference map and IDs but "owned" by the implementing organization.
+The proposed OGC GERS Community Standard will have limited focus on the logical model for a GERS framework as documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a standard that can be implemented by any organization that will be 100% consistent with the existing Overture Maps Foundation implementation of the GERS framework but "owned" by the implementing organization.
 
 === Overview of the GERS Model and Reference System
 
@@ -65,9 +65,9 @@ Often, the cost of integrating data exceeds the cost of the initial data capture
 
 GERS changes this equation by providing persistent, unique identifiers for every geospatial entity – from buildings and roads to places and addresses. With GERS, what once took weeks of complex geospatial conflation can now be accomplished in minutes with simple column joins.
 
-=== What will be standardized?
+=== What is in the OGC GERS Community Standard?
 
-The following components of the Global Entity Reference System will be addressed in the GERS Community Standard. The source of the content for the draft Community Standard is the July 2025 of the Overture GERS release.
+The following components of the Global Entity Reference System are addressed in the GERS Community Standard. The source of the content for the draft Community Standard is the July 2025 of the Overture GERS release.
 
 - BridgeFiles: Bridge files connect the unique GERS IDs to the entity identifiers used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and the ability to join content from multiple geospatial data repositories.
 - ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
