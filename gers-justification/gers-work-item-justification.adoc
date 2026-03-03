@@ -63,7 +63,7 @@ Organizations can spend an enormous amount of time and resources on data prepara
 
 Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation tax – a hidden cost that affects everyone working with data obtained from multiple sources.
 
-An implementation of the GERS model can change this equation by specifying a mechanism for defining persistent, unique identifiers for any geospatial entity as well as a supporting infrastructure such as a regsitry of those IDs and related metadata.
+An implementation of the GERS model can change this equation by specifying a mechanism for defining persistent, unique identifiers for any geospatial entity as well as a supporting infrastructure such as a registry of those IDs and related metadata.
 
 === What is in the OGC GERS Community Standard?
 
