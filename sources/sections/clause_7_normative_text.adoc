@@ -167,7 +167,7 @@ https://docs.overturemaps.org/gers/bridge-files/#example-examining-the-source-da
 
 === Requirements Class Registry (Optional)
 
-With each data update, the GERS Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of a GERS implementation. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
+With each data update (release), the Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of an implmentation of the GERS model/framework. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
 
 If an implementation of the GERS framework requires a Registry, then the following requirements class is mandatory.
 
@@ -175,7 +175,7 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 
 ==== GERS registry file name
 
-The following requirement defines the name for a GERS regsitry file. Please note that this name can be included in a longer URI/URL path to the actual location of the regsitry file. 
+The following requirement defines the physical name for a GERS registry file. Please note that this name can be included in a longer URI/URL path to the actual location of the registry file. 
 
 include::../requirements/REQ011-gers-registry-name.adoc[]
 
