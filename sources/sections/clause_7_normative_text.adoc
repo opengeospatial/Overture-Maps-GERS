@@ -20,7 +20,7 @@ The following table lists the mandatory and optional requirements classes for an
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
 
-[[req-gers-general]]
+[[req-gers-general-7]]
 
 === General requirements and recommendations
 
@@ -28,7 +28,7 @@ The following requirements class and recommendations specify "global" requiremen
 
 include::../requirements/requirements_class-gers-general.adoc[]
 
-[[rec-gers-schema]]
+[[rec-gers-schema-7]]
 
 ==== Recommended Schema Conventions
 
@@ -40,7 +40,7 @@ include::../recommendations/REC001-schema.adoc[]
 
 https://docs.overturemaps.org/schema/concepts/names/
 
-[[req-gers-datetime]]
+[[req-gers-datetime-7]]
 
 ==== Date Time Requirement
 
@@ -50,7 +50,7 @@ include::../requirements/REQ001-gers-general-datetime.adoc[]
 
 An example of  a datetime string that complies with REQ001 is: `2024-10-15T00:00:00.000Z`
 
-[[req-gers-bbox]]
+[[req-gers-bbox-7]]
 
 ==== Bounding Box requirement
 
@@ -60,7 +60,7 @@ include::../requirements/REQ002-gers-general-bbox.adoc[]
 
 An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843}
 
-[[req-gers-geometry]]
+[[req-gers-geometry-7]]
 
 ==== Geometry requirement
 
@@ -68,7 +68,7 @@ The following defines the requirements for expressing geometry in an implementat
 
 
 
-[[req-class-crs]]
+[[req-class-crs-7]]
 
 === Requirement Class Coordinate Reference System (Conditional)
 
@@ -102,7 +102,7 @@ In order to be consistent and compatible with existing GERS framework implementa
 
 include::../recommendations/REC002-CRS.adoc[]
 
-[[req-class-id]]
+[[req-class-id-7]]
 === Requirements Class GERS ID (Mandatory)
 
 As of the June 2025 release of the GERS schema and model, all GERS IDs are UUIDs: 128-bit, randomly-generated identifiers (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[UUID v4]) that are kept stable across data releases and updates. These IDs are stored as strings with dashes: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx . UUID v4 is meant for generating UUIDs from truly random or pseudorandom numbers.
@@ -125,7 +125,7 @@ The following requirement states that a GERS ID is generated using the rules as 
 
 include::../requirements/REQ008-id-uuid.adoc[]
 
-[[req-class-bridge]]
+[[req-class-bridge-7]]
 
 === Requirements Class Bridge Files
 
@@ -163,7 +163,7 @@ NOTE: The `between` property is applicable to segments contained in a lineal fea
 
 https://docs.overturemaps.org/gers/bridge-files/#example-examining-the-source-data-for-the-building-dataset[An example query of a bridge file maintained in the Overture Maps implementation]. This query assumes that the BridgeFile information is maintained in an S3 GeoParquet structured bucket.
 
-[[req-class-registry]]
+[[req-class-registry-7]]
 
 === Requirements Class Registry (Optional)
 
@@ -217,7 +217,7 @@ WHERE id='fea28f69-7afa-460c-b270-61ef74cd340c';
 
 The query response will show that fea28f69-7afa-460c-b270-61ef74cd340c is a building first released in the Overture GERS i9plementation in June 2025 and last seen in August 2025 (2025-08-20.1), the current release. The exact bounding box of the feature is {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843} and the relative path to the feature is /theme=buildings/type=building/part-00149-8a741876-e04d-4e66-bc96-0171910fa1b1-c000.zstd.parquet.
 
-[[req-class-changelog]]
+[[req-class-changelog-7]]
 
 === Requirements Class ChangeLog (Optional)
 
