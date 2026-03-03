@@ -187,7 +187,7 @@ include::../requirements/REQ012-gers-registry-schema.adoc[]
 
 |===
 |Column	| Data type	| Description
-|id	| string	| GERS identifier (UUID)
+|id	| string	| GERS conformant identifier (UUID)
 |version	| integer	| Current version of the feature, incremented in each release whenever the geometry or attributes of this feature changed.
 |first_seen	| string	| Release number when entity first appeared in a GERS framework compliant repository
 |last_seen	| string	| Most recent release containing entity/feature
