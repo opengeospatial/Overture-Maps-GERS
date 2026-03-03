@@ -64,7 +64,7 @@ An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795
 
 ==== Geometry requirement
 
-The following defines the requirements for expressing geometry in a GERS implementation including schemas and distributions.
+The following defines the requirements for expressing geometry in an implementation of the GERS framework including schemas and distributions.
 
 
 
@@ -189,24 +189,24 @@ include::../requirements/REQ012-gers-registry-schema.adoc[]
 |Column	| Data type	| Description
 |id	| string	| GERS identifier (UUID)
 |version	| integer	| Current version of the feature, incremented in each release whenever the geometry or attributes of this feature changed.
-|first_seen	| string	| GERS release number when entity first appeared in the GERS repository
-|last_seen	| string	| Most recent GERS release containing entity/feature
-|last_changed	| string	| Last GERS release in which the entity/feature was changed, sourced from ChangeLog
+|first_seen	| string	| Release number when entity first appeared in a GERS framework compliant repository
+|last_seen	| string	| Most recent release containing entity/feature
+|last_changed	| string	| Last release in which the entity/feature was changed, sourced from ChangeLog
 |path	| string	| Relative path to entity/feature in release data (ReferenceMap?)
 |bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| Bounding box coordinates in the CRS of the GERS framework implementation.
 |===
 
-==== Updates to GERS registry file
+==== Updates to the Registry File
 
 The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
 
 include::../requirements/REQ013-gers-registry-updates.adoc[]
 
-NOTE: The GERS Registry can be used to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added.
+NOTE: The Registry can be used to verify that an entity exists in Overture, track the history of that entity, and find new entities that have been added.
 
-==== Example query of a GERS Registry (From Overture)
+==== Example query of a GERS Compliant Registry (From Overture)
 
-You can use the GERS Registry to verify that an entity exists in the GERS framework data, track the history of that entity, and find new entities that have been added. For example, a user might ask, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS?" The user can query the GERS Registry to find out:
+You can use the GERS Registry to verify that an entity exists in the GERS framework data, track the history of that entity, and find new entities that have been added. For example, a user might ask, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS compliant datastore?" The user can query the Registry to find out:
 
 ```
 SELECT 
