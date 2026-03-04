@@ -27,14 +27,14 @@ The current implementations of GERS support a limited set of foundation data the
 
 == Security considerations
 
-   Do not assume that the GERS IDs (UUIDs) are hard to guess. For example the IDs should not be used
-   as security capabilities (identifiers whose mere possession grants
-   access).  A predictable random number source will exacerbate the situation.
+Do not assume that the GERS IDs (UUIDs) are hard to guess. For example the IDs should not be used
+as security capabilities (identifiers whose mere possession grants
+access).  A predictable random number source will exacerbate the situation.
 
-   Do not assume that it is easy to determine if a GERS ID has been
-   slightly transposed in order to redirect a reference to another
-   object.  Humans do not have the ability to easily check the integrity
-   of a GERS ID by simply glancing at it.
+Do not assume that it is easy to determine if a GERS ID has been
+slightly transposed in order to redirect a reference to another
+object.  Humans do not have the ability to easily check the integrity
+of a GERS ID by simply glancing at it.
 
 NOTE: The security measures discussed above do not provide confidentiality. This is outside the scope of this document.
 
