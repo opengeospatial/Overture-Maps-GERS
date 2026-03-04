@@ -10,7 +10,7 @@ identifier that uniquely designates a feature instance
 
 [SOURCE: ISO 19142:2010]
 
-NOTE: In the GERS model, the feature ID is the unique ID used for a feature instance in a source dataset (see source data)
+NOTE: In the GERS model, the feature ID is the unique ID used for a feature instance in a source dataset (see source data). Further, the generated GERS ID is not meant to replace any existing feature IDs used in the source data
 
 === feature instance
 
