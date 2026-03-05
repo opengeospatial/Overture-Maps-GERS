@@ -97,7 +97,9 @@ Data contained in the reference map should be carefully validated, consistently 
 
 === GERS Themes and types
 
-Geospatial data registered in an implementation of the GERS framework are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GERS schema, such as for BridgeFiles, and in many query instances. Further, in some cases `type` can also have `sub-types`. While the current GERS implementation provide defined enumerations for theme and type, these enumerations can be extended and/or replaced with other enumerations.
+Geospatial data registered in an implementation of the GERS framework are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GERS schema, such as for BridgeFiles, and in many query instances. Further, in some cases `type` can also have `sub-types`. 
+
+NOTE: While the current GERS implementations use defined enumerations for theme and type, these enumerations can be extended and/or replaced with other enumerations.
 
 ==== GERS Themes
 
