@@ -47,9 +47,7 @@ From RFC 9562: One area in which UUIDs have gained popularity is database keys. 
 
 ==== GERS Registry
 
-A GERS registry is a comprehensive database documenting every GERS ID created in a given GERS implementation.
-
-Think of the GERS Registry as the authoritative phonebook for GERS IDs. It maintains:
+A GERS registry is a comprehensive database documenting every GERS ID created in a given GERS implementation. The Registry maintains:
 
 * Complete lifecycle information for every ID.
 * Current location data for active entities.
@@ -65,27 +63,27 @@ Why it matters:
 
 ==== GERS Bridge File
 
-A bridge file contains mappings between GERS IDs and identifiers used other (source) geospatial datasets. A bridge file can be thought of as join tables .
+A Bridge File contains mappings between GERS IDs and identifiers used other (source) geospatial datasets. A Bridge File can be thought of as join tables .
 
 Why it matters:
 
-* Instant integration: Using a dataset with a bridge file supports quick connection(s) between a GERS implementation and the source geospatial repositories.
+* Instant integration: Using a dataset with a Bridge File supports quick connection(s) between a GERS implementation and the source geospatial repositories.
 * Transparency: See exactly which geospatial data sources were used used to build the reference data.
 * Flexibility: You can create your own bridge files to share with the community.
 
 ==== GERS Change Log
 
-A GERS change log contains detailed records of all changes made to data referenced in an implementation of the GERS framework. In the OMF implementation, updates to the change log occur between data releases
+A GERS Change Log contains detailed records of all changes made to data referenced in an implementation of the GERS framework. In the OMF implementation, updates to the Change Log occur between data releases
 
-Why a chnage log? The physical world is constantly changing – new buildings are constructed, businesses move, roads are rerouted. The metadata maintained in a GERS change log documents these changes at the ID level: 
+Why a Change Log? The physical world is constantly changing – new buildings are constructed, businesses move, roads are rerouted. The metadata maintained in a GERS change log documents these changes at the ID level: 
 
 * What new entities were added.
 * What entities were removed.
-* What modifications to existing entities.
+* What modifications were made to existing entities.
 
 Why it matters:
 
-* Efficient updates: Only process what’s changed instead of reprocessing entire datasets.
+* Efficient updates: Only process what is changed instead of reprocessing entire datasets.
 * Time savings: If only 200 of your 1,000 matched records have changed, update just those 200.
 * Transparency: Understand exactly how and why data evolved between releases.
 
