@@ -1,0 +1,49 @@
+:Title: Response to public comments for justiifcation of GERS as a community standard
+:titletext: {Title}
+:doctype: Public Comment Responses
+:encoding: utf-8
+:lang: en
+:status: draft
+:committee: technical
+:draft: 1.0
+:external-id: http://www.opengis.net/doc/response/justification/{1.0}
+:docnumber: YY-999
+:received-date: 2026-03-30
+:issued-date: 2026-03-30
+:published-date: 2026-03-30
+:fullname: Carl Reed
+:fullname_2: Amy Rose
+:docsubtype: Response to Comments
+:keywords: ogcdoc, OGC document, GERS, community standard, comment responses
+:submitting-organizations: Organization One; Organization Two
+:mn-document-class: ogc
+:mn-output-extensions: html,doc,pdf
+:local-cache-only:
+:data-uri-image:
+:pdf-uri: ./document.pdf
+:xml-uri: ./document.html
+:doc-uri: ./document.doc
+:edition: 1.0
+
+include::sections/clause_0_front_material.adoc[]
+[big]*i.     Abstract*
+
+This OGC Response to Comments document provides detailed responses to each of the comments received during the https://www.ogc.org/requests/ogc-seeks-public-comment-on-justification-for-the-global-entity-reference-system-gers-framework-and-model-as-an-ogc-community-standard/[GERS jsustification public Comment period].
+
+
+[big]*iii.   Preface*
+
+////
+If the comments were on a vote, start with the following language:
+The Technical Committee vote ended on <date> with <NN> YES votes, <NN> NO votes, and <NN> ABSTAINS. <NN> comments were received on <vote types>
+
+If the comments were from a Public Comment period, start with the following language:
+The Request for Public Comment ended on <date>. <NN> comments were received.
+
+Provide a short summary of the general nature of the comments.
+////
+
+////
+Make sure to complete each included document
+////
+include::responses.adoc[]
