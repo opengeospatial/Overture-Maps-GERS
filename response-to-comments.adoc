@@ -26,6 +26,7 @@
 :edition: 1.0
 
 include::sections/clause_0_front_material.adoc[]
+
 [big]*i.     Abstract*
 
 This OGC Response to Comments document provides detailed responses to each of the comments received during the https://www.ogc.org/requests/ogc-seeks-public-comment-on-justification-for-the-global-entity-reference-system-gers-framework-and-model-as-an-ogc-community-standard/[GERS jsustification public Comment period].
