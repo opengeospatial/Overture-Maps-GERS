@@ -23,3 +23,10 @@ No, a global central assignment authority such as IANA is not required. Any orga
 `The document they are proposing to review sets the Overture Map foundation as the sole source.`
 
 No. Please see comment summary in above <<abstract,Abstract>>
+
+=== Comment
+
+`I do see a potential overlap with the proposed OPN SWG, as stated in a previous comment.`
+
+Possibly although there is a greater potential for synergy. Check out the OGC Member https://regrid.com/blog/introducing-enhanced-land-use-insights-through-the-regrid-id-and-overture-maps-foundations-gers-id-matchst-title-here[REGRID's] use of the GERS framework to enrich and augment their parcel map data holdings. From the REGRID/Overture presse release: We’re excited to announce a new interoperable ID match into our parcel data offering: a direct linkage delivered via a data bridge between our stable, persistent UUID - the Regrid ID and the GERS ID from the Overture Maps Foundation’s Places (Points-of-Interest) dataset.
+
