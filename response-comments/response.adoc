@@ -1,0 +1,21 @@
+== Detailed Responses to Comments
+
+=== Comment
+
+`Is the OGC is proposing the 'GERS Community Standard' to encourage map providers to "be 100% consistent with the existing Overture Maps Foundation reference map"?`
+
+No. See comment in above Abstract
+
+=== Comment
+
+`I thus propose to retitled this proposal as "Select Overture as unique and single UUID for geospatial objets" to make thing clear for everybody.`
+
+Nowhere in the CS Justification Document is there a statement requiring the use of OMF identifiers they have generated. Any organization can, based on their requirements and use cases, decide to implement their own GERS framework or they can choose to work with OMF or they can pursue some hybrid solution.
+
+=== Comment
+
+`The purpose of any developed standard is to provide "unique, open, and interoperable identifiers" (s. 2). This, by necessity, requires a central assignment authority.`
+
+No, a global central assignment authority such as IANA is not required. Any organization implementing the GERS Model/framework could/should be the authority for their organization. 
+
+
