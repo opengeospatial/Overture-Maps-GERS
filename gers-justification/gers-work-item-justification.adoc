@@ -39,13 +39,13 @@
 
 == Introduction
 
-This document provides a justification as to why the OGC Technical Committee (TC) should consider the Global Entity Reference System (GERS) framework as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for TC review and vote to approve the start of a Work Item as the first step in the Community Standard process for this standard.
+This document provides a justification as to why the OGC Technical Committee (TC) should consider the Global Entity Reference System (GERS) model and framework as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for TC review and vote to approve the start of a Work Item as the first step in the Community Standard process for this standard.
 
-The submitters agree to abide by the TC Policies and Procedures and OGC http://www.opengeospatial.org/ogc/policies[Intellectual Property Rights Policy] during the processing of this submission.
+The submitters agree to abide by the OGC TC Policies and Procedures and OGC http://www.opengeospatial.org/ogc/policies[Intellectual Property Rights Policy] during the processing of this submission.
 
 Once approved, the GERS Community Standard Work Item defined by this document is valid for a period of six (6) months from the approval date.
 
-More information on the Overture Maps GERS framework can be found https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
+More information on the source of the GERS Model and Framework Community Standard can be found https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
 
 == Overview of proposed submission
 
@@ -67,17 +67,17 @@ An implementation of the GERS model and framework can change this equation by sp
 
 === What is in the OGC GERS Community Standard?
 
-The following components of the Global Entity Reference System model and framework are addressed in the GERS Community Standard. The source of the content for the draft Community Standard is the July 2025 of the Overture GERS release.
+The following components of the Global Entity Reference System model and framework are addressed in the GERS Community Standard. The source of the content for the draft Community Standard is the January 2026 of the Overture GERS release. Please note that depending on an organization's requirements, developers may implement one or more components of the framework.
 
 - BridgeFiles: Bridge files connect the unique GERS IDs to the entity identifiers used in the source data. These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and the ability to join content from multiple geospatial data repositories.
 - ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
-- GERS ID: The requirements for generating a unique GERS ID. A GERS ID is a unique identifier for real-world geospatial entities across data releases and maintains consistency when the same entity appears in multiple source datasets. 
+- GERS ID: The requirements for generating a unique GERS ID. This ID is a unique identifier for real-world geospatial entities across data releases and maintains consistency when the same entity appears in multiple source datasets. 
 - ReferenceMap: A reference map of all entities that have been assigned a unique GERS ID. The content in the reference map is defined by a set of JSON schema.
 - Registry: A GERS Registry serves as the single source of truth for all entities that are part of an implementation of a Global Entity Reference System.
 - JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet. GeoJSON is used as the default canonical geospatial format. GeoJSON provides a "mental model and language" to express data constructions in the schema. The OGC GERS Community Standard schema reference docs will describe key schema concepts for each theme and definitions and examples for each feature type.
 - Feature Types: The source Overture JSON schemas provide type enumerations for the base themes, such as land cover types. The OGC GERS Community Standard will define how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
 
-Each of the above components are defined using JSON Schema that will clearly and fully documented in the OGC GERS Community Standard. 
+Each of the above components are defined using JSON Schema that will be clearly and fully documented in the OGC GERS Community Standard. 
 
 === What will not be in the Community Standard
 
@@ -109,12 +109,14 @@ Provide a brief paragraph from one or more supporting OGC members that describes
 ////
 
 === Overture Maps Foundation
+
 The Overture Maps Foundation submits and supports GERS as an OGC Community Standard to ensure long-term, open, and vendor-neutral stewardship of the framework. Overture’s goal in advancing GERS through OGC is to encourage broad, global adoption of a consistent reference system that benefits commercial, government, research, and open-source communities.
 
 OGC governance provides a durable home for the logical GERS framework, separate from any single implementation, and allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and transparent change processes. The Foundation affirms that elevating GERS into the OGC Standards Program is essential to establishing a common, interoperable identifier fabric for the world’s geospatial data.
 
 
 === Esri
+
 Esri supports the submission of the Global Entity Reference System (GERS) as an OGC Community Standard because globally unique, open identifiers are foundational to interoperable GIS workflows. Persistent identifiers enable scalable joins, efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as organizations integrate larger and more diverse datasets.
 
 Esri has already integrated GERS identifiers into key workflows to demonstrate the practical value of an open entity reference system, including using GERS IDs to join the Overture Buildings dataset with FEMA’s USA Structures dataset. By using GERS IDs as join keys, Esri achieved high match rates (≈ 98 %) and enabled enriched visualization and analytic workflows in ArcGIS, including enhanced 3D scene layers and thematic mapping. This example highlights how GERS can significantly reduce reliance on complex geoprocessing and spatial conflation, improving efficiency and accuracy in real-world GIS operations. 
