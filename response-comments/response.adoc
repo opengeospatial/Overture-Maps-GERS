@@ -56,3 +56,9 @@ As another example, consider the https://overturemaps.org/case-study/2025/precis
 From one of the supporters of the OMF GERS submission to the OGC: We believe that advancing GERS through the OGC standards process is the right path. The governance, transparency, and technical rigor provided by OGC are essential for broad adoption and long-term stewardship. Elevating GERS to an OGC Community Standard will strengthen the geospatial ecosystem as a whole and provide a foundation that benefits both data producers and consumers.
 
 To be clear, Overture Maps is not "pay-to-play" in the sense of requiring a subscription or purchase fee to access its data. It is an open-data project aimed at providing free, open-source mapping data. Yes, to particpate in the ongoing technical specification of the model and framework, an organization does have to be a member. However, qualified nonprofit organizations and government entities may be eligible for exemption from the Linux Foundation Silver membership requirement. Just about every Standards Development Organization is pay-to-play in some form - even the IETF in the form of meeting regsitration fees.
+
+=== Comment
+
+`I don't see this project being successful without deep integration of the time dimension. Geographic entities reconstruct themselves continuously over time, both spatially and semantically.`
+
+
