@@ -27,7 +27,7 @@ Why it matters:
 
 A draft version of the SWG charter document can be viewed here:
 
-* [GERS Community Standard Justification](https://github.com/opengeospatial/Overture-Maps-GERS/blob/main/gers-justification-charter.adoc)
+* [GERS Community Standard Justification](https://github.com/opengeospatial/Overture-Maps-GERS/blob/main/gers-justification/gers-work-item-justification.adoc)
 
 ## General
 
