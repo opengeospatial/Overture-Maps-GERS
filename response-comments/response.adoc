@@ -4,7 +4,7 @@
 
 `Is the OGC is proposing the 'GERS Community Standard' to encourage map providers to "be 100% consistent with the existing Overture Maps Foundation reference map"?`
 
-No. See comment in above Abstract
+No. Please see comment summary in above Abstract
 
 === Comment
 
@@ -18,4 +18,8 @@ Nowhere in the CS Justification Document is there a statement requiring the use 
 
 No, a global central assignment authority such as IANA is not required. Any organization implementing the GERS Model/framework could/should be the authority for their organization. 
 
+=== Comment
 
+`The document they are proposing to review sets the Overture Map foundation as the sole source.`
+
+No. Please see comment summary in above Abstract
