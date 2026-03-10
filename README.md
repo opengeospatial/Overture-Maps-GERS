@@ -23,11 +23,11 @@ Why it matters:
 * No collisions: Guaranteed uniqueness across all systems
 * Standard tooling: Leverage existing UUID libraries and utilities
 
-## OGC Draft of the Charter
+## OGC Justification Document
 
 A draft version of the SWG charter document can be viewed here:
 
-* [GERS SWG Charter](https://github.com/opengeospatial/Overture-Maps-GERS/blob/main/gers-swg-charter.adoc)
+* [GERS Community Standard Justification](https://github.com/opengeospatial/Overture-Maps-GERS/blob/main/gers-justification-charter.adoc)
 
 ## General
 
@@ -35,6 +35,7 @@ This repository contains files and documents for the OGC Overture GERS Community
 
 * The OGC GERS Community Standard Justification Document
 * Issues for discussion and resolution related to the proposed changes.
+* Response to comments received during the public comment period.
 
 ## Structure
 
