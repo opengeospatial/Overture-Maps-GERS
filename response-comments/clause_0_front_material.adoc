@@ -2,40 +2,23 @@
 [abstract]
 == Abstract
 
-The document provides the GERS COmmunity Standard Justification Document submission team's responses to comments received during the public comment period.
+The document provides the GERS Community Standard Justification Document submission team's responses to comments received during the public comment period. A number of the comments desired clarification on several issues. These are summarized below:
+
+1. Is there a requirement to use the Overture Maps GERS implementation? 
 
 == Preface
 
-<Insert Preface Text here>
+The Global Entity Reference System (GERS) model and framework defines an approach for assigning and cataloguing persistent, unique, open, and interoperable identifiers to real-world geospatial entities to support consistent reference and integration across datasets from multiple providers and jurisdictions. However, the GERS model does not restrict the use of other identifiers such as those already established in deployed geospatial datasets. As part of the OGC Community Standrd Process, a public comment period is required. The GERS Justification document comment period completed March 3, 2026. All comments were submitted and archived in an OGC GitHub repository.
 
 == Security considerations
 
-//If no security considerations have been made for this Standard, use the following text.
-
 No security considerations have been made for this Standard.
-
-////
-If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
-“VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
-Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
-NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
-////
-
-
 
 == Submitters
 
-All questions regarding this submission should be directed to the editor or the submitters:
+All questions regarding this document should be directed to the editor or the editors or the OGC:
 
 |===
 |*Name* |*Affiliation*
 | |
 |===
-
-== Contributors
-
-//This clause is optional.
-
-Additional contributors to this Standard include the following:
-
-Individual name(s), Organization
