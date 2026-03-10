@@ -51,11 +51,11 @@ More information on the Overture Maps GERS framework can be found https://overtu
 
 This section provides an overview of the proposed submission, benefits of implementing GERS and a summary of the GERS Model.
 
-The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation]. The goal of the GERS Model and approach is to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
+The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation]. The goal of the GERS Model and framework is to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
 NOTE: Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. However, the Community Standard does not specify or require using the OMF implementation or any other organization's implementation of components of the GERS fraemework.
 
-The proposed OGC GERS Community Standard will have a limited focus on documenting the GERS logical model for a GERS framework as documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a standard that can be implemented by any organization that will be consistent with the existing Overture Maps Foundation implementation of the GERS framework but "owned" by the implementing organization.
+The proposed OGC GERS Community Standard will have a limited focus on documenting the GERS logical model and associated framework as documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a standard that can be implemented by any organization that will be consistent with the existing Overture Maps Foundation implementation of the GERS framework but "owned" by the implementing organization.
 
 === Overview of the GERS Model and Reference System
 
@@ -63,7 +63,7 @@ Organizations can spend an enormous amount of time and resources on data prepara
 
 Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation tax – a hidden cost that affects everyone working with data obtained from multiple sources.
 
-An implementation of the GERS model can change this equation by specifying a mechanism for defining persistent, unique identifiers for any geospatial entity as well as a supporting infrastructure such as a registry of those IDs and related metadata.
+An implementation of the GERS model and framework can change this equation by specifying a mechanism for defining persistent, unique identifiers for any geospatial entity as well as a supporting infrastructure such as a registry of those IDs and related metadata.
 
 === What is in the OGC GERS Community Standard?
 
@@ -81,17 +81,17 @@ Each of the above components are defined using JSON Schema that will clearly and
 
 === What will not be in the Community Standard
 
-No Overture maintained data, registry content, maps, tools, or workflow processes will be part of the OGC Community Standard.
+No Overture maintained data, registry content, maps, tools, or workflow processes will be part of the OGC Community Standard. There is no depemdency on the Overture Referance Map. However, as the Reference Map is freely and openly available for access and use, organizations may choose to utilize content maintained in the OMF implementation or any other implementation that maintains a reference map.
 
 === Benefits of implementing a GERS Framework
 
-The key benefits of implementing a GERS framework as identified by the Overture Foundation community are as follows.
+The key benefits of implementing a GERS framework and associated unique IDs as identified by the Overture Foundation community are:
 
-- Simplified Data Integration: GERS IDs allow developers to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
-- Reduced Costs: By streamlining data integration, GERS helps reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
-- Increased Interoperability: GERS promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
-- Enhanced Data Richness: With GERS, it becomes easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
-- Innovation in Geospatial: GERS is expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
+- Simplified Data Integration: Unique IDs support the ability for developers and analysts to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
+- Reduced Costs: By streamlining data integration, unique IDs help reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
+- Increased Interoperability: Implementing and/or using a GERS framework promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
+- Enhanced Data Richness: Utilizing and implementation of the GERS framework makes it easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
+- Innovation in Geospatial: Implementations of the GERS framework are expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
 
 === GERS Value Proposition - Summary
 
