@@ -10,8 +10,7 @@ The document provides the GERS Community Standard Justification Document submiss
 4. Does implementing the Community Standard require using the OMF conflation tools? No. How conflation functions are performed and what conflation tools could be used is not part of the Community Standard. Such decisions are up to the organization that wishes to implement/use the GERS model/framework.
 5. Is the GERS Community Standard an implementation standard? No, the GERS Community Standard defines a logical model and framework that can be implemented by any organization, either in its entirety or as components. The OGC has defined numerous conceptual and logical models such as https://www.ogc.org/standards/citygml/[CityGML 3.0] and the https://docs.ogc.org/as/19-014r3/19-014r3.html[Core Tiling Conceptual and Logical Models for 2D Euclidean Space]. Further, there are a number of OGC Community Standards that defined models that can be implemented. These include 3D Tiles and I3S.
 
-
-
+As an example of how and where the GERS Framework could be implemented to enhance or extend an existing standard to meet a broader set of community requirements, consider the OGC CDB 2.0 Standard. The CDB User Community has, for years, asked for better indexing and discovery capabilities as part of a CDB structured datastore. Implementing components for the GERS Framework, such as a Registry, Change Log, and Bridge files, would provide such an enhancement and meet user needs. Further, having a unique ID for every entity in a CDB datastore would 1.) support cross LoD feature joins, 2.) enable easier and searchable change history (versioning), and 3.) enable joins (or links) with non-CDB geospatial repositories - such as the Overture Maps GERS members' map contributions.
 
 == Preface
 
