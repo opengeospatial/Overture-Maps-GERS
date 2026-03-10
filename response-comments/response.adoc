@@ -73,4 +73,12 @@ The GERS Model and Framework provides the ability to implement and use distribut
 
 `However, there may then be an increased need to declare if identifiers are from authoritative governmental registers or not. Especially when identifiers syntactically look the same but come from different systems.`
 
+=== Comment - Stefan Keller
+
+`The GERS ID was developed by Overture Maps Foundation (OMF) to link the geodata of OM stakeholders internally. And the GERS ID seems to fulfill this function well. Now OMF seems to try to make GERS ID the “community standard” with OMF geodata at the centre, and infrastructure operated solely by OMF (not open source!).`
+
+Again, wrong assumptions. Please see previous responses to this stated concern.
+
+=== Comment by OpenStreetMap Foundation Board of Directors via Minh Nguyễn
+
 
