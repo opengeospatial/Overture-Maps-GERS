@@ -1,0 +1,30 @@
+:Title: Response to public comments for justiifcation of GERS as a community standard
+:titletext: {Title}
+:doctype: Public Comment Responses
+:encoding: utf-8
+:lang: en
+:status: draft
+:committee: technical
+:draft: 1.0
+:external-id: http://www.opengis.net/doc/response/justification/{1.0}
+:docnumber: YY-999
+:received-date: 2026-03-30
+:issued-date: 2026-03-30
+:published-date: 2026-03-30
+:fullname: Carl Reed
+:fullname_2: Amy Rose
+:docsubtype: Response to Comments
+:keywords: ogcdoc, OGC document, GERS, community standard, comment responses
+:submitting-organizations: Organization One; Organization Two
+:mn-document-class: ogc
+:mn-output-extensions: html,doc,pdf
+:local-cache-only:
+:data-uri-image:
+:pdf-uri: ./document.pdf
+:xml-uri: ./document.html
+:doc-uri: ./document.doc
+:edition: 1.0
+
+include::sections/clause_0_front_material.adoc[]
+
+include::responses.adoc[]
