@@ -4,9 +4,13 @@
 
 The document provides the GERS Community Standard Justification Document submission team's responses to comments received during the public comment period. A number of the comments desired clarification on several issues. These are summarized below:
 
-1. Is there a requirement to use the Overture Maps GERS implementation? No. The GERS Model and Framework is technology and vendor neutral. There are zero dependencies on using the Overture implementation. Decisions as to whether to work with Overture and use their framework and tools or whether an organization wishes to implement the entire or components of the model/framework internally is based on the organizations requirements for geospatial data integration and sharing.
-2. Is the OGC and OMF requir
+1. Is there a requirement to use the Overture Maps GERS implementation? No. The GERS Model and Framework defined in the Community Standard is technology and vendor neutral. There are zero dependencies on using the Overture implementation. Decisions as to whether to work with Overture and use their framework and tools or whether an organization wishes to implement the entire or components of the model/framework internally is based on the organizations requirements for geospatial data integration and sharing.
+2. Does implementing the Community Standard require the use of OMF tools and workflows? No.
 3. Does the GERS identifier replace existing feature identifiers? No. GERS identifiers are designed to work in collaboration with existing feature identifiers with the goal of enhancing the ability to integrate/join/share geospatial content across disparate geospatial datasets.
+4. Does implementing the Community Standard require using the OMF conflation tools? No. How conflation functions are performed and what conflation tools could be used is not part of the Community Standard. Such decisions are up to the organization that wishes to implement/use the GERS model/framework.
+5. Is the GERS Community Standard an implementation standard? No, the GERS Community Standard defines a logical model and framework that can be implemented by any organization, either in its entirety or as components. The OGC has defined numerous conceptual and logical models such as https://www.ogc.org/standards/citygml/[CityGML 3.0] and the https://docs.ogc.org/as/19-014r3/19-014r3.html[Core Tiling Conceptual and Logical Models for 2D Euclidean Space]. Further, there are a number of OGC Community Standards that defined models that can be implemented. These include 3D Tiles and I3S.
+
+
 
 
 == Preface
