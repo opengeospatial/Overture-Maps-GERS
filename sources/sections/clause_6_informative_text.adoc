@@ -63,7 +63,7 @@ Why it matters:
 
 ==== GERS Bridge File
 
-A Bridge File contains mappings between GERS IDs and identifiers used other (source) geospatial datasets. A Bridge File can be thought of as join tables .
+A Bridge File contains mappings between GERS IDs and identifiers used other (source) geospatial datasets. A Bridge File can be thought of as a join table.
 
 Why it matters:
 
