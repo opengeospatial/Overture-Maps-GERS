@@ -91,6 +91,14 @@ Third, the OSM response states: "The standard should explicitly support the exis
 
 === Comment Foursquare
 
-Issue 1: The Matching Process Is Opaque and Non-Reproducible. Neither the justification nor the draft CS makes any statement regarding how an organization should (or does) feature matching and/or conflation. That is outside the scope of the proposed CS.
+`Issue 1: The Matching Process Is Opaque and Non-Reproducible.` Neither the justification nor the draft CS makes any statement regarding how an organization should (or does) feature matching and/or conflation. That is outside the scope of the proposed CS.
 
-Issue 2: The Standard Does Not Define How New Entities Enter the System.
+`Issue 2: The Standard Does Not Define How New Entities Enter the System.` Such governance issues are beyond the scope of the proposed CS.
+
+`Issue 3: Identifier Persistence Does Not Address Data Quality.` Data quality is out of the scope for the proposed CS. However, the wording referenced in the justification document has been chnaged to ". . . helping to improve data traceability, auditability, and accuracy." 
+
+`Issue 4: The Standard Cannot Be Implemented Independently of Overture.` As defined in the draft CS, the requirements stated in the draft can be implemented independent of the Overture implementation. For example, the OGC CDB SWG is looking to define how to use the model/framework in a CDB datastore. The CDB standard is widely implemented by multiple, independent industry contractors for end-user simulation and mission rehearsal customers. This user base has asked for enhancements to theCDB Standard. In the case of CDB, the reference map is the CDB datastore. As to OGC APIs, an implementation of OGC API - Features could easily implemented for accessing existing reference maps.
+
+
+
+
