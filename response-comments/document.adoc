@@ -25,6 +25,6 @@
 :doc-uri: ./document.doc
 :edition: 1.0
 
-include::sections/clause_0_front_material.adoc[]
+include::clause_0_front_material.adoc[]
 
 include::responses.adoc[]
