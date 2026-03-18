@@ -74,8 +74,9 @@ The following components of the Global Entity Reference System model and framewo
 - GERS ID: The requirements for generating a unique GERS ID. This ID is a unique identifier for real-world geospatial entities across data releases and maintains consistency when the same entity appears in multiple source datasets. 
 - ReferenceMap: A reference map of all geospatial entities that have been assigned a unique GERS ID. The content in the reference map may be defined by a set of JSON schema.
 - Registry: A GERS Registry serves as the single source of truth for all geospatial entities that are part of an implementation of a Global Entity Reference System.
-- JSON Schema: JSON schema is used to define the schema for the components of the GERS framework. GeoJSON maybe used as the default canonical geospatial format. GeoJSON provides a "mental model and language" to express data constructions in the schema. The OGC GERS Community Standard schema reference documents will describe key schema concepts for each theme and definitions and examples for each feature type.
-- Feature Types: The source Overture JSON schemas provide type enumerations for the base themes, such as land cover types. The OGC GERS Community Standard will define how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
+- JSON Schema: JSON schema is used to define the schema for the components of the GERS framework. GeoJSON maybe used as the default canonical geospatial distribution format. GeoJSON provides a "mental model and language" to express data constructions in the schema.
+- Feature theme: A GERS compliant reference map structures geospatial content into themes. The Community Standard provides a default enumeration of themes. The theme enumeration may be used as is, extended or replaced with an enumeration as required by the implementating organization or community. 
+- Feature Types: Each theme consists of one or more feature types. The GERS framework provides default type enumerations, such as land cover types. The theme/type enumeration may be used as is, extended or replaced with an enumeration as required by the implementating organization or community. 
 
 Each of the above components are defined using JSON Schema that will be clearly and fully documented in the OGC GERS Community Standard. 
 
