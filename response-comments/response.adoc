@@ -81,4 +81,16 @@ Again, wrong assumptions. Please see previous responses to this stated concern.
 
 === Comment by OpenStreetMap Foundation Board of Directors via Minh Nguyễn
 
+We appreciate OSM's detailed response to the GERs Community Standard proposal. 
 
+First, OSM (and others) state: Two Different Ideas About Geographic Truth. There is no disagrement with that statement. However, the draft CS and the justification make no statements regarding the physical geospatial content, such as how it is collected, its provenance, or its licensing. While valid issues, these are beyond the scope of the proposed model and framework.
+
+Second, OSM states, "The OGC proposal states that a GERS Registry will be the single source of truth for all entities within an implementation. What the proposal does not address is the consequence for everything Overture chooses not to include." Neither the justification nor the draft CS make such statements. Neither the justification nor the draft CS states that any implementing organization must use the OMF implementation. Obviously, they can if they wish to. Further, yes, a GERS registry is the "source of truth" for GERS IDs any implementation of the framework may generate. However, the GERS IDs do nor replace or supercede any existing IDs used in any existing geospatial data repositories. The GERS IDs and associated registries are meant to enhance existing geospatial data repositories and enhance the ability to integrate and join resources.
+
+Third, the OSM response states: "The standard should explicitly support the existence of multiple independent GERS-compatible registries, not just as a theoretical option but as a real design requirement. As currently written, the proposal is closely tied to the Overture implementation and its governance structures." Totally agree. Will reword the draft CS to make sure that these two requirements are clearly expressed.
+
+=== Comment Foursquare
+
+Issue 1: The Matching Process Is Opaque and Non-Reproducible. Neither the justification nor the draft CS makes any statement regarding how an organization should (or does) feature matching and/or conflation. That is outside the scope of the proposed CS.
+
+Issue 2: The Standard Does Not Define How New Entities Enter the System.
