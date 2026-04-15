@@ -18,7 +18,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <2025-12-28>
 |Approval Date:   <2026-mm-dd>
-|Internal reference number of this OGC(R) document:    25-024
+|Internal reference number of this OGC(R) document:    25-024r1
 |Category: OGC(R) Community Standard Work Item Justification
 |Authors:   Carl Reed, PhD, Amy Rose
 |===
@@ -86,22 +86,14 @@ No Overture maintained data, registry content, maps, tools, or workflow processe
 
 === Benefits of implementing a GERS Framework
 
-The key benefits of implementing a GERS framework and associated unique IDs as identified by the Overture Foundation community are:
+As identified by the current GERS user and imlpementation community, the key benefits of implementing a GERS framework and associated unique IDs are:
 
-- Simplified Data Integration: Unique IDs support the ability for developers and analysts to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
-- Reduced Costs: By streamlining data integration, unique IDs help reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
+- Simplified Data Integration: Unique IDs and the associated Bridge and Registry resources support the ability for developers and analysts to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
+- Reduced Costs: By streamlining data integration, unique IDs and the supporting infrastructure help reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
 - Increased Interoperability: Implementing and/or using a GERS framework promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
 - Enhanced Data Richness: Utilizing and implementation of the GERS framework makes it easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
-- Innovation in Geospatial: Implementations of the GERS framework are expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
-
-=== GERS Value Proposition - Summary
-
-Key value points include the following.
-
-- Data integration: Simplifies the exchange and integration of map data by using a universal system of consistent identifiers (GERS IDs) for geospatial entities.
-- Reliability: Provides persistent IDs and changelogs for geospatial entities, helping to improve data traceability, auditability, and accuracy.
-- Accessibility: As a free and open backbone, the GERS framework provides an open, no-cost path to generating, maintainng, and using global identifiers.
-- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training, operating, and specifying quality metrics for AI enabled workflows. 
+- Innovation: Implementations of the GERS framework are expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
+- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training, operating, and specifying quality metrics for AI enabled workflows.
 
 == Motivation of supporting OGC Members for this submission
 
@@ -113,7 +105,7 @@ Provide a brief paragraph from one or more supporting OGC members that describes
 
 The Overture Maps Foundation submits and supports GERS as an OGC Community Standard to ensure long-term, open, and vendor-neutral stewardship of the framework. Overture’s goal in advancing GERS through OGC is to encourage broad, global adoption of a consistent reference system that benefits commercial, government, research, and open-source communities.
 
-OGC governance provides a durable home for the logical GERS framework, separate from any single implementation, and allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and transparent change processes. The Foundation affirms that elevating GERS into the OGC Standards Program is essential to establishing a common, interoperable identifier fabric for the world’s geospatial data.
+OGC governance provides a durable home for the logical GERS model and framework, separate from any single implementation, and allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and transparent change processes. The Overture Maps Foundation affirms that elevating the GERS model and framework into the OGC Standards Program enhances the ability to establish a common, interoperable identifier fabric for the world’s geospatial data.
 
 === Esri
 
