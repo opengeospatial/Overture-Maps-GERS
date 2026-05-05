@@ -5,7 +5,8 @@
 ====
 [%metadata]
 identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-general
-subject:: GERS General requirements
+subject:: GERS General requirements and recommendations
+recommendation:: /rec/schema-recommended
 requirement:: /req/gers-date-time
 requirement:: /req/gers-general-bbox
 ====
