@@ -1,0 +1,9 @@
+
+[requirement]
+
+====
+[%metadata]
+name:: Registry File schema
+identifier:: req/gers-registry-schema
+part:: Every RegistryFile _SHALL_ be implemented using the schema defined in table <TBD>
+====
