@@ -18,7 +18,7 @@ The model of the GERS framework is now described at a high level. Specific detai
 
 === GERS Release Concept
 
-A key concept for any operational implementation of the GERS Framework/Model is `release`. A `release` contains information on updates, such as additions and/or changes, to the geospatial data content referenced in a GERS implementation. A `release` is conceptually similar to a checkpoint in database technology. A checkpoint is a point in time in the log when a known and consistent state for the database system is established. In the case of a GERS implementation, the checkpoint is the content of the Registry (and Bridge, ChangeLog, and ReferenceMap datasets) as published at a given date. Periodically, the Registry (and other GERS files) are updated with changed or added content. Such updates could occur daily, weekly, monthly or whatever time period is deemed appropriate. When the Registry update occurs, this becomes the new `release` (checkpoint). In a GERS implementation, each `release` has a unique version number.
+A key concept for any operational implementation of the GERS Framework/Model is `release`. A `release` contains information on updates, such as additions and/or changes, to the geospatial data content referenced in an implementation of the GERS framework. A `release` is conceptually similar to a checkpoint in database technology. A checkpoint is a point in time in the log when a known and consistent state for the database system is established. In the case of a GERS implementation, the checkpoint is the content of the Registry (and Bridge, ChangeLog, and ReferenceMap datasets) as published at a given date. Periodically, the Registry (and other GERS files) are updated with changed or added content. Such updates could occur daily, weekly, monthly or whatever time period is deemed appropriate. When the Registry update occurs, this becomes the new `release` (checkpoint). In a GERS implementation, each `release` has a unique version number.
 
 === The GERS Model - High Level
 
@@ -47,7 +47,7 @@ From RFC 9562: One area in which UUIDs have gained popularity is database keys. 
 
 ==== GERS Registry
 
-A GERS registry is a comprehensive database documenting every GERS ID created in a given GERS implementation. The Registry maintains:
+A GERS Registry is a comprehensive database documenting every GERS ID created in a given GERS implementation. The Registry maintains:
 
 * Complete lifecycle information for every ID.
 * Current location data for active entities.
@@ -95,15 +95,15 @@ A GERS reference map contains feature data that connect GERS IDs to real-world e
 
 Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the roads in a navigation route. Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature geometry and some metadata, content contained in the reference map is not a duplication of the source data. GERS IDs reference entities in a global, open, free, and accessible manner. There is no risk of lock-in because any ID system can also be matched with a GERS ID.
 
-=== GERS Themes and types
+=== Themes and types
 
 Geospatial data registered in an implementation of the GERS framework are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GERS schema, such as for BridgeFiles, and in many query instances. Further, in some cases `type` can also have `sub-types`. 
 
 NOTE: While the current GERS implementations use defined enumerations for theme and type, these enumerations can be extended and/or replaced with other enumerations.
 
-==== GERS Themes
+==== Themes
 
-The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in a GERS implementation.  Currently, existing GERS implementations reference/include the following themes: 
+The model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in an implementation of the GERS framework.  Currently, existing implementations reference/include the following themes: 
 
 |===
 |*Theme*    |	*Description*
@@ -117,7 +117,7 @@ The GERS model has a concept `theme`. In the GERS model, a `theme` is a set of r
 
 ==== GERS Theme (feature) Types
 
-Each feature instance in a theme can have a feature `type` as shown in the following table. Please note that these are recommended types. There is no requirement to use the types and associated schema referenced via the links below. 
+Each feature instance in a theme can have a feature `type` as shown in the following table. Please note that these are recommended types. There is no requirement to use the types and associated schema referenced via the links below.
 
 |===
 |*Theme*    |	*Feature types* | Additional information on subtypes, properties, classes etc.
@@ -131,4 +131,5 @@ Each feature instance in a theme can have a feature `type` as shown in the follo
 
 Schema for each of the current feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
 
-NOTE: The above theme and type  infromation is the current (January 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme.
+NOTE: The above theme and type  information is the current (April 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations of the GERS framework, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme. Whether the existing theme and type enumeration is used - or not - any implementation of the framework MUST have a theme and theme type enumeration. This is a requirement based on the use of this information in various schema.
+
