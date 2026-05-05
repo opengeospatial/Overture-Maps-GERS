@@ -34,7 +34,7 @@ include::../requirements/requirements_package-gers-general.adoc[]
 
 The following recommendations for schema conventions are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026 and later) implementation instances.
 
-include::../recommendations/REC001-schema-recommended.adoc[]
+include::../recommendations/schema-recommended.adoc[]
 
 [[req-gers-datetime-7]]
 
@@ -42,7 +42,7 @@ include::../recommendations/REC001-schema-recommended.adoc[]
 
 The following is the requirement for expressing date and time in any GERS implementation, regardless of theme, type, or schema. This requirement is consistent with various OGC and ISO standards as well as with STAC.
 
-include::../requirements/REQ001-gers-general-datetime.adoc[]
+include::../requirements/gers-general-datetime.adoc[]
 
 An example of  a datetime string that complies with REQ001 is: `2024-10-15T00:00:00.000Z`
 
@@ -52,7 +52,7 @@ An example of  a datetime string that complies with REQ001 is: `2024-10-15T00:00
 
 The following requirement defines how to express a bounding box in the CRS of an impementation of the GERS framework. 
 
-include::../requirements/REQ002-gers-general-bbox.adoc[]
+include::../requirements/gers-general-bbox.adoc[]
 
 An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795, 'ymax': 26.619843}
 
@@ -64,7 +64,7 @@ The following defines the requirements for expressing geometry in an implementat
 of the GERS framework are compliant with ISO 19107: Spatial Schema and the OGC Simple Features Standard. The enumeration of geometry types currently used
 in implementations of the GERS framework: geometry_collection, line_string, multi_line_string, multi_point, multi_polygon, point, polygon.
 
-include::../requirements/REQ003-gers-geometry.adoc[]
+include::../requirements/gers-geometry.adoc[]
 
 For those not familiar with geometry types, the following is provided.
 
@@ -85,7 +85,7 @@ The following types are collections of the simpler geometries:
 
 The following requirement specified how country codes are provided.
 
-include::../requirements/REQ004-gers-country-code.adoc[]
+include::../requirements/gers-country-code.adoc[]
 
 [[req-class-crs-7]]
 
@@ -101,7 +101,7 @@ include::../requirements/requirements_class-gers-crs.adoc[]
 
 The following requirement states that any CRS metadata used in a GERS implementation be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
 
-include::../requirements/REQ004-crs-topic2.adoc[]
+include::../requirements/crs-topic2.adoc[]
 
 ==== Requirement Use same CRS Throughout
 
