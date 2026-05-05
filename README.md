@@ -1,8 +1,12 @@
 # Overture Maps/OGC Global Entity Reference System (GERS) Draft Standard
 
-## What is GERS
+## The standardization problem
 
-The Global Entity Reference System (GERS) is a framework defined by the [Overture Maps Foundation](https://overturemaps.org) to provide a frameowrk for generating, cateloguing, and leveraging the use of unique, persistent identifiers (GERS IDs) for real-world entities such as buildings, places, and roads in their open map data. These IDs and addociated framework facilitate data interoperability and sharing by enabling different datasets to be easily connected and enriched using a common reference.
+Numerous datasets/resources with geospatial content reference the same real-world entities but use their own conventions, identifiers, and vocabulary, making them difficult to merge and combine.
+
+## What is the GERS framework?
+
+The Global Entity Reference System (GERS) is a framework defined by the [Overture Maps Foundation](https://overturemaps.org) to provide a model for generating, cateloguing, and leveraging the use of unique, persistent identifiers (GERS IDs) for real-world entities such as buildings, places, and roads in their open map data. These IDs and addociated framework facilitate data interoperability and sharing by enabling different datasets to be easily connected and enriched using a common reference.
 
 ### Who supports GERS?
 
