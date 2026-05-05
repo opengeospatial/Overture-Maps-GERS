@@ -1,4 +1,4 @@
-= OGC Global Entity Reference System (GERS) Community Standard
+= OGC Global Entity Reference System (GERS) Framework Community Standard
 :doctype: draft OGC Community Standard
 :docsubtype: model
 :language: en
