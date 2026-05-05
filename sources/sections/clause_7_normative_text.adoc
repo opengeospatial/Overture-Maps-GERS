@@ -26,19 +26,15 @@ NOTE: A complete implementation of the GERS framework requires implementation of
 
 The following requirements class and recommendations specify "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. Examples include the specification of language for properties of a name, specification of a bounding box, and time.
 
-include::../requirements/requirements_class-gers-general.adoc[]
+include::../requirements/requirements_package-gers-general.adoc[]
 
 [[rec-gers-schema-7]]
 
 ==== Recommended Schema Conventions
 
-The following recommendations for schema conventions are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026) implementation instances.
+The following recommendations for schema conventions are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026 and later) implementation instances.
 
-include::../recommendations/REC001-schema.adoc[]
-
-==== Names recommendation
-
-https://docs.overturemaps.org/schema/concepts/names/
+include::../recommendations/REC001-schema-recommended.adoc[]
 
 [[req-gers-datetime-7]]
 
@@ -66,7 +62,11 @@ An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795
 
 The following defines the requirements for expressing geometry in an implementation of the GERS framework including schemas and distributions.
 
+==== Country Codes
 
+The following requirement specified how country codes are provided.
+
+include::../requirements/REQ004-gers-country-code.adoc[]
 
 [[req-class-crs-7]]
 
