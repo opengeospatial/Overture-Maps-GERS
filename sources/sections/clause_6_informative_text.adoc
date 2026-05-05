@@ -93,7 +93,11 @@ Examples of using and accessing change logs are available on the OMF web site. U
 
 A GERS reference map contains feature data that connect GERS IDs to real-world entities. 
 
-Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the roads in a navigation route. Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature geometry and some metadata, content contained in the reference map is not a duplication of the source data. GERS IDs reference entities in a global, open, free, and accessible manner. There is no risk of lock-in because any ID system can also be matched with a GERS ID.
+Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. 
+Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the 
+roads in a navigation route. Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature 
+geometry and some metadata, content contained in the reference map does not need to be a complete replication of the source data. There is a minimum set of content 
+that is required and hence replicated.  
 
 === Themes and types
 
