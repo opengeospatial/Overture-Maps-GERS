@@ -1,5 +1,3 @@
-[req-material-class-optional]
-
 [requirement]
 
 ====
