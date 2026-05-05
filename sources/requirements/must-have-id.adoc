@@ -1,0 +1,9 @@
+
+[requirement]
+
+====
+[%metadata]
+name:: Every entity has a unique ID
+identifier:: req/must-have-id
+part:: Every entity in an implementation compliant with the GERS framework _SHALL_ have a unique ID 
+====
