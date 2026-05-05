@@ -110,10 +110,15 @@ The model has a concept `theme`. In the GERS model, a `theme` is a set of relate
 |Addresses	| A feature type that represents a physical place specified by its street number, street name, unit, address_level(s), postalcode and/or country. An address also has a Point geometry, which provides an approximate location of the position most commonly associated with the feature.
 |Base	      | Provides the land, water, infrastructure, and bathymetry features that are necessary to render a complete basemap.
 |Buildings	| Describes human-made structures with roofs or interior spaces that are permanently or semi-permanently in one place
-|Divisions	| A feature type that represents an official or non-official organization of people such as country, region, province, city, neighborhood, and so on as seen from a given political perspective. A division feature instance has a Point geometry which gives an approximate location of the position most commonly associated with the division feature.
+|Divisions	| A feature type that represents an official or non-official organization of people such as country, region, province, city, 
+neighborhood, and so on as seen from a given political perspective. A division feature instance has a Point geometry which gives 
+an approximate location of the position most commonly associated with the division feature.
 |Places	    | Point representations of real-world entities such as schools, businesses, hospitals, religious organizations, landmarks, mountain peaks, and more.
 |Transportation	| Describes the infrastructure and conventions of how people and objects travel around the world.
 |===
+
+This is not an inclusive enumeration of themes. The enumeration can be extended to add additional themes. However, if an implementation 
+of the framework is to be consistent with other existing implementations, than this theme enumeration should be considered.
 
 ==== GERS Theme (feature) Types
 
