@@ -66,7 +66,7 @@ in implementations of the GERS framework: geometry_collection, line_string, mult
 
 include::../requirements/REQ003-gers-geometry.adoc[]
 
-For those not familiar with geoemtry types, the following is provided.
+For those not familiar with geometry types, the following is provided.
 
 The common primary 0, 1, and 2-dimensional objects used in geopatial applications are: 
 
