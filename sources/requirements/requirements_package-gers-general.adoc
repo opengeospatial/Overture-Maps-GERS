@@ -9,6 +9,7 @@ subject:: GERS General requirements and recommendations
 recommendation:: /rec/schema-recommended
 requirement:: /req/gers-date-time
 requirement:: /req/gers-general-bbox
+requirement:: /req/ger-geometry-types
 requirement:: /req/gers-country-code
 ====
 
