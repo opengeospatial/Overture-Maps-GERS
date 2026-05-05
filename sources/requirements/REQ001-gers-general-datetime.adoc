@@ -1,6 +1,6 @@
 [[req-gers-datetime]]
 
-requirement
+[requirement]
 
 ====
 [%metadata]
