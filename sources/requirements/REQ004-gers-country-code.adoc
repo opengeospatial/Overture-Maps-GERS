@@ -1,0 +1,10 @@
+[req-gers-country-code]
+
+[requirement]
+
+====
+[%metadata]
+name:: Country code specification 
+identifier:: req/gers-country-code
+part:: Only ISO 3166-1 alpha-2 country codes _SHALL_ be used in any implementation. (CountryCodeAlpha2Constraint, pattern: ^[A-Z]{2}$)
+==== 
