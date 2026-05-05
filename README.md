@@ -6,7 +6,7 @@ The Global Entity Reference System (GERS) is a framework created by the http://h
 
 ### Who supports GERS?
 
-GERS is supported by a diverse community of over 40 organizations, including Amazon Web Services (AWS), Meta, Microsoft, TomTom, and Esri. These companies have committed to and depend on Overture data. Overture powers the maps used by billions of people across Meta’s, Microsoft’s, TomTom’s, and Esri’s platforms. Many of the Overture Maps supporting organizations are also OGC Member organization.
+GERS is supported by a diverse community of over 40 organizations, including Amazon Web Services (AWS), Meta, Microsoft, TomTom, and Esri. These companies have committed to and depend on Overture data. Overture powers the maps used by billions of people across Meta’s, Microsoft’s, TomTom’s, and Esri’s platforms. Many of the Overture Maps supporting organizations are also OGC Member organizations.
 
 ## What does a GERS ID look like?
 
