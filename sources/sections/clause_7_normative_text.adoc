@@ -81,6 +81,8 @@ The following types are collections of the simpler geometries:
 - MultiSurface / MultiPolygon: A collection of Polygons.
 - GeometryCollection: A heterogeneous collection of any geometry type.
 
+[req-gers-country-code]
+
 ==== Country Codes
 
 The following requirement specified how country codes are provided.
@@ -107,13 +109,13 @@ include::../requirements/crs-topic2.adoc[]
 
 The following requirement states that any implementation of the GERS Framework compliant with this Community Standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
 
-include::../requirements/REQ005-crs-storage.adoc[]
+include::../requirements/crs-storage.adoc[]
 
 ==== Requirement Valid CRS
 
 The following requirement states that only non-projected coordinate reference systems are used in an implementation of the GERS framework. The are several reasons for this requirement, one of which is the possible use of global tiled storage systems for a GERS reference map.
 
-include::../requirements/REQ006-crs-valid.adoc[]
+include::../requirements/crs-valid.adoc[]
 
 ==== Recommendation 2
 
@@ -136,13 +138,13 @@ include::../requirements/requirements_class-gers-id.adoc[]
 
 The following requirement states that every entity in a GER compliant implementation has a unique ID
 
-include::../requirements/REQ007-must-have-id.adoc[]
+include::../requirements/must-have-id.adoc[]
 
 ==== ID is generated using UUID v4
 
 The following requirement states that a GERS ID is generated using the rules as defined in UUID v4
 
-include::../requirements/REQ008-id-uuid.adoc[]
+include::../requirements/id-is-uuid.adoc[]
 
 [[req-class-bridge-7]]
 
@@ -156,11 +158,11 @@ include::../requirements/requirements-class-gers-bridge.adoc[]
 
 ==== Structure of the BridgeFile name
 
-include::../requirements/REQ009-gers-bridgefile-name.adoc[]
+include::../requirements/gers-bridgefile-name.adoc[]
 
 ==== BridgeFile Schema Content
 
-include::../requirements/REQ010-gers-bridgefile-schema.adoc[]
+include::../requirements/gers-bridgefile-schema.adoc[]
 
 The bridge file schema consists of the following columns:
 
@@ -196,13 +198,13 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 
 The following requirement defines the physical name for a GERS registry file. Please note that this name can be included in a longer URI/URL path to the actual location of the registry file. 
 
-include::../requirements/REQ011-gers-registry-name.adoc[]
+include::../requirements/gers-registry-name.adoc[]
 
 ==== Schema for GERS registry file
 
 The following requirement states that using the registry schema defined in Table xyz below is mandatory.
 
-include::../requirements/REQ012-gers-registry-schema.adoc[]
+include::../requirements/gers-registry-schema.adoc[]
 
 |===
 |Column	| Data type	| Description | DCAT property
@@ -219,7 +221,7 @@ include::../requirements/REQ012-gers-registry-schema.adoc[]
 
 The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
 
-include::../requirements/REQ013-gers-registry-updates.adoc[]
+include::../requirements/gers-registry-updates.adoc[]
 
 NOTE: The Registry can be used to verify that an entity exists in an implmentation of a GERS framework, track the history of that entity, and find new entities that have been added.
 
