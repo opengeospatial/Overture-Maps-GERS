@@ -1,4 +1,3 @@
-[req-gers-registry-updates]
 
 [requirement]
 
