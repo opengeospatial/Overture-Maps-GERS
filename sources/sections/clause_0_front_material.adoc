@@ -4,11 +4,11 @@
 
 The OGC Global Entity Reference System Community Standard (GERS) framework defines:
 
-. A model and system for exchanging and enriching geospatial data.
-. A services architecture comprised of components that can be implemented as an operational GERS frameowk.
-. The schema to structure geospatial data into a datastore that includes the unique GERS IDs and that is consistent with other OGC/ISO Standards.
+. A model and system for enhancing the ability to exchange, join, and enrich geospatial data.
+. A services architecture comprised of components that can be implemented as an operational GERS framework.
+. Schema to structure geospatial data into a datastore that includes the unique GERS IDs and that is consistent with other OGC/ISO Standards.
 
-In summary, GERS defines/provides a universal framework for structuring and matching map data across different geospatial technologies and systems.
+In summary, this Community Standard defines/provides a universal framework for structuring and matching map data across different geospatial technologies and systems.
 
 Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
 
@@ -24,6 +24,8 @@ geographic entities over time can be captured and persisted. This system aims to
 datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
 The current implementations of GERS support a limited set of foundation data themes: Addresses, Buildings, Base (Layers), Divisions, Places, and Transportation. Each of these foundation themes also have an enumeration of subtypes. For example, the Base Layer theme enumeration of subtypes includes bathymetry, infrastructure, land, land cover, landuse, and water. These enumerations can be extended.
+
+NOTE: This Community Standard does not specify what technology should be used to implement the framework. Further, this Community Standard states no requirements regarding the use of existing GERS framework implementations.
 
 == Security considerations
 
