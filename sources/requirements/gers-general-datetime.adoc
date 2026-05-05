@@ -1,7 +1,5 @@
-[[req-gers-datetime]]
 
 [requirement]
-
 ====
 [%metadata]
 name:: GERS DateTime specification. 
