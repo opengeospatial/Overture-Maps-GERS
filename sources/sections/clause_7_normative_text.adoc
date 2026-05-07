@@ -16,6 +16,7 @@ The following table lists the mandatory and optional requirements classes for an
 | <<req-class-bridge-7,requirements_class-gers-bridge>> | Requirements for Bridge Files              | Mandatory
 | <<req-class-registry-7,requirements_class-gers-registry>> | Requirements for the Registry File       | Optional
 | <<req-class-changelog-7,requirements-class-gers-changelog.adoc>> | Requirements for ChangeLog File | optional
+| <<req-class-refmap-7,requirements-class-gers-refmap.adoc>> | Requirements for Referance Map | optional
 |===
 
 NOTE: A complete implementation of the GERS framework requires implementation of all of the above requirements classes
