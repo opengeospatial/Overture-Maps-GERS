@@ -142,3 +142,20 @@ Schema for each of the current feature types can be found in the Overture Maps F
 
 NOTE: The above theme and type  information is the current (April 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations of the GERS framework, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme. Whether the existing theme and type enumeration is used - or not - any implementation of the framework MUST have a theme and theme type enumeration. This is a requirement based on the use of this information in various schema.
 
+==== Geometry as used in the GERS Framework.
+
+For those not familiar with geometry types, the following information is provided. These geometry types are consistent with the OGC Simple Features Definitions as well as those
+used in GeoJSON. The normative reference for these geometry types is https://www.iso.org/standard/66175.html[ ISO 19107:2019 Geographic information — Spatial schema]
+
+The common primary 0, 1, and 2-dimensional objects used in the OGC, IETF, ISO, and other international stadndards and applications are: 
+
+- Point (0-dimensional): A single location in coordinate space (_x,y_ or _x,y,z_).
+- Curve (1-dimensional): A 1-dimensional geometric object, usually a LineString (a sequence of linear segments connecting points).
+- Surface (2-dimensional): A 2-dimensional object, typically a Polygon (defined by one outer ring and zero or more inner rings/holes). 
+
+The following types are collections of the simpler geometries: 
+
+- MultiPoint: A collection of individual points.
+- MultiCurve / MultiLineString: A collection of LineStrings.
+- MultiSurface / MultiPolygon: A collection of Polygons.
+- GeometryCollection: A heterogeneous collection of any geometry type.
