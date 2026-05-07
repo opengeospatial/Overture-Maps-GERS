@@ -25,7 +25,10 @@ NOTE: A complete implementation of the GERS framework requires implementation of
 
 === General requirements and recommendations
 
-The following requirements class and recommendations specify "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. Examples include the specification of language for properties of a name, specification of a bounding box, and time.
+The following requirements package and recommendations specify "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. 
+Examples include the specification of language for properties of a name, specification of a bounding box, and time.
+
+NOTE: A requirements package consists of one or more requirements classes and associated recommendations and permissions.
 
 include::../requirements/requirements_package-gers-general.adoc[]
 
@@ -66,21 +69,6 @@ of the GERS framework are compliant with ISO 19107: Spatial Schema and the OGC S
 in implementations of the GERS framework: geometry_collection, line_string, multi_line_string, multi_point, multi_polygon, point, polygon.
 
 include::../requirements/gers-geometry.adoc[]
-
-For those not familiar with geometry types, the following is provided.
-
-The common primary 0, 1, and 2-dimensional objects used in geopatial applications are: 
-
-- Point (0-dimensional): A single location in coordinate space (_x,y_ or _x,y,z_).
-- Curve (1-dimensional): A 1-dimensional geometric object, usually a LineString (a sequence of linear segments connecting points).
-- Surface (2-dimensional): A 2-dimensional object, typically a Polygon (defined by one outer ring and zero or more inner rings/holes). 
-
-The following types are collections of the simpler geometries: 
-
-- MultiPoint: A collection of individual points.
-- MultiCurve / MultiLineString: A collection of LineStrings.
-- MultiSurface / MultiPolygon: A collection of Polygons.
-- GeometryCollection: A heterogeneous collection of any geometry type.
 
 [req-gers-country-code]
 
