@@ -1,0 +1,9 @@
+[requirement]
+
+====
+[%metadata]
+name:: Geometry types
+identifier:: req/gers-geometry-types
+part:: The following are the mininum geometry types that _SHALL_ be supported in an implementation of the GERS framework
+guidance:: These geometry types and model are fully defined in the OGC/ISO Simple Features Standard[https://docs.ogc.org/is/06-103r4/06-103r4.pdf]
+====
