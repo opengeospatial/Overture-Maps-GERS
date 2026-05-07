@@ -4,6 +4,7 @@
 [%metadata]
 name:: Geometry types
 identifier:: req/gers-geometry-types
-part:: The following are the mininum geometry types that _SHALL_ be supported in an implementation of the GERS framework
+part:: The following are the mininum geometry types that _SHALL_ be supported in an implementation of the GERS framework:
+geometry_collection, line_string, multi_line_string, multi_point, multi_polygon, point, polygon.
 guidance:: These geometry types and model are fully defined in the https://docs.ogc.org/is/06-103r4/06-103r4.pdf[OGC/ISO Simple Features Standard]
 ====
