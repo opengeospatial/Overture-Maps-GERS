@@ -6,5 +6,6 @@
 name:: Only non-projected CRS are valid
 identifier:: req/crs-valid
 part:: Only non-projected (geodetic or geographic) coordinate reference systems _SHALL_ be used. 
+part:: If a CRS is not specified, then https://epsg.org/crs_4326/WGS-84.html[EPSG 4326] _SHALL be assumed as the default.
 guidance:: In simple terms: A geodetic/geographic coordinate reference system defines where the data is located on the earth. A projected coordinate "tells" how data is to be drawn on a flat surface, such as on a paper map or a computer screen. 
 ====
