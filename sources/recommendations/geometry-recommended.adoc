@@ -1,0 +1,9 @@
+[recommendation]
+====
+[%metadata]
+identifier:: /rec/geometry-recommended
+note:: The following recommendations are provided for implementation of the GER-ID framework in which the organization wishes to be consistent with the existing Overture implementation.
+part:: The following labels _SHOULD_ be used for identifying a geometry type: Point, MultiPoint, LineString, MultiLineString, Polygon, MultiPolygon, GeometryCollection.
+part:: There _SHOULD NOT_ be more than three elements defining a coordinate (position)
+part:: In the absence of height values, applications sensitive to height or depth _SHOULD_ interpret positions as being at local ground or sea level.
+====
