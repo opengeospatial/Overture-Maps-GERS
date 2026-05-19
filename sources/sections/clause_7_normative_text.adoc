@@ -1,10 +1,10 @@
 [obligation=normative]
 
-== GERS Framework Requirements Classes
+== GERS Framework Requirements Classes and Requirements Packages
 
 This Clause defines requirements classes with a standardization target of an implementation of the GERS Model and framework. Specifically, requirements defined in this clause are focused on the elements of the model required or recommended to implement a GERS framework consistent with the existing GERS implementation community. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
 
-=== Summary of GERS Framework Requirements Classes
+=== Summary of GERS Framework Requirements Classes/Packages
 
 The following table lists the mandatory and optional requirements classes for an implementation of the GERS Framework.
 
@@ -62,13 +62,19 @@ An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795
 
 [[req-gers-geometry-7]]
 
-==== Geometry requirement
+==== Geometry requirement and recommendations
 
 The following defines the requirements for expressing geometry in an implementation of the GERS framework including schemas and distributions. Geometry types used in an implementation 
-of the GERS framework are compliant with ISO 19107: Spatial Schema and the OGC Simple Features Standard. The enumeration of geometry types currently used
+of the GERS framework are compliant with ISO 19107: Spatial Schema, the OGC Simple Features Standard, and formats such as GeoJSON. The enumeration of geometry types currently used
 in implementations of the GERS framework: geometry_collection, line_string, multi_line_string, multi_point, multi_polygon, point, polygon.
 
 include::../requirements/gers-geometry.adoc[]
+
+[[rec-gers-geometry-7]]
+
+The following recommendation provides guidance on how a new implementation of the framework would be consistent (harmonized) with the OMF implementation. 
+
+include::../recommendations/geometry-recommended.adoc[]
 
 [req-gers-country-code]
 
