@@ -220,7 +220,7 @@ include::../requirements/gers-registry-updates.adoc[]
 
 NOTE: The Registry can be used to verify that an entity exists in an implmentation of a GERS framework, track the history of that entity, and find new entities that have been added.
 
-==== Example query of a GERS Compliant Registry (From Overture)
+==== Example query of a GERS Compliant Registry (Example from Overture)
 
 You can use the GERS Registry to verify that an entity exists in the GERS framework data, track the history of that entity, and find new entities that have been added. For example, a user might ask, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS compliant datastore?" The user can query the Registry to find out:
 
@@ -243,10 +243,6 @@ NOTE: The concept of `release` is the same as `version` in the OGC CDB 2.0 Stand
 
 The data contained in a `changelog` is made available in some file or database system and is partitioned by theme, type, and change_type and sorted geospatially with a unique index on id. The `changelog` files are available at a physical location as defined in a given implementation of the `changelog` resource.
 
-Diagrammtically, the `changelog` structure can be abstracted as follows.
-
-image:../images/changelog_tree_structure.png[600]
-
 The following is the ChangeLog Requirements Class
 
 include::../requirements/requirements-class-gers-changelog.adoc[]
@@ -259,10 +255,10 @@ include::../requirements/gers-changelog-name.adoc[]
 
 Examples might be:
 
-- For Amazon S3 bucket: s3://<ger-datastore-name>/changelog/<RELEASE> where:
--- ger-datastore-name is the name/location of the content
--- release is the latest release date, such as 2026-01-21.0/
-- In a CDB 2.0 datastore, the path could be /global_metadata/changelog/2026-01-21.0
+. For Amazon S3 bucket: s3://<ger-datastore-name>/changelog/<RELEASE> where:
+.. ger-datastore-name is the name/location of the content
+.. release is the latest release date, such as 2026-01-21.0/
+. In a CDB 2.0 datastore, the path could be /global_metadata/changelog/2026-01-21.0
 
 ==== ChangeLog Schema
 
@@ -276,4 +272,13 @@ The change_type property in the changelog includes these types of changes to the
 
 ==== ChangeLog Release Dataset Structure
 
-part:: In the path definition, the property `release data` _SHALL_ be followed by the theme value.
+Diagrammtically, the `changelog` structure can be abstracted as follows.
+
+image:../images/changelog_tree_structure.png[ChangeLog Structure, 640, 400]
+
+This above structure is implementation independent. An implementation could be a Unix or Windows file system. An implementation could be an S3 set of prefixes to organize ChangeLog storage. A prefix is a logical grouping of the objects in a bucket. Or an implementation could be one or more normalized relational tables. 
+
+[[req-class-refmap-7]]
+=== Requirement Class Reference Map (Optional)
+
+This section defines the requirements for the optional GER-ID reference map.
