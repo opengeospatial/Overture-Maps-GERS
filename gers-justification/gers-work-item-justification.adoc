@@ -47,13 +47,16 @@ The submitters agree to abide by the OGC TC Policies and Procedures and OGC http
 
 Once approved, the GER-ID Community Standard Work Item defined by this document is valid for a period of six (6) months from the approval date.
 
-More information on the source of the GERS Model and Framework Community Standard can be found https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
+The source of the content for the proposed Community Standard can be found at https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
+
+NOTE:: The proposed GER-ID Community Standard DOES NOT include requirements for data, tools, processes, or licensing as defined in the original Overture Maps implementation of the framework. There are NO dependencies on any existing implementations of the framework. 
 
 == Overview of proposed submission
 
-This section provides an overview of the proposed submission, benefits of implementing GERS and a summary of the GERS Model.
+This section provides an overview of the proposed submission, benefits of implementing GER-ID framework and a summary of the GER-ID Model.
 
-The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation]. The goal of the GERS Model and framework is to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
+The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation]. The goal of the GERS Model 
+and framework is to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
 NOTE: Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. However, the Community Standard does not specify or require using the OMF implementation or any other organization's implementation of components of the GERS fraemework.
 
