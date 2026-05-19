@@ -245,7 +245,7 @@ The data contained in a `changelog` is made available in some file or database s
 
 Diagrammtically, the `changelog` structure can be abstracted as follows.
 
-
+image:../images/changelog_tree_structure.png[600]
 
 The following is the ChangeLog Requirements Class
 
