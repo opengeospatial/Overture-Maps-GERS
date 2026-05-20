@@ -291,4 +291,6 @@ This above structure is implementation independent. An implementation could be a
 [[req-class-refmap-7]]
 === Requirement Class Reference Map (Optional)
 
-This section defines the requirements for the optional GER-ID reference map.
+This section defines the requirements for the optional GER-ID reference map. 
+
+include::../requirements/requirements-class-gers-refmap.adoc[]
