@@ -1,2 +1,9 @@
 [recommendation]
 
+====
+[%metadata]
+identifier:: /rec/reference-map-optional-elements
+subject:: Recommended ReferenceMap properties in addition to mandatory properties.
+part:: Any entity (feature) in a ReferenceMap _SHOULD_ have a `name` property. The `name` is often referred to as the primary attribute, such as a land use code or a road name.
+part:: Any entity (feature) in a ReferenceMap _SHOULD_ have a `source` property. This is the name of the dataset where the source data can be found. 
+====
