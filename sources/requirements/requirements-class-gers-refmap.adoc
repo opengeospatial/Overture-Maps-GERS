@@ -1,6 +1,9 @@
-[requirement]
+[requirements_class]
 
 ====
 [%metadata]
-requirements-class-gers-refmap
+subject:: Requirements for optional class ReferenceMap
+identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-refmap
+requirement:: /req/path-to-reference-map
+requirement:: /req/mandatory-reference-map-elements
 ====
