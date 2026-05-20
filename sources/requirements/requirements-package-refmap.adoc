@@ -1,0 +1,8 @@
+[requirements-package]
+
+====
+[%metadata]
+subject:: Requirements Package for ReferenceMap
+requirements-class:: /req/requirements-class-gers-refmap
+recommendation:: /req/reference-map-optional-elements
+====
