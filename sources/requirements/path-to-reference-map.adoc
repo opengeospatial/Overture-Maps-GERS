@@ -4,5 +4,5 @@
 [%metadata]
 subject:: Path to all files in given reference map release.
 identifier:: req/path-to-reference-map
-part:: The path to a given reference map _SHALL_ have the following structure: <root>/release/<release/version>/<theme>/<type>/ 
+part:: The path to a given reference map _SHALL_ have the following structure: <root>/release/<release or version>/<theme>/<type>/ 
 ====
