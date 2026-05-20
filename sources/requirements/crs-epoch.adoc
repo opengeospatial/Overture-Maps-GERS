@@ -1,0 +1,9 @@
+[requirement]
+
+====
+[%metadata]
+name:: For cases in which a dynamic CRS is used, the epoch must be provided
+identifier:: req/crs-epoch
+part:: If a dynamic CRS is used, then the epoch _SHALL_ be provided.
+part:: The coordinate epoch _SHALL_ be expressed as a decimal year (e.g. 2021.47)
+====
