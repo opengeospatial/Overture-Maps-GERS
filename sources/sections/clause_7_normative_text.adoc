@@ -302,7 +302,7 @@ include::../requirements/requirements-class-gers-refmap.adoc[]
 The following requirement states how a path to a given reference map is structured. This path could be to a file in a 
 file oriented storage system, "table" paths in an RDMS, or S3 buckets path using slashes.
 
-include::../requirements/path-to-reference-map[]
+include::../requirements/path-to-reference-map.adoc[]
 
 Where the components of the path are:
 
