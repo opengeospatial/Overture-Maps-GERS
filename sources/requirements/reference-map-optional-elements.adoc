@@ -1,6 +1,0 @@
-[recommendation]
-
-====
-[%metadata]
-subject:: Recommended ReferenceMap properties in addition to mandatory properties.
-====
