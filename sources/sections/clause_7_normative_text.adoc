@@ -108,13 +108,23 @@ include::../requirements/crs-storage.adoc[]
 
 ==== Requirement: Valid CRS
 
-The following requirement states that only non-projected coordinate reference systems are used in an implementation of the GERS framework. The are several reasons for this requirement, one of which is the possible use of global tiled storage systems for a GERS reference map.
+The following requirement states that only non-projected coordinate reference systems are used in an implementation of the GERS framework. 
+The are several reasons for this requirement, one of which is the possible use of global tiled storage systems for a GERS reference map.
 
 include::../requirements/crs-valid.adoc[]
 
+==== Requirement: CRS Epochs
+
+In a dynamic CRS, coordinates of a point on the surface of the Earth may change with time. To be unambiguous, the coordinates 
+must always be qualified with the epoch at which they are valid.
+
+The conditional epoch requirement supports specifing an epoch for the case where a dynamic CRS is used.
+
+include::../requirements/crs-epoch.adoc[]
+
 ==== Recommendation: OGC CRS84
 
-In order to be consistent and compatible with existing GERS framework implementations (as of 2026), the following recommendation states that a WGS84 2d CRS be used. Further, if a CRS is not specified then the default is WGS84 2d with axis order longitude/latitude. This is known as OGC CRS84.
+In order to be consistent and compatible with existing framework implementations (as of 2026) as well as GeoParquet, GeoJSON and so on, the following recommendation states that a WGS84 2d CRS be used. Further, if a CRS is not specified then the default is WGS84 2d with axis order longitude/latitude. This is known as OGC CRS84.
 
 include::../recommendations/REC002-CRS.adoc[]
 
