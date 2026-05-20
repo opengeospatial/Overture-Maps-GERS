@@ -315,7 +315,7 @@ Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 
 |<type>     | A feature type within a theme, such as railways or interstates in a transportation theme.
 |===
 
-==== Requirement: Reference Map minimum metadata/properties
+==== Requirement: Reference Map mandatory properties
 
 Any content stored in a ReferenceMap has a minimum set of required properties. The minimum set of properties 
 is the same for all themes and types in a GER framework compliant ReferenceMap. The minimum set of properties 
@@ -327,4 +327,10 @@ include::../requirements/reference-map-mandatory-elements.adoc[]
 
 NOTE: The rationale for specifying this mandatory set of elements is to allow maintaining consistency with all existing implementation of the framework.
 
+==== Recommendation" Reference map optional properties
+
+In addition to the mandatory properties, there is also a recommended set of optional properties that are used to enhance the 
+content for an entity (feature) in the ReferenceMap.
+
+include::../recommendations/reference-map-optional-elements.adoc[]
 
