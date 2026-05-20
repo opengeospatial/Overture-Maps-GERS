@@ -286,7 +286,9 @@ Diagrammtically, the `changelog` structure can be abstracted as follows.
 
 image:../images/changelog_tree_structure.png[ChangeLog Structure, 640, 400]
 
-This above structure is implementation independent. An implementation could be a Unix or Windows file system. An implementation could be an S3 set of prefixes to organize ChangeLog storage. A prefix is a logical grouping of the objects in a bucket. Or an implementation could be one or more normalized relational tables. 
+This above structure is implementation independent. An implementation could be a Unix or Windows file system. 
+An implementation could be an S3 set of prefixes to organize ChangeLog storage. A prefix is a logical grouping of 
+the objects in a bucket. Or an implementation could be one or more normalized relational tables. 
 
 [[req-class-refmap-7]]
 === Requirement Class Reference Map (Optional)
@@ -294,3 +296,22 @@ This above structure is implementation independent. An implementation could be a
 This section defines the requirements for the optional GER-ID reference map. 
 
 include::../requirements/requirements-class-gers-refmap.adoc[]
+
+==== Requirement: Path to a given reference map
+
+The following requirement states how a path to a given reference map is structured. This path could be to a file in a 
+file oriented storage system, "table" paths in an RDMS, or S3 buckets path using slashes.
+
+include::../requirements/path-to-reference-map[]
+
+Where the components of the path are:
+
+|===
+|<root>     | Implementation dependent but the root location where a path to a set of files begins. Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 implementation or an `https://` landing page.
+|release    | Always in the path and follows the <root> string.
+|<RELEASE> | date-based version in the format yyyy-mm-dd.x.
+|<theme>    | theme name such addresses, base, buildings, divisions, places, or transportation.
+|<type>     | A feature type within a theme, such as railways or interstates in a transportation theme.
+|===
+
+
