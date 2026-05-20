@@ -1,36 +1,49 @@
 [obligation=informative]
 
-== Global Entity Reference System Concepts
+== Global Entity Reference Framework Concepts
 
-This clause provides information on the concepts essential to the GERS model or framework. 
+This clause provides information on the concepts essential to the GER-ID model and framework (hereafter referred to as the `model` or `framework`. 
 
 === Use cases
 
-In terms of implementation, the GERS framework described below is very flexible and extensible. Following are some use cases ranging from the very simple to more complete implementation of the framework.
+In terms of implementation, the framework described below is very flexible and extensible. Following are some use cases ranging from the very 
+simple to more complete implementation of the framework.
 
-At the simplist, an implementation could consist of using an existing deployed framework, such as that provided by Overture Maps Foundation (OMF). In this use case, the end user provides their source data to OMF. OMF processes the data and updates their implementation and then provides the end user information of the GERS IDs associated with each entity (feature) in the source map dataset.
+At the simplist, an implementation could consist of using an existing deployed framework, such as that provided by Overture Maps Foundation (OMF). 
+In this use case, the end user provides their source data to OMF. OMF processes the data and updates their implementation and then provides the 
+end user information of the GER-IDs associated with each entity (feature) in the source map dataset.
 
-The above use case may meet the needs of some organizations. However, there are many situations that require complete implementations of the framework with no external links to "outside" implementations. These situations include, for example, companies that deal with confidential data that cannot be shared outside their organization. Another situation is where the geospatial data are classified and must remain within a classified environment.
+The above use case may meet the needs of some organizations. However, there are many situations that require complete implementations of the 
+framework with no external links to "outside" implementations. These situations include, for example, companies that deal with confidential 
+data that cannot be shared outside their organization. Another situation is where the geospatial data are classified and must remain within a classified environment.
 
-There are also hybrid solutions where some of the data in the application or organization are classfied and/or confidential and other geospatial data may be shared (open data, public domain, etc).
+There are also hybrid solutions where some of the data in the application or organization are classfied and/or confidential and other geospatial 
+data may be shared (open data, public domain, etc).
 
-The model of the GERS framework is now described at a high level. Specific details are contained in the normative clause of this Community Standard.
+The model of the framework is now described at a high level. Specific details are contained in the normative clause of this Community Standard.
 
-=== GERS Release Concept
+=== The Release Concept
 
-A key concept for any operational implementation of the GERS Framework/Model is `release`. A `release` contains information on updates, such as additions and/or changes, to the geospatial data content referenced in an implementation of the GERS framework. A `release` is conceptually similar to a checkpoint in database technology. A checkpoint is a point in time in the log when a known and consistent state for the database system is established. In the case of a GERS implementation, the checkpoint is the content of the Registry (and Bridge, ChangeLog, and ReferenceMap datasets) as published at a given date. Periodically, the Registry (and other GERS files) are updated with changed or added content. Such updates could occur daily, weekly, monthly or whatever time period is deemed appropriate. When the Registry update occurs, this becomes the new `release` (checkpoint). In a GERS implementation, each `release` has a unique version number.
+A key concept for any operational implementation of the GERS Framework/Model is `release`. A `release` contains information on updates, 
+such as additions and/or changes, to the geospatial data content referenced in an implementation of the GERS framework. A `release` is 
+conceptually similar to a checkpoint in database technology. A checkpoint is a point in time in the log when a known and consistent state 
+for the database system is established. In the case of an implementation of the framework, the checkpoint is the content of the 
+Registry (and Bridge, ChangeLog, and ReferenceMap datasets) as published at a given date. Periodically, the Registry (and other files in an implementation) 
+are updated with changed or added content. Such updates could occur daily, weekly, monthly or whatever time period is deemed appropriate. 
+When the Registry update occurs, this becomes the new `release` (checkpoint). In an implementation of the framework, each `release` has a unique version number.
 
 === The GER-ID Model - High Level
 
-The following is a high level view of the GERS framework.
+The following is a high level view of the GER-ID Model and Framework.
 
 image:../images/GERS-high-level-arch.png[600]
 
 Each of the key components is now described.
 
-==== GERS Unique Identifier
+==== The Unique Identifier
 
-GERS IDs are generated and formatted based on the IETF RFC https://datatracker.ietf.org/doc/html/rfc4122[A Universally Unique IDentifier (UUID) URN Namespace]. In an implementation of the GERS framework, every GERS ID follows the standard UUIDv4 format. An example of a UUIDv4 ID is `12345678-1234-5678-1234-567812345678)` making them:
+GER-IDs are generated and formatted based on the IETF RFC https://datatracker.ietf.org/doc/html/rfc4122[A Universally Unique IDentifier (UUID) URN Namespace]. 
+In an implementation of the framework, every GER-ID follows the standard UUIDv4 format. An example of a UUIDv4 ID is `12345678-1234-5678-1234-567812345678)` making them:
 
 * Globally unique
 * System-agnostic
@@ -43,11 +56,14 @@ Why it matters:
 * No collisions: Guaranteed uniqueness across all systems
 * Standard tooling: Leverage existing UUID libraries and utilities
 
-From RFC 9562: One area in which UUIDs have gained popularity is database keys. This stems from the increasingly distributed nature of modern applications. In such cases, "auto-increment" schemes that are often used by databases do not work well: the effort required to coordinate sequential numeric identifiers across a network can easily become a burden. The fact that UUIDs can be used to create unique, reasonably short values in distributed systems without requiring coordination makes them a good alternative
+From RFC 9562: One area in which UUIDs have gained popularity is database keys. This stems from the increasingly distributed nature of modern applications. 
+In such cases, "auto-increment" schemes that are often used by databases do not work well: the effort required to coordinate sequential numeric identifiers 
+across a network can easily become a burden. The fact that UUIDs can be used to create unique, reasonably short values in distributed systems without 
+requiring coordination makes them a good alternative
 
-==== GERS Registry
+==== The Registry
 
-A GERS Registry is a comprehensive database documenting every GERS ID created in a given GERS implementation. The Registry maintains:
+A Registry is a comprehensive database documenting every GER-ID created in a given implementation of the framework The Registry maintains:
 
 * Complete lifecycle information for every ID.
 * Current location data for active entities.
@@ -56,26 +72,28 @@ A GERS Registry is a comprehensive database documenting every GERS ID created in
 
 Why it matters:
 
-* Validation: Instantly verify if a UUID is a legitimate GERS ID.
+* Validation: Instantly verify if a UUID is a legitimate GER-ID.
 * History: Access the complete lifecycle of any GERS ID.
 * Efficiency: Quickly “catch up” if you haven’t updated for several releases.
 * Location services: Find where entities exist both geographically and within file structures.
 
-==== GERS Bridge File
+==== The Bridge File
 
-A Bridge File contains mappings between GERS IDs and identifiers used other (source) geospatial datasets. A Bridge File can be thought of as a join table.
+A Bridge File contains mappings between GER-IDs and identifiers used other (source) geospatial datasets. A Bridge File can be thought of as a join table.
 
 Why it matters:
 
-* Instant integration: Using a dataset with a Bridge File supports quick connection(s) between a GERS implementation and the source geospatial repositories.
+* Instant integration: Using a dataset with a Bridge File supports quick connection(s) between an implementation of the framework and the source geospatial repositories.
 * Transparency: See exactly which geospatial data sources were used used to build the reference data.
 * Flexibility: You can create your own bridge files to share with the community.
 
-==== GERS Change Log
+==== The Change Log
 
-A GERS Change Log contains detailed records of all changes made to data referenced in an implementation of the GERS framework. In the OMF implementation, updates to the Change Log occur between data releases
+A Change Log instance contains detailed records of all changes made to data referenced in an implementation of the framework. 
+For example, in the OMF implementation, updates to the Change Log occur between data releases
 
-Why a Change Log? The physical world is constantly changing – new buildings are constructed, businesses move, roads are rerouted. The metadata maintained in a GERS change log documents these changes at the ID level: 
+Why a Change Log? The physical world is constantly changing – new buildings are constructed, businesses move, roads are rerouted. 
+The metadata maintained in a Change Log documents these changes at the ID level: 
 
 * What new entities were added.
 * What entities were removed.
@@ -89,19 +107,21 @@ Why it matters:
 
 Examples of using and accessing change logs are available on the OMF web site. Use this information to update only the affected portions of your data pipeline.
 
-==== GERS Reference Map
+==== The Reference Map
 
-A GERS reference map contains feature data that connect GER-IDs to real-world entities. 
+The reference map contains feature data that connect GER-IDs to real-world entities. 
 
 Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. 
-Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the 
-roads in a navigation route. Any implementation of the GERS framework should include or link to a reference map. While a GERS reference map does contain feature 
+Each entity in the reference map datasets carries a unique GER-ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the 
+roads in a navigation route. Any implementation of the framework should include or link to a reference map. While a reference map does contain feature 
 geometry and some metadata, content contained in the reference map does not need to be a complete replication of the source data. There is a minimum set of content 
 that is required and hence replicated.  
 
 === Themes and types
 
-Geospatial data registered in an implementation of the GER-ID framework are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GER-ID schema, such as for BridgeFiles and entities in a ReferenceMap, and in many query instances. Further, in some cases `type` can also have `sub-types`. 
+Geospatial data registered in an implementation of the GER-ID framework are semantically organized by `theme` and `type`. 
+The properties for `theme` and `type` are used in a number of GER-ID schema, such as for BridgeFiles and entities in a ReferenceMap, 
+and in many query instances. Further, in some cases `type` can also have `sub-types`. 
 
 NOTE: While the current GER-ID implementations use defined enumerations for `theme` and `type`, these enumerations can be extended and/or replaced with other enumerations.
 
@@ -143,7 +163,7 @@ There is no requirement to use the types and associated schema referenced via th
 Schema for each of the current feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
 
 NOTE: The above theme and type  information is the current (April 2026) theme and type enumerations currently defined by the Overture Maps Foundation. 
-To be 100% consistent with existing implementations of the GERS framework, this theme/type enumeration should be followed. However, additional themes 
+To be 100% consistent with existing implementations of the framework, this theme/type enumeration should be followed. However, additional themes 
 may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional 
 types may be added to the type enumeation for a given theme. Whether the existing theme and type enumeration is used - or not - any implementation 
 of the framework MUST have a theme and theme type enumeration. This is a requirement based on the use of this information in various schema.
