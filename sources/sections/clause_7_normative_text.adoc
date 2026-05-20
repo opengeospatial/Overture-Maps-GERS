@@ -307,11 +307,16 @@ include::../requirements/path-to-reference-map.adoc[]
 Where the components of the path are:
 
 |===
-|<root>     | Implementation dependent but the root location where a path to a set of files begins. Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 implementation or an `https://` landing page.
+|<root>     | Implementation dependent but the root location where a path to a set of files begins. 
+Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 implementation or an `https://` landing page.
 |release    | Always in the path and follows the <root> string.
 |<RELEASE> | date-based version in the format yyyy-mm-dd.x.
 |<theme>    | theme name such addresses, base, buildings, divisions, places, or transportation.
 |<type>     | A feature type within a theme, such as railways or interstates in a transportation theme.
 |===
 
+==== Requirement: Reference Map minimum metadata/properties
 
+Any content stored in a ReferenceMap has a minimum set of metadata and properties. The minimum set of metadata/properties 
+is the same for all themes and types in a GER framework compliant ReferenceMap. The minimum set of metadata/properties 
+can be extended as necessary. An example of such an extended set of metadata/properties is https://docs.overturemaps.org/schema/reference/base/water/[here].
