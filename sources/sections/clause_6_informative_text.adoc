@@ -91,7 +91,7 @@ Examples of using and accessing change logs are available on the OMF web site. U
 
 ==== GERS Reference Map
 
-A GERS reference map contains feature data that connect GERS IDs to real-world entities. 
+A GERS reference map contains feature data that connect GER-IDs to real-world entities. 
 
 Data contained in the reference map should be carefully validated, consistently structured collections that describe potentially billions of real-world entities. 
 Each entity in the reference map datasets carries a unique GERS ID. These IDs represent actual physical entities in the world, from the corner coffee shop to the 
@@ -101,13 +101,14 @@ that is required and hence replicated.
 
 === Themes and types
 
-Geospatial data registered in an implementation of the GERS framework are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GERS schema, such as for BridgeFiles, and in many query instances. Further, in some cases `type` can also have `sub-types`. 
+Geospatial data registered in an implementation of the GER-ID framework are semantically organized by `theme` and `type`. The properties for `theme` and `type` are used in a number of GER-ID schema, such as for BridgeFiles and entities in a ReferenceMap, and in many query instances. Further, in some cases `type` can also have `sub-types`. 
 
-NOTE: While the current GERS implementations use defined enumerations for theme and type, these enumerations can be extended and/or replaced with other enumerations.
+NOTE: While the current GER-ID implementations use defined enumerations for `theme` and `type`, these enumerations can be extended and/or replaced with other enumerations.
 
 ==== Themes
 
-The model has a concept `theme`. In the GERS model, a `theme` is a set of related features for which schema and rules have been documented for inclusion in an implementation of the GERS framework.  Currently, existing implementations reference/include the following themes: 
+The model has a concept `theme`. In the model, a `theme` is a set of related features for which schema and rules have been documented for 
+inclusion in an implementation of the framework.  Currently, existing implementations reference/include the following themes: 
 
 |===
 |*Theme*    |	*Description*
@@ -124,9 +125,10 @@ an approximate location of the position most commonly associated with the divisi
 This is not an inclusive enumeration of themes. The enumeration can be extended to add additional themes. However, if an implementation 
 of the framework is to be consistent with other existing implementations, than this theme enumeration should be considered.
 
-==== GERS Theme (feature) Types
+==== Examples of Theme (feature) Types
 
-Each feature instance in a theme can have a feature `type` as shown in the following table. Please note that these are recommended types. There is no requirement to use the types and associated schema referenced via the links below.
+Each feature instance in a theme can have a feature `type` as shown in the following table. Please note that these are example types. 
+There is no requirement to use the types and associated schema referenced via the links below.
 
 |===
 |*Theme*    |	*Feature types* | Additional information on subtypes, properties, classes etc.
@@ -140,7 +142,11 @@ Each feature instance in a theme can have a feature `type` as shown in the follo
 
 Schema for each of the current feature types can be found in the Overture Maps Foundation GERS documentation. Follow the links provided above.
 
-NOTE: The above theme and type  information is the current (April 2026) theme and type enumerations currently defined by the Overture Maps Foundation. To be 100% consistent with existing implementations of the GERS framework, this theme/type enumeration should be followed. However, additional themes may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional types may be added to the type enumeation for a given theme. Whether the existing theme and type enumeration is used - or not - any implementation of the framework MUST have a theme and theme type enumeration. This is a requirement based on the use of this information in various schema.
+NOTE: The above theme and type  information is the current (April 2026) theme and type enumerations currently defined by the Overture Maps Foundation. 
+To be 100% consistent with existing implementations of the GERS framework, this theme/type enumeration should be followed. However, additional themes 
+may be added and used as long as extensions to the theme enumeration comply with requirements as stated in this Community Standard. Further, additional 
+types may be added to the type enumeation for a given theme. Whether the existing theme and type enumeration is used - or not - any implementation 
+of the framework MUST have a theme and theme type enumeration. This is a requirement based on the use of this information in various schema.
 
 ==== Geometry as used in the GERS Framework.
 
