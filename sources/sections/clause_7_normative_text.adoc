@@ -317,6 +317,14 @@ Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 
 
 ==== Requirement: Reference Map minimum metadata/properties
 
-Any content stored in a ReferenceMap has a minimum set of metadata and properties. The minimum set of metadata/properties 
-is the same for all themes and types in a GER framework compliant ReferenceMap. The minimum set of metadata/properties 
+Any content stored in a ReferenceMap has a minimum set of required elements/properties. The minimum set of elements/properties 
+is the same for all themes and types in a GER framework compliant ReferenceMap. The minimum set of elements/properties 
 can be extended as necessary. An example of such an extended set of metadata/properties is https://docs.overturemaps.org/schema/reference/base/water/[here].
+Also, a given implementation of the framework may have additional mandatory elements for a given theme. For example, a `landuse` theme may have a mandatory 
+land use code property. However, such rules are specific to a given implementation of the framework.
+
+include::../requirements/reference-map-mandatory-elements.adoc[]
+
+NOTE: The rationale for specifying this mandatory set of elements to allow maintaining consistency with all existing implementation of the framework.
+
+
