@@ -1,0 +1,6 @@
+[requirement]
+
+====
+[%metadata]
+requirements-class-gers-refmap
+====
