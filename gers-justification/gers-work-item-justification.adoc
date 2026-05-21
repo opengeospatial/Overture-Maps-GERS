@@ -125,10 +125,6 @@ As identified by the current GERS user and imlpementation community, the key ben
 
 == Motivation of supporting OGC Members for this submission
 
-////
-Provide a brief paragraph from one or more supporting OGC members that describes why they are supporting this submission and how they feel it helps the geospatial community.
-////
-
 === Overture Maps Foundation
 
 The Overture Maps Foundation submits and supports GERS as an OGC Community Standard to ensure long-term, open, and vendor-neutral stewardship of the framework. Overture’s goal in advancing GERS through OGC is to encourage broad, global adoption of a consistent reference system that benefits commercial, government, research, and open-source communities.
@@ -186,7 +182,7 @@ NOTE: Overture Maps Foundation provides global data across six data themes (addr
 
 ==== Relationship to OGC Points of Interest (PoI) Conceptual Model Standard
 
-The OGC docs.ogc.org/is/21-049/21-049.html[Points of Interest] (POI) Conceptual Model is an open data model for representing information about POI. 
+The OGC https://docs.ogc.org/is/21-049/21-049.html[Points of Interest] (POI) Conceptual Model is an open data model for representing information about POI. 
 A POI can be as simple as a set of coordinates and an identifier. The model specifically states that "An encoding of the AbstractFeature class SHALL include zero or one identifier attributes" (Requirement 6) and that if an identifier is specified that the identifier of the feature is unique and valid globally.
 
 NOTE: From PoI Standard - Abstract Feature class in POI model: identifier «property»	ScopedName [0..*]	Specifies the unique identifier of the feature that is valid globally.
