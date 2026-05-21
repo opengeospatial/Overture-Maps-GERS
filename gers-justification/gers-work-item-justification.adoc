@@ -57,8 +57,8 @@ A system is a set of interacting or interdependent parts that work together to f
 The content of the GERF Community Standard is an abstraction of the Overture Maps Foundation (OMF) Global Entity Reference System (GERS) implementation. The abstraction was performed to:
 
 - Ensure that requirements, recommendations, and guidance are clearly stated, flexible, and can be profiled or extended.
-- Ensure that any organization anywhere can implement the GERF framework.
-- Ensure that the requirements and recommendations contained in the GERF CS are technology agnostic
+- Ensure that any organization anywhere can implement the GER Framework and remain consistent with all existing GERS implementations.
+- Ensure that the requirements and recommendations contained in the GERF Community Standard are technology agnostic
 - Ensure that any implementation of the GERF framework is consistent with but not dependent on the OMF GERS implementation.
 - Ensure that if an organization wishes to define dependencies on other implementations of the GERF framework, they can do so.
 
@@ -71,29 +71,39 @@ NOTE: This OGC Community Standard is not an endorsement of the OMF implementatio
 
 This section provides an overview of the proposed submission, benefits of implementing GER-ID framework and a summary of the GER-ID Model.
 
-The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation (OMF)]. The goal of the OMF work
+The source for the content in this Community Standard is the Global Entity Reference System (GERS). GERS was originally developed 
+by the https://overturemaps.org/[Overture Maps Foundation (OMF)]. The goal of the OMF work
 was to and is to simplify data integration and sharing across different geospatial datasets and platforms with potentially different semantics, 
 fostering collaboration and innovation in the geospatial industry.
 
-NOTE: Overture provides a complete and operational implementation of the GERS Framework that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. However, this OGC Community Standard has no dependencies on the OMF implementation and does not specify or require using the OMF implementation or any other organization's implementation of components of the GERF framework.
+NOTE: Overture provides a complete and operational implementation (system) that includes data schemas, a registry schema, the 
+GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. 
+However, this OGC Community Standard has no dependencies on the OMF implementation and does not specify or require using the 
+OMF implementation or any other organization's implementation of components of the GERF framework.
 
 The proposed OGC GERF Community Standard has a limited focus as an abstraction of the key components as 
-documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a Community Standard 
+documented in the current OMF website: bridge files, change logs, reference maps, and registry schemas. This focus defines a framework
 that can be implemented by any organization that will be consistent with existing GERF implementations such as the OMF implementation of 
 the GERF but "owned" by the implementing organization.
 
 === Overview of the Gloal Entity Reference Framework
 
-Organizations can spend an enormous amount of time and resources on data preparation and integration rather than value-adding analysis. For organizations using geospatial data, the challenge is even more acute: Different data producers describe the same real-world entities in different ways, use different reference systems, and different ontologies. The combinations of these differences make it expensive and time-consuming to combine datasets from these different sources. 
+Organizations can spend an enormous amount of time and resources on data preparation and integration rather than value-adding analysis. 
+For organizations using geospatial data, the challenge is even more acute: Different data producers describe the same real-world entities 
+in different ways, use different reference systems, and different ontologies. The combinations of these differences make it expensive and 
+time-consuming to combine datasets from these different sources. 
 
-Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation tax – a hidden cost that affects everyone working with data obtained from multiple sources.
+Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. This is the data conflation 
+tax – a hidden cost that affects everyone working with data obtained from multiple sources.
 
 An implementation of the GERF can change this equation by specifying a mechanism for defining persistent, unique identifiers for any 
 geospatial entity as well as a supporting infrastructure such as a registry of those IDs and related metadata.
 
 === What is in the OGC GERF Community Standard?
 
-The following components of the Global Entity Reference Framework are defined in the GERF Community Standard. The source of the content for the draft Community Standard is the April 2026 of the Overture GERS release. Please note that depending on an organization's requirements, developers may implement one or more components of the framework.
+The following components are defined in the GERF Community Standard. The source of the content for the draft 
+Community Standard is the April 2026 of the Overture GERS release. Please note that depending on an organization's requirements, 
+developers may implement one or more components of the framework.
 
 - BridgeFiles: Bridge files connect the unique GERF IDs to the entity identifiers used in the source data. These files are a key component of an
 implementation of the framework and offer two critical capabilities: reverse lookup of source features and the ability to join content from multiple geospatial data repositories.
@@ -130,13 +140,20 @@ As identified by the current GERS user and imlpementation community, the key ben
 
 === Overture Maps Foundation
 
-The Overture Maps Foundation submits and supports GERS as an OGC Community Standard to ensure long-term, open, and vendor-neutral stewardship of the framework. Overture’s goal in advancing GERS through OGC is to encourage broad, global adoption of a consistent reference system that benefits commercial, government, research, and open-source communities.
+The Overture Maps Foundation submits and supports GERF as an OGC Community Standard to ensure long-term, open, and vendor-neutral 
+stewardship of the framework. Overture’s goal in advancing GERF through OGC is to encourage broad, global adoption of a consistent 
+reference system and supporting infrastructure that benefits commercial, government, research, and open-source communities.
 
-OGC governance provides a durable home for the logical GERS model and framework, separate from any single implementation, and allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and transparent change processes. The Overture Maps Foundation affirms that elevating the GERS model and framework into the OGC Standards Program enhances the ability to establish a common, interoperable identifier fabric for the world’s geospatial data.
+OGC governance provides a durable home for the logical model and framework, separate from any single implementation, and 
+allows organizations worldwide to implement compatible GERS-based systems aligned with open standards, shared schemas, and 
+transparent change processes. The Overture Maps Foundation affirms that elevating the model and framework into the 
+OGC Standards Program enhances the ability to establish a common, interoperable identifier fabric for the world’s geospatial data.
 
 === Esri
 
-Esri supports the submission of the Global Entity Reference System (GERS) as an OGC Community Standard because globally unique, open identifiers are foundational to interoperable GIS workflows. Persistent identifiers enable scalable joins, efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as organizations integrate larger and more diverse datasets.
+Esri supports the submission of the Global Entity Reference System (GERS) as an OGC Community Standard because 
+globally unique, open identifiers are foundational to interoperable GIS workflows. Persistent identifiers enable scalable joins, 
+efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as organizations integrate larger and more diverse datasets.
 
 Esri has already integrated GERS identifiers into key workflows to demonstrate the practical value of an open entity reference system, including using GERS IDs to join the Overture Buildings dataset with FEMA’s USA Structures dataset. By using GERS IDs as join keys, Esri achieved high match rates (≈ 98 %) and enabled enriched visualization and analytic workflows in ArcGIS, including enhanced 3D scene layers and thematic mapping. This example highlights how GERS can significantly reduce reliance on complex geoprocessing and spatial conflation, improving efficiency and accuracy in real-world GIS operations. 
 
