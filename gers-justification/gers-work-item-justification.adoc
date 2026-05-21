@@ -49,6 +49,9 @@ Once approved, the GERF Community Standard Work Item defined by this document is
 
 The source of the content for the proposed Community Standard can be found at https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
 
+NOTE: Based on feedback from OGC Members and Staff and from the community, the decision was made to replace the word "System" with "Framework". 
+A system is a set of interacting or interdependent parts that work together to form a unified whole and achieve a specific purpose. It operates as an organized structure defined by boundaries, rules, and its relationship to the surrounding environment. This implies an operational implementation. A framework is a basic structural foundation or set of guidelines used to build, support, or guide the development of something. It provides a reusable skeleton or blueprint so you don't have to start from scratch, whether you are writing software, managing a project, or analyzing a concept. This implies that any individual or organization can implement the framework. This Community Standard defines a framework and not a system.
+
 == Standardization Goal
 
 The content of the GERF Community Standard is an abstraction of the Overture Maps Foundation (OMF) Global Entity Reference System (GERS) implementation. The abstraction was performed to:
