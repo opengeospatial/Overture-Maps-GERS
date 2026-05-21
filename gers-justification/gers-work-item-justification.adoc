@@ -41,7 +41,7 @@
 
 Based on feedback from OGC Members and Staff and from the broader geo-community, the decision was made to replace the word "System" with "Framework". 
 
-A system is a set of interacting or interdependent parts that work together to form a unified whole and achieve a specific purpose. It operates as an organized structure defined by boundaries, rules, and its relationship to the surrounding environment. This implies an operational implementation. 
+A system is a set of interacting or interdependent parts that work together to form a unified whole and achieve a specific purpose. It operates as an organized structure defined by boundaries, rules, and its relationship to the surrounding environment. In the software world, this implies an operational implementation. 
 
 A framework is a basic structural foundation or set of guidelines used to build, support, or guide the development of something. It provides a reusable skeleton or blueprint so that developers do not have to start from scratch. Developers following the "blueprint" will have interoperable implementations. This also implies that any individual or organization can implement the framework. 
 
