@@ -1,4 +1,4 @@
-:CSname: Global Entity Reference ID (GER-ID) Framework
+:CSname: Global Entity Reference Framework (GERF)
 :Title: {CSname} Community Standard Work Item Justification
 :titletext: {Title}
 :doctype: book
@@ -39,28 +39,41 @@
 
 == Introduction
 
-This document provides a justification as to why the OGC Technical Committee (TC) should consider the Global Entity Reference ID (GER-ID) model and 
-framework as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for 
+This document provides a justification as to why the OGC Technical Committee (TC) should consider the Global Entity Reference Framework (GERF)
+as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for 
 TC review and vote to approve the start of a Work Item as the first step in the Community Standard process for this standard.
 
 The submitters agree to abide by the OGC TC Policies and Procedures and OGC http://www.opengeospatial.org/ogc/policies[Intellectual Property Rights Policy] during the processing of this submission.
 
-Once approved, the GER-ID Community Standard Work Item defined by this document is valid for a period of six (6) months from the approval date.
+Once approved, the GERF Community Standard Work Item defined by this document is valid for a period of six (6) months from the approval date.
 
 The source of the content for the proposed Community Standard can be found at https://overturemaps.org/blog/2025/understanding-overtures-global-entity-reference-system/[here].
 
-NOTE:: The proposed GER-ID Community Standard DOES NOT include requirements for data, tools, processes, or licensing as defined in the original Overture Maps implementation of the framework. There are NO dependencies on any existing implementations of the framework. 
+== Standardization Goal
+
+The content of the GERF Community Standard is an abstraction of the Overture Maps Foundation (OMF) Global Entity Reference System (GERS) implementation. The abstraction was performed to:
+
+- Ensure that any organization anywhere can implement the GERF framework.
+- Ensure that the requirements and recommendations contained in the GERF CS are technology agnostic
+- Ensure that any implementation of the GERF framework is consistent with but not dependent on the OMF GERS implementation.
+- Ensure that if an organization wishes to define dependencies on other implementations of the GERF framework, they can do so.
+
+NOTE:: The proposed GERF Community Standard DOES NOT include requirements for data, tools, processes, or licensing as defined in the original Overture Maps implementation of the framework. 
+There are NO dependencies on any existing implementations of the framework. 
+
+NOTE: This OGC Community Standard is not an endorsement of the OMF implementation of the Global Entity Reference System.
 
 == Overview of proposed submission
 
 This section provides an overview of the proposed submission, benefits of implementing GER-ID framework and a summary of the GER-ID Model.
 
-The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation]. The goal of the GERS Model 
-and framework is to simplify data integration and sharing across different datasets and platforms, fostering collaboration and innovation in the geospatial industry.
+The Global Entity Reference System (GERS) was originally developed by the https://overturemaps.org/[Overture Maps Foundation (OMF)]. The goal of the OMF work
+was to and is to simplify data integration and sharing across different geospatial datasets and platforms with potentially different semantics, 
+fostering collaboration and innovation in the geospatial industry.
 
-NOTE: Overture provides a complete and operational implementation of the GERS Model that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. However, the Community Standard does not specify or require using the OMF implementation or any other organization's implementation of components of the GERS fraemework.
+NOTE: Overture provides a complete and operational implementation of the GERS Framework that includes data schemas, a registry schema, the GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. However, this OGC Community Standard has no dependencies on the OMF implementation. does not specify or require using the OMF implementation or any other organization's implementation of components of the GERF framework.
 
-The proposed OGC GERS Community Standard will have a limited focus on documenting the GERS logical model and associated framework as documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a standard that can be implemented by any organization that will be consistent with the existing Overture Maps Foundation implementation of the GERS framework but "owned" by the implementing organization.
+The proposed OGC GERF Community Standard will have a limited focus on documenting the OMF logical model and associated framework as documented in the current Overture data, bridge, change log, reference map, and registry schemas. This focus defines a standard that can be implemented by any organization that will be consistent with the existing Overture Maps Foundation implementation of the GERS framework but "owned" by the implementing organization.
 
 === Overview of the GERS Model and Reference System
 
