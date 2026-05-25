@@ -1,12 +1,10 @@
 == Conformance
 
-The Standardization Goal for the GERS Community Standard is to define an interoperable framework for the storage and maintenance of unique and persistent feature identifiers.
+The Standardization Goal for the GERF Community Standard is to define an interoperable framework for the storage and maintenance of unique and persistent feature identifiers.
 
-The OGC Global Entity Reference System Community Standard defines the following requirements classes and associated target types: 
+The OGC Global Entity Reference Framework Community Standard defines the following requirements classes and associated target types: 
 
 The standardization target are implementations that comply with the above requirements classes.
-
-Requirements for one standardization target type are considered: Properties and metadata for physical materials in a CDB datastore.
 
 Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
 
