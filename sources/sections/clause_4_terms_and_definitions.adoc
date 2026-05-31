@@ -10,7 +10,7 @@ identifier that uniquely designates a feature instance
 
 [SOURCE: ISO 19142:2010]
 
-NOTE: In the GERS model, the feature ID is the unique ID used for a feature instance in a source dataset (see source data). Further, the generated GERS ID is not meant to replace any existing feature IDs used in the source data
+NOTE: In the GERS Framework, the feature ID is the unique ID used for a feature instance in a source dataset (see source data). Further, the generated ID is not meant to replace any existing feature IDs used in the source data
 
 === feature instance
 
@@ -30,29 +30,29 @@ representation of real world phenomenon associated with a location relative to t
 
 [SOURCE: ISO 19101-2:2018]
 
-=== GERS Bridge Files
+=== Bridge Files
 
 bridge files connect GERS IDs to the IDs contained in the source data. 
 
-NOTE: These files are a key component of GERS and offer two critical capabilities: reverse lookup of source features and insight into any conflation process used to process source feature.
+NOTE: These files are a key component of an implementation of the Framework and offer two critical capabilities: reverse lookup of source features and insight into any conflation process used to process source feature.
 
-=== GERS ChangeLog
+=== ChangeLog
 
-a changelog documents/captures changes in the data from the previous release to the current release of a GERS reference map. 
+a changelog documents/captures changes in the data from the previous release to the current release of a reference map. 
 
 NOTE: This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
 
-=== GERS Entity (feature)
+=== Entity (feature)
 
 refers to a physical feature such as a building, address, or road segment. 
 
 === GERS Framework
 
-a framework for generating, structuring, discovering, and matching data across systems via the GERS ID. 
+a framework for generating, structuring, discovering, and matching data across systems via the unique IDs. 
 
-NOTE: The GERS framework is made up of several components – Reference Map, Changelogs, Registry, and Bridge Files.
+NOTE: The Framework is made up of several components – Reference Map, Changelogs, Registry, and Bridge Files.
 
-=== GERS ID
+=== ID
 
 a globally unique entity ID generated using the IETF UUID (Universally Unique Identifier) format
 
@@ -61,17 +61,17 @@ a globally unique entity ID generated using the IETF UUID (Universally Unique Id
 
 === GERS Reference Map
 
-validated map datasets that connect GERS IDs to real-world entities.
+validated map datasets that connect the IDs to real-world entities.
 
-=== GERS Registry
+=== Registry
 
-a GERS Registry serves as the single source of truth for all entities that are registered with and part of a Global Entity Reference System framework implementation. 
+a Registry serves as the single source of truth for all entities that are registered with and part of a Global Entity Reference System framework implementation. 
 
-NOTE: The Registry is a comprehensive catalog that tracks every stable ID ever published across all data releases in a given implementation of the GERS framework.
+NOTE: The Registry is a comprehensive catalog that tracks every stable ID ever published across all data releases in a given implementation of the Framework.
 
-=== GERS Themes
+=== Themes
 
-geographic feature types for which schema and rules have been documented for inclusion in an implementation of a GERS Framework. 
+geographic feature types for which schema and rules have been documented for inclusion in an implementation of an implmentation of the Framework. 
 
 === theme
 
@@ -83,4 +83,4 @@ class of features having common characteristics
 
 === Source data
 
-external geospatial data repository for which GERS IDs were generated and corresponding entries/updates incorporated into the GERS Registry, Bridge Files, ChangeLog, and Reference Map. Open Street Map is an example of an external geospatial repository.
+external geospatial data repository for which the unique IDs were generated and corresponding entries/updates incorporated into the GERS Registry, Bridge Files, ChangeLog, and Reference Map. Open Street Map is an example of an external geospatial repository.
