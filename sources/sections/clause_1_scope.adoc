@@ -1,21 +1,20 @@
 == Scope
 
-The OGC GERS Community Standard defines requirements and guidance for the following components of a Global Entity Reference System (GERS):
+The OGC GERS Framework Community Standard defines requirements and guidance for the following components of an implementation of the Framework:
 
-- Logical Model: The model as documented in the current Overture Maps Foundation (OMF) data and registry schema. 
-- BridgeFiles: Bridge files connect the unique GERS IDs to the features identifiers used in the source data. These files are a key component of GERS and 
-offer two critical capabilities: Reverse lookup of source features and to enhance ability to join content from multiple geospatial data repositories.
+- Framework Model: The model as documented in the current Overture Maps Foundation (OMF) data and registry schema. 
+- BridgeFiles: Bridge files connect the unique IDs to the features identifiers used in the source data. These files are a key component of the Frameowrk and  offer two critical capabilities: Reverse lookup of source features and to enhance ability to join content from multiple geospatial data repositories.
 - ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
 guide decisions about data matching, better understand data stability, and help detect data errors.
 - GERS ID: A GERS ID is a persistent, unique identifier for geospatial entities.  The ID remains stable across data updates and is the same when the same entity appears in multiple source datasets.
-- ReferenceMap: A reference map of all entities that have been assigned a unique GERS ID. The content in the reference map is defined by a set of JSON schema.
-- Registry: A GERS Registry serves as the single source of truth for all entities that are part of an implementation of a Global Entity Reference System.
-- JSON Schema: The format of the content stored in the reference map is defined using JSON schema. Overture releases their reference map data as GeoParquet.  GeoJSON is used as the default canonical geospatial format. 
-The OGC GERS Standard schema reference documentss describe key schema concepts for each theme and definitions and examples for each feature type.
-- Feature Types: The source Overture JSON schema provide type enumerations for the base themes, such as land cover types. The OGC GERS Community Standard defines how an enumeration contained in the schema can be extended while maintaining backwards compatibility.
+- ReferenceMap: A reference map of all entities that have been assigned a unique and persistent ID. The content in the reference map is defined by a set of schema.
+- Registry: A Registry serves as the single source of truth for all entities that are part of an implementation of the Framework.
+- JSON Schema: The format of the content stored in the reference map is defined using JSON schema.  While Overture releases their reference map data as GeoParquet, this Community Standard does not specify the use of any particular storage or format technology. 
+- Themes: Any implementation of the framework organizes geospatial content into themes, such as elevation, buildings, or hydrology. 
+- Feature Types: Themes, such as land cover types, contain an enumeration of feature types. The OGC Community Standard defines how an existing enumeration can be extended while maintaining backwards compatibility.
 
-Each of the above components are defined in this Community Standard using JSON Schema that are clearly and fully documented. 
+Each of the above components are defined in this Community Standard using dictionaries that are clearly and fully documented. 
 
-This focus that any implementation by any organization that will be 100% consistent with the existing Overture foundation map but "owned" by the implementing organization. An example of this approach is the `precisely` implementation (See Annex D). 
+Organization that implement the requirements and recommendations as stated in this Community Standard will be 100% consistent with the existing implementations of the Framework but "owned" by the implementing organization. An example of this approach is the `precisely` implementation (See Annex D). 
 
-This Community Standard DOES NOT specify how the the GERS IDs, bridge files, registry and so forth are physically stored. Current implementations use storage and communication formats such as GeoParquet and GeoJSON and storage technologies such as Azure blob storage.
+This Community Standard DOES NOT specify how the the IDs, bridge files, registry and so forth are physically stored. Current implementations use storage and communication formats such as GeoParquet and GeoJSON and storage technologies such as Azure blob storage.
