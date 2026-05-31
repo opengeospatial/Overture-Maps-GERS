@@ -1,8 +1,8 @@
 [obligation=informative]
 
-== Global Entity Reference Framework Concepts
+== Global Entity Reference System Framework Concepts
 
-This clause provides information on the concepts essential to the GER-ID model and framework (hereafter referred to as the `Model` or `Framework`. 
+This clause provides information on the concepts essential to the GERS model and framework (hereafter referred to as the `Model` or `Framework`. 
 
 === Use cases
 
