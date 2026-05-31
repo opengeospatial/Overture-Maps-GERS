@@ -36,7 +36,7 @@ When the Registry update occurs, this becomes the new `release` (checkpoint). In
 
 The following is a high level view of the GER-ID Model and Framework.
 
-image:../images/GERS-high-level-arch.png[600]
+image:../images/GERS-high-level-arch.png[Framework architecture, 600, 400]
 
 Each of the key components is now described.
 
