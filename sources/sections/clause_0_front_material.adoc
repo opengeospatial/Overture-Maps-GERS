@@ -2,13 +2,13 @@
 
 == Preface
 
-The OGC Global Entity Reference Framework Community Standard (GERF) defines:
+The OGC Global Entity Reference System Framework Community Standard (hreafter referred to as the Framework)) defines:
 
 . A model and system for enhancing the ability to exchange, join, and enrich geospatial data.
 . A services architecture comprised of components that can be implemented as an operational framework.
-. Schema to structure geospatial data into a datastore that includes the unique IDs (GERF IDs) and that is consistent with other OGC/ISO Standards.
+. Schema to structure geospatial data into a datastore that includes and maintains the persistent unique IDs and that is consistent with other OGC/ISO Standards.
 
-In summary, this Community Standard defines/provides a universal framework for structuring and matching map data across different geospatial technologies and systems.
+In summary, this Community Standard defines requirements and recommendations for implementing a Framework for structuring and matching map data across different geospatial technologies and systems.
 
 Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. 
 The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
@@ -19,23 +19,19 @@ intellectual property rights of which they may be aware that might be infringed 
 [abstract]
 == Abstract
 
-GERS was developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open, 
-persistent, and interoperable identifiers for geospatial entities such as buildings, places (e.g. PoI), and road segments. The GERS framework also provides schema and a framework
-to register and maintain a persistent registry of these unique IDs. This includes a change log so that changes to
-geographic entities over time can be captured and persisted. This system aims to simplify data integration and sharing across different 
-datasets and platforms, fostering collaboration and innovation in the geospatial industry.
+The Framework was originally defined and developed by the https://overturemaps.org/[Overture Maps Foundation] and launched in June 2025 as a way to provide unique, open,  persistent, and interoperable identifiers for geospatial entities such as buildings, places (e.g. PoI), and road segments. The Framework also defines schema and components to register and maintain a persistent registry of these unique IDs. This includes a change log so that changes to geographic entities over time can be captured and persisted. This system aims to simplify data integration and sharing across different  datasets and platforms, fostering collaboration and innovation in the geospatial industry.
 
-The current implementations of GERS support a limited set of foundation data themes: Addresses, Buildings, Base (Layers), Divisions, Places, and Transportation. Each of these foundation themes also have an enumeration of subtypes. For example, the Base Layer theme enumeration of subtypes includes bathymetry, infrastructure, land, land cover, landuse, and water. These enumerations can be extended.
+The current implementations of the Framework support a limited set of foundation data themes: Addresses, Buildings, Base (Layers), Divisions, Places, and Transportation. Each of these foundation themes also have an enumeration of subtypes. For example, the Base Layer theme enumeration of subtypes includes bathymetry, infrastructure, land, land cover, landuse, and water. These enumerations can be extended.
 
-NOTE: This Community Standard does not specify what technology should be used to implement the framework. Further, this Community Standard states no requirements regarding the use of existing GERS framework implementations.
+NOTE: This Community Standard does not specify what technology should be used to implement the Framework. Further, this Community Standard states no requirements regarding the use of existing Framework implementations.
 
 == Security considerations
 
-Do not assume that the GERS IDs (UUIDs) are hard to guess. For example the IDs should not be used
+Do not assume that the unique IDs (UUIDs) are hard to guess. For example the IDs should not be used
 as security capabilities (identifiers whose mere possession grants
 access).  A predictable random number source will exacerbate the situation.
 
-Do not assume that it is easy to determine if a GERS ID has been
+Do not assume that it is easy to determine if a unique ID has been
 slightly transposed in order to redirect a reference to another
 object.  Humans do not have the ability to easily check the integrity
 of a GERS ID by simply glancing at it.
