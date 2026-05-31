@@ -2,7 +2,7 @@
 
 == GERS Framework Requirements Classes and Requirements Packages
 
-This Clause defines requirements classes with a standardization target of an implementation of the GERS Model and framework. Specifically, requirements defined in this clause are focused on the elements of the model required or recommended to implement a GERS framework consistent with the existing GERS implementation community. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
+This Clause defines requirements classes with a standardization target of an implementation of the GERS Framework. Specifically, requirements defined in this clause are focused on the elements of the model required or recommended to implement a GERS Framework consistent with the existing GERS implementation community. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
 
 === Summary of GERS Framework Requirements Classes/Packages
 
@@ -25,8 +25,7 @@ NOTE: A complete implementation of the GERS framework requires implementation of
 
 === General requirements and recommendations
 
-The following requirements package and recommendations specify "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework. 
-Examples include the specification of language for properties of a name, specification of a bounding box, and time.
+The following requirements package and recommendations specify "global" requirements pertinent to all schema, formats and so on used in an implementation of the GERS framework.  Examples include the specification of language for properties of a name, specification of a bounding box, and time.
 
 NOTE: A requirements package consists of one or more requirements classes and associated recommendations and permissions.
 
@@ -36,7 +35,7 @@ include::../requirements/requirements_package-gers-general.adoc[]
 
 ==== Recommended Schema Conventions
 
-The following recommendations for schema conventions are suggested so that any new implementations of the GERS Framework and Model are consistent with all current (2026 and later) implementation instances.
+The following recommendations for schema conventions are suggested so that any new implementations of the GERS Framework are consistent with all current (2026 and later) implementation instances.
 
 include::../recommendations/schema-recommended.adoc[]
 
@@ -44,17 +43,17 @@ include::../recommendations/schema-recommended.adoc[]
 
 ==== Date Time Requirement
 
-The following is the requirement for expressing date and time in any GERS implementation, regardless of theme, type, or schema. This requirement is consistent with various OGC and ISO standards as well as with STAC.
+The following is the requirement for expressing date and time in any implementation of the Framework, regardless of theme, type, or schema. This requirement is consistent with various OGC and ISO standards as well as with STAC.
 
 include::../requirements/gers-general-datetime.adoc[]
 
-An example of  a datetime string that complies with REQ001 is: `2024-10-15T00:00:00.000Z`
+An example of  a datetime string that complies with the above requirement is: `2024-10-15T00:00:00.000Z`
 
 [[req-gers-bbox-7]]
 
 ==== Bounding Box requirement
 
-The following requirement defines how to express a bounding box in the CRS of an impementation of the GERS framework. 
+The following requirement defines how to express a bounding box in the CRS of an impementation of the Framework. 
 
 include::../requirements/gers-general-bbox.adoc[]
 
@@ -64,9 +63,7 @@ An example is as follows  {'xmin': 80.67177, 'xmax': 80.67182, 'ymin': 26.619795
 
 ==== Geometry requirement and recommendations
 
-The following defines the requirements for expressing geometry in an implementation of the GERS framework including schemas and distributions. Geometry types used in an implementation 
-of the GERS framework are compliant with ISO 19107: Spatial Schema, the OGC Simple Features Standard, and formats such as GeoJSON. The enumeration of geometry types currently used
-in implementations of the GERS framework: geometry_collection, line_string, multi_line_string, multi_point, multi_polygon, point, polygon.
+The following defines the requirements for expressing geometry in an implementation of the GERS framework including schemas and distributions. Geometry types used in an implementation  of the Framework are compliant with ISO 19107: Spatial Schema, the OGC Simple Features Standard, and formats such as GeoJSON. The enumeration of geometry types currently used in implementations of the Framework: geometry_collection, line_string, multi_line_string, multi_point, multi_polygon, point, polygon.
 
 include::../requirements/gers-geometry.adoc[]
 
@@ -88,7 +85,7 @@ include::../requirements/gers-country-code.adoc[]
 
 === Requirement Class Coordinate Reference System (Conditional)
 
-The CRS Requirements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the GERS framework and model must be in the same (consistent) coordinate reference system (CRS).
+The CRS Requirements Class states that all coordinates used in any geometry, query, tiling scheme, and so on in an implementation of the Framework must be in the same (consistent) coordinate reference system (CRS).
 
 NOTE: This requirements class is based on and is consistent with the CDB 2.0 and OGC API - Common CRS Requirements Classes.
 
@@ -96,20 +93,20 @@ include::../requirements/requirements_class-gers-crs.adoc[]
 
 ==== Requirement: CRS definition
 
-The following requirement states that any CRS metadata used in a GERS implementation be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
+The following requirement states that any CRS metadata used in an implementation of the Framework be consistent with OGC Abstract Specification Topic 2: Referencing by coordinates (ISO 19111:2019).
 
 include::../requirements/crs-topic2.adoc[]
 
 ==== Requirement: Use same CRS Throughout
 
-The following requirement states that any implementation of the GERS Framework compliant with this Community Standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
+The following requirement states that any implementation of the Framework compliant with this Community Standard specifies only one CRS. This requirement ensures that rigorous coordinate transformations as stated in OGC Topic 2 can be successfully performed without loss of data.
 
 include::../requirements/crs-storage.adoc[]
 
 ==== Requirement: Valid CRS
 
-The following requirement states that only non-projected coordinate reference systems are used in an implementation of the GERS framework. 
-The are several reasons for this requirement, one of which is the possible use of global tiled storage systems for a GERS reference map.
+The following requirement states that only non-projected coordinate reference systems are used in an implementation of the Framework. 
+There are several reasons for this requirement, one of which is the possible use of global tiled storage systems for the reference map.
 
 include::../requirements/crs-valid.adoc[]
 
@@ -131,17 +128,17 @@ include::../recommendations/REC002-CRS.adoc[]
 [[req-class-id-7]]
 === Requirements Class GERS ID (Mandatory)
 
-As of the June 2025 release of the GERS schema and model, all GERS IDs are UUIDs: 128-bit, randomly-generated identifiers (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[UUID v4]) that are kept stable across data releases and updates. These IDs are stored as strings with dashes: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx . UUID v4 is meant for generating UUIDs from truly random or pseudorandom numbers.
+As of the June 2025 release of the OMF GERS schema and model, all GERS IDs are UUIDs: 128-bit, randomly-generated identifiers (https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4[UUID v4]) that are kept stable across data releases and updates. These IDs are stored as strings with dashes: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx . UUID v4 is meant for generating UUIDs from truly random or pseudorandom numbers.
 
-NOTE: This Community Standard does not specify how the GERS ID is generated. This is up to the organization implementing the GERS framework/model. The following requirements also do not preclude the organization from using an existing GERS implementation, such as from Overture Maps, as the source of a GERS ID. 
+NOTE: This Community Standard does not specify how the IDs are generated. This is up to the organization implementing the Framework. The following requirements also do not preclude the organization from using an existing GERS implementation, such as from Overture Maps, as the source of a GERS ID. 
 
-The following is the GERS ID Requirements Class
+The following is the ID Requirements Class
 
 include::../requirements/requirements_class-gers-id.adoc[]
 
-==== Requirement: Every entity has an associated GER-ID
+==== Requirement: Every entity has an associated unique ID
 
-The following requirement states that every entity in a GER compliant implementation has a unique ID
+The following requirement states that every entity in a compliant implementation has a unique and persistent ID
 
 include::../requirements/must-have-id.adoc[]
 
@@ -193,7 +190,7 @@ https://docs.overturemaps.org/gers/bridge-files/#example-examining-the-source-da
 
 === Requirements Class Registry (Optional)
 
-With each data update (release), the Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of an implmentation of the GERS model/framework. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the GERS framework.
+With each data update (release), the Registry is also updated. A data update could be the inclusion of a new geospatial data source or an update to an existing geospatial data source. The GERS Registry serves as the single source of truth for all entities that are part of an implmentation of the GERS model/framework. It serves as a comprehensive catalog that tracks every stable ID ever published across all data updates in an implementation of the Framework.
 
 If an implementation of the GERS framework requires a Registry, then the following requirements class is mandatory.
 
@@ -201,11 +198,11 @@ include::../requirements/requirements-class-gers-registry.adoc[]
 
 ==== GERS registry file name
 
-The following requirement defines the physical name for a GERS registry file. Please note that this name can be included in a longer URI/URL path to the actual location of the registry file. 
+The following requirement defines the physical name for a registry file. Please note that this name can be included in a longer URI/URL path to the actual location of the registry file. 
 
 include::../requirements/gers-registry-name.adoc[]
 
-==== Schema for GERS registry file
+==== Schema for the registry file
 
 The following requirement states that using the registry schema defined in Table xyz below is mandatory.
 
@@ -213,7 +210,7 @@ include::../requirements/gers-registry-schema.adoc[]
 
 |===
 |Column	| Data type	| Description | DCAT property
-|id	| string	| GERS conformant identifier (UUID) | dcat:indentifier
+|id	| string	| Conformant identifier (UUID) | dcat:indentifier
 |version	| integer	| Current version number of the feature, incremented in each release whenever the geometry or attributes of this feature change. | dcat:version
 |first_seen	| string	| Release number when entity/feature first appeared in a GERS framework compliant repository | dcterms:issued
 |last_seen	| string	| Most recent release containing entity/feature | dcat:version
@@ -224,7 +221,7 @@ include::../requirements/gers-registry-schema.adoc[]
 
 ==== Updates to the Registry File
 
-The following requiremehnt defines the rules for how updates are performed on the GERS regsitry.
+The following requiremehnt defines the rules for how updates are performed on the regsitry.
 
 include::../requirements/gers-registry-updates.adoc[]
 
@@ -232,7 +229,7 @@ NOTE: The Registry can be used to verify that an entity exists in an implmentati
 
 ==== Example query of a GERS Compliant Registry (Example from Overture)
 
-You can use the GERS Registry to verify that an entity exists in the GERS framework data, track the history of that entity, and find new entities that have been added. For example, a user might ask, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS compliant datastore?" The user can query the Registry to find out:
+The Registry can be used to verify that an entity exists in the reference map, track the history of that entity, and find new entities that have been added. For example, a user might ask, "Is fea28f69-7afa-460c-b270-61ef74cd340c part of GERS compliant datastore?" The user can query the Registry to find out:
 
 ```
 SELECT 
@@ -293,7 +290,7 @@ the objects in a bucket. Or an implementation could be one or more normalized re
 [[req-class-refmap-7]]
 === Requirement Pacage: Reference Map (Optional)
 
-This section defines the requirements for the optional GER-ID reference map. 
+This section defines the requirements for the optional reference map. 
 
 include::../requirements/requirements-package-gers-refmap.adoc[]
 
@@ -320,6 +317,7 @@ Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 
 Any content stored in a ReferenceMap has a minimum set of required properties. The minimum set of properties 
 is the same for all themes and types in a GER framework compliant ReferenceMap. The minimum set of properties 
 can be extended as necessary. An example of such an extended set of properties is https://docs.overturemaps.org/schema/reference/base/water/[here].
+
 Also, a given implementation of the framework may have additional mandatory elements for a given theme. For example, a `landuse` theme may have a mandatory 
 land use code property. However, such rules are specific to a given implementation of the framework.
 
