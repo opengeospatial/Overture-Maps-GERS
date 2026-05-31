@@ -2,7 +2,7 @@
 
 == GERS Framework Requirements Classes and Requirements Packages
 
-This Clause defines requirements classes with a standardization target of an implementation of the GERS Framework. Specifically, requirements defined in this clause are focused on the elements of the model required or recommended to implement a GERS Framework consistent with the existing GERS implementation community. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
+This Clause defines requirements classes with a standardization target of an implementation of the GERS Framework. Specifically, requirements defined in this clause are focused on the elements of the model required or recommended to implement the Framework consistent with the existing GERS implementation community. This clause does not define requirements for conflation, work flows, or storage/processing technologies.
 
 === Summary of GERS Framework Requirements Classes/Packages
 
