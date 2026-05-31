@@ -4,8 +4,7 @@ The OGC GERS Framework Community Standard defines requirements and guidance for 
 
 - Framework Model: The model as documented in the current Overture Maps Foundation (OMF) data and registry schema. 
 - BridgeFiles: Bridge files connect the unique IDs to the features identifiers used in the source data. These files are a key component of the Frameowrk and  offer two critical capabilities: Reverse lookup of source features and to enhance ability to join content from multiple geospatial data repositories.
-- ChangeLog: A GERS changelog capture changes in the map data from the previous release to the current release. This information can be used to 
-guide decisions about data matching, better understand data stability, and help detect data errors.
+- ChangeLog: A change log capture changes in the map data from the previous release to the current release. This information can be used to  guide decisions about data matching, better understand data stability, and help detect data errors.
 - GERS ID: A GERS ID is a persistent, unique identifier for geospatial entities.  The ID remains stable across data updates and is the same when the same entity appears in multiple source datasets.
 - ReferenceMap: A reference map of all entities that have been assigned a unique and persistent ID. The content in the reference map is defined by a set of schema.
 - Registry: A Registry serves as the single source of truth for all entities that are part of an implementation of the Framework.
