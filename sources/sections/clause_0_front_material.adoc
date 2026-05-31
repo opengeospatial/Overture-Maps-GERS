@@ -2,7 +2,7 @@
 
 == Preface
 
-The OGC Global Entity Reference System Framework Community Standard (hreafter referred to as the Framework)) defines:
+The OGC Global Entity Reference System Framework Community Standard (hereafter referred to as the `Framework`) defines:
 
 . A model and system for enhancing the ability to exchange, join, and enrich geospatial data.
 . A services architecture comprised of components that can be implemented as an operational framework.
