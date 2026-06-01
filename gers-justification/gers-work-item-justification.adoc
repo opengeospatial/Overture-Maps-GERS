@@ -64,9 +64,9 @@ The source of the content for the proposed Community Standard can be found at ht
 
 == Standardization Goal
 
-The content of the GERF Community Standard is an abstraction of the Overture Maps Foundation (OMF) Global Entity Reference System (GERS) implementation and related framework components and schema. The abstraction has the objectives of ensuring that:
+This Community Standard is an abstraction of the Overture Maps Foundation (OMF) Global Entity Reference System (GERS) implementation and related framework components and schema. The abstraction has the objectives of ensuring that:
 
-- A free, open, and consistent standards based approach is used to generate unique identifiers.
+- A free, open, and consistent standards-based approach is used to generate unique identifiers.
 - Any and all existing identifiers remain valid and that the GERS ID is an enhancement and does not replace any existing IDs.
 - Requirements, recommendations, and guidance are clearly stated, flexible, and can be profiled or extended.
 - Any organization anywhere can implement the Framework and remain consistent with all existing GERS implementations.
@@ -80,11 +80,11 @@ NOTE: This OGC Community Standard is not an endorsement of the OMF implementatio
 
 == Overview of proposed submission
 
-This section provides an overview of the proposed submission, benefits of implementing GER-ID framework and a summary of the GER-ID Model.
+This section provides an overview of the proposed submission, benefits of implementing Framework and a summary of the Framework.
 
 The source for the content in this Community Standard is the OMF Global Entity Reference System (GERS). 
 GERS was originally developed by the https://overturemaps.org/[Overture Maps Foundation (OMF)]. The goal of the OMF work
-was to and is to simplify data integration and sharing across different geospatial datasets and platforms with potentially different semantics,  fostering collaboration and innovation in the geospatial industry.
+was and is to simplify data integration and sharing across different geospatial datasets and platforms with potentially different semantics,  fostering collaboration and innovation in the geospatial industry.
 
 NOTE: Overture provides a complete and operational implementation (system) that includes data schemas, a registry schema, the 
 GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. 
@@ -96,7 +96,7 @@ documented in the current OMF website: bridge files, change logs, reference maps
 This focus defines a framework that can be implemented by any organization that will be consistent 
 with existing implementations - such as the OMF implementation of the Framework - but "owned" by the implementing organization.
 
-=== Overview of the GGERS Framework
+=== Overview of the GERS Framework
 
 Organizations can spend an enormous amount of time and resources on data preparation and 
 integration rather than value-adding analysis.  For organizations using geospatial data, 
@@ -108,7 +108,7 @@ from these different sources.
 Often, the cost of integrating data exceeds the cost of the initial data capture and any related licensing. 
 This is the data conflation tax – a hidden cost that affects everyone working with data obtained from multiple sources.
 
-An implementation of the Framework defined in this Community Stadnard can change this equation 
+An implementation of the Framework defined in this Community Standard can change this equation 
 by specifying a mechanism for defining persistent, unique identifiers for any  geospatial 
 entity as well as a supporting infrastructure such as a registry of those IDs and related metadata.
 
@@ -126,9 +126,9 @@ This information can be used to guide decisions about data matching, better unde
 - ReferenceMap: A reference map of all geospatial entities that have been assigned a unique ID. The content in the reference map may be defined by a set of JSON schema.
 - Registry: The Registry serves as the single source of truth for all geospatial entities that are part of an implementation of the Framework.
 - JSON Schema: JSON schema is used to define the schema for the components of the GERS framework. GeoJSON maybe used as the default canonical geospatial distribution format. GeoJSON provides a "mental model and language" to express data constructions in the schema.
-- Feature theme: The reference map structures geospatial content into themes. The Community Standard provides a default enumeration of themes.  The theme enumeration may be used as is, extended or replaced with an enumeration as required by the implementating organization or community. 
+- Feature theme: The reference map structures geospatial content into themes. The Community Standard provides a default enumeration of themes.  The theme enumeration may be used as is, extended or replaced with an enumeration as required by the implementing organization or community. 
 - Feature Types: Each theme consists of one or more feature types. The Community Standard provides links to possible default type enumerations, such as land cover types. 
-The theme/type enumeration may be used as is, extended or replaced with an enumeration as required by the implementating organization or community. 
+The theme/type enumeration may be used as is, extended or replaced with an enumeration as required by the implementing organization or community. 
 
 === What will not be in the Community Standard
 
