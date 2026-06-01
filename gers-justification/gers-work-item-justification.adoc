@@ -133,7 +133,7 @@ The theme/type enumeration may be used as is, extended or replaced with an enume
 === What will not be in the Community Standard
 
 No Overture maintained data, registry content, maps, tools, or workflow processes will be part of the OGC Community Standard. 
-There is no depemdency on the Overture Referance Map. However, as the Reference Map is freely and openly available for access and use,  organizations may choose to utilize content maintained in the OMF implementation or any other implementation that maintains a reference map.
+There is no dependency on the Overture Reference Map. However, as the Reference Map is freely and openly available for access and use,  organizations may choose to utilize content maintained in the OMF implementation or any other implementation that maintains a reference map.
 
 === Benefits of implementing the Framework
 
