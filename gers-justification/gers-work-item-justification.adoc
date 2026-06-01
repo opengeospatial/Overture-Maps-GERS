@@ -1,4 +1,4 @@
-:CSname: Global Entity Reference System Framework Community Standard
+:CSname: Global Entity Reference System Framework
 :Title: {CSname} Community Standard Work Item Justification
 :titletext: {Title}
 :doctype: book
