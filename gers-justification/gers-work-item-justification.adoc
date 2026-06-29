@@ -53,7 +53,8 @@ As such, this Community Standard defines a framework and not a system. However, 
 == Introduction
 
 This document provides a justification as to why the OGC Technical Committee (TC) should 
-consider the Global Entity Reference System Framework (hereafter termed `Framework`) as an OGC Community Standard. This justification, along with the submitted candidate Community Standard, will form the basis for 
+consider the Global Entity Reference System Framework (hereafter termed `Framework`) as an OGC Community Standard. This justification, 
+along with the submitted candidate Community Standard, will form the basis for 
 TC review and vote to approve the start of a Work Item as the first step in the Community Standard process.
 
 The submitters agree to abide by the OGC TC Policies and Procedures and OGC http://www.opengeospatial.org/ogc/policies[Intellectual Property Rights Policy] during the processing of this submission.
@@ -69,12 +70,13 @@ This Community Standard is an abstraction of the Overture Maps Foundation (OMF) 
 - A free, open, and consistent standards-based approach is used to generate unique identifiers.
 - Any and all existing identifiers remain valid and that the GERS ID is an enhancement and does not replace any existing IDs.
 - Requirements, recommendations, and guidance are clearly stated, flexible, and can be profiled or extended.
-- Any organization anywhere can implement the Framework and remain consistent with all existing GERS implementations.
-- The requirements and recommendations contained in the this Community Standard are technology agnostic
+- Any organization anywhere can implement the GES Framework and remain consistent with all existing GERS implementations.
+- The requirements and recommendations contained in the this Community Standard are technology agnostic.
 - Any implementation of the Framework is consistent with but not dependent on the OMF GERS implementation.
 - If an organization wishes to define dependencies on other implementations of the Framework, they can do so.
 
-NOTE: This proposed Community Standard DOES NOT include requirements for data, tools, processes, or licensing as defined in the original Overture Maps implementation of the framework. There are NO dependencies on any existing implementations of the framework. 
+NOTE: This proposed Community Standard DOES NOT include requirements for data, tools, processes, or licensing as defined in the 
+original Overture Maps implementation of the framework. There are NO dependencies on any existing implementations of the framework. 
 
 NOTE: This OGC Community Standard is not an endorsement of the OMF implementation of the Global Entity Reference System.
 
@@ -84,7 +86,8 @@ This section provides an overview of the proposed submission, benefits of implem
 
 The source for the content in this Community Standard is the OMF Global Entity Reference System (GERS). 
 GERS was originally developed by the https://overturemaps.org/[Overture Maps Foundation (OMF)]. The goal of the OMF work
-was and is to simplify data integration and sharing across different geospatial datasets and platforms with potentially different semantics,  fostering collaboration and innovation in the geospatial industry.
+was and is to simplify data integration and sharing across different geospatial datasets and platforms with potentially different semantics,  
+fostering collaboration and innovation in the geospatial industry.
 
 NOTE: Overture provides a complete and operational implementation (system) that includes data schemas, a registry schema, the 
 GERS ID generation, processes, tools, and the physical foundation reference map maintained by the Overture Map Foundation. 
@@ -94,7 +97,7 @@ OMF implementation or any other organization's implementation of components of t
 This proposed OGC Community Standard has a more limited focus as an abstraction of the key components
 documented in the current OMF website: bridge files, change logs, reference maps, and registry schemas. 
 This focus defines a framework that can be implemented by any organization that will be consistent 
-with existing implementations - such as the OMF implementation of the Framework - but "owned" by the implementing organization.
+with existing implementations.
 
 === Overview of the GERS Framework
 
@@ -116,7 +119,7 @@ entity as well as a supporting infrastructure such as a registry of those IDs an
 
 The following components are defined in the GERS Framework Community Standard. The source of the content for the draft 
 Community Standard is the April 2026 of the Overture GERS release. Please note that depending on an organization's requirements, 
-developers may implement one or more components of the framework.
+developers may implement one or more components of the framework. The components of the framework are:
 
 - GERS ID: The requirements for generating a unique ID. This ID is a unique identifier for real-world geospatial entities across 
 data releases and maintains consistency when the same entity appears in multiple source datasets. Generating and using this ID is a key requirement when implementing the Framework.
@@ -125,7 +128,6 @@ data releases and maintains consistency when the same entity appears in multiple
 This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
 - ReferenceMap: A reference map of all geospatial entities that have been assigned a unique ID. The content in the reference map may be defined by a set of JSON schema.
 - Registry: The Registry serves as the single source of truth for all geospatial entities that are part of an implementation of the Framework.
-- JSON Schema: JSON schema is used to define the schema for the components of the GERS framework. GeoJSON maybe used as the default canonical geospatial distribution format. GeoJSON provides a "mental model and language" to express data constructions in the schema.
 - Feature theme: The reference map structures geospatial content into themes. The Community Standard provides a default enumeration of themes.  The theme enumeration may be used as is, extended or replaced with an enumeration as required by the implementing organization or community. 
 - Feature Types: Each theme consists of one or more feature types. The Community Standard provides links to possible default type enumerations, such as land cover types. 
 The theme/type enumeration may be used as is, extended or replaced with an enumeration as required by the implementing organization or community. 
@@ -133,26 +135,35 @@ The theme/type enumeration may be used as is, extended or replaced with an enume
 === What will not be in the Community Standard
 
 No Overture maintained data, registry content, maps, tools, or workflow processes will be part of the OGC Community Standard. 
-There is no dependency on the Overture Reference Map. However, as the Reference Map is freely and openly available for access and use,  organizations may choose to utilize content maintained in the OMF implementation or any other implementation that maintains a reference map.
+There is no dependency on the Overture Reference Map implementation of the framework. However, as the OMF Reference Map is freely and openly available for access and use,  
+organizations may choose to utilize content maintained in the OMF implementation or any other implementation of the framework that maintains a reference map.
 
 === Benefits of implementing the Framework
 
 As identified by the current GERS user and implementation community, the key benefits of implementing a GERS framework and associated unique IDs are:
 
-- Simplified Data Integration: Unique IDs and the associated Bridge and Registry resources support the ability for developers and analysts to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
-- Reduced Costs: By streamlining data integration, unique IDs and the supporting infrastructure help reduce the "hidden tax" of data integration, making it more cost-effective to incorporate new data into mapping solutions. 
-- Increased Interoperability: Implementing and/or using a GERS framework promotes interoperability by providing a common language for identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
-- Enhanced Data Richness: Utilizing and implementation of the GERS framework makes it easier to enrich map data with information from various sources, leading to more comprehensive and informative mapping applications. 
-- Innovation: Implementations of the GERS framework are expected to drive innovation in the geospatial industry by reducing barriers to data integration and enabling the development of new and more powerful mapping solutions. 
-- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training, operating, and specifying quality metrics for AI enabled workflows.
+- Simplified Data Integration: Unique IDs and the associated Bridge and Registry resources support the ability for developers 
+and analysts to easily link datasets by joining columns rather than relying on complex data conflation processes, saving time and resources. 
+- Reduced Costs: By streamlining data integration, unique IDs and the supporting infrastructure help reduce the "hidden tax" of data 
+integration, making it more cost-effective to incorporate new data into mapping solutions. 
+- Increased Interoperability: Implementing and/or using a GERS Framework promotes interoperability by providing a common language for 
+identifying geospatial entities, enabling data sharing and collaboration between different organizations and platforms. 
+- Enhanced Data Richness: Utilizing and implementation of the GERS Framework makes it easier to enrich map data with information 
+from various sources, leading to more comprehensive and informative mapping applications. 
+- Innovation: Implementations of the GERS framework are expected to drive innovation in the geospatial industry by reducing barriers 
+to data integration and enabling the development of new and more powerful mapping solutions. 
+- AI and data pipelines: Offers persistent identifiers that help ground facts to real-world assets, which is crucial for training, 
+operating, and specifying quality metrics for AI enabled workflows.
 
 == Motivation of OGC Members for supporting this submission
 
-The following organizations have implemented all or some of the elements of the GER framework. 
+The following organizations have implemented all or some of the elements of the GERS Framework. 
 
 === Overture Maps Foundation
 
-The Overture Maps Foundation submits and supports GERS Framework as an OGC Community Standard to ensure long-term, open, and vendor-neutral stewardship of the Framework. Overture’s goal in advancing this Framework as an abstraction of GERS through OGC process is to encourage broad, global adoption of a consistent reference system and supporting infrastructure that benefits commercial, government, research, and open-source communities.
+The Overture Maps Foundation submits and supports GERS Framework as an OGC Community Standard to ensure long-term, open, and vendor-neutral 
+stewardship of the Framework. Overture’s goal in advancing this Framework as an abstraction of GERS through OGC process is to encourage broad, 
+global adoption of a consistent reference system and supporting infrastructure that benefits commercial, government, research, and open-source communities.
 
 OGC governance provides a durable home for logical models and frameworks, separate from any single implementation, and 
 allows organizations worldwide to implement compatible systems aligned with open standards, shared schemas, and 
@@ -161,17 +172,30 @@ OGC Standards Program enhances the ability to establish a common, interoperable 
 
 === Esri
 
-Esri supports the submission of the Global Entity Reference System (GERS) Framework as an OGC Community Standard because 
+Esri supports the submission of the GERS Framework as an OGC Community Standard because 
 globally unique, open identifiers are foundational to interoperable GIS workflows. Persistent identifiers enable scalable joins, 
-efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as organizations integrate larger and more diverse datasets.
+efficient data enrichment, and reliable cross-dataset interoperability - capabilities that are increasingly critical as 
+organizations integrate larger and more diverse datasets.
 
-Esri has already integrated GERS identifiers into key workflows to demonstrate the practical value of an open entity reference system, including using GERS IDs to join the Overture Buildings dataset with FEMA’s USA Structures dataset. By using GERS IDs as join keys, Esri achieved high match rates (≈ 98 %) and enabled enriched visualization and analytic workflows in ArcGIS, including enhanced 3D scene layers and thematic mapping. This example highlights how GERS can significantly reduce reliance on complex geoprocessing and spatial conflation, improving efficiency and accuracy in real-world GIS operations. 
+Esri has already integrated GERS identifiers into key workflows to demonstrate the practical value of an open entity reference system, 
+including using GERS IDs to join the Overture Buildings dataset with FEMA’s USA Structures dataset. By using GERS IDs as join keys, 
+Esri achieved high match rates (≈ 98 %) and enabled enriched visualization and analytic workflows in ArcGIS, including enhanced 3D 
+scene layers and thematic mapping. This example highlights how GERS can significantly reduce reliance on complex geoprocessing and 
+spatial conflation, improving efficiency and accuracy in real-world GIS operations. 
 
-By developing the GERS Community Standard through OGC, Esri believes the framework will gain wider adoption across the geospatial ecosystem, strengthening interoperability and reducing barriers to data integration across public, private, and research domains. Standardization in OGC also helps ensure that implementations of GERS remain aligned with complementary OGC API standards and other elements of the international geospatial standards baseline.
+By submitting the GERS Framework Community Standard to the OGC, Esri believes the framework will gain wider adoption across the 
+geospatial ecosystem, strengthening interoperability and reducing barriers to data integration across public, private, and research 
+domains. Standardization in OGC also helps ensure that implementations of GERS remain aligned with complementary OGC API standards 
+and other elements of the international geospatial standards baseline.
 
-Esri joined the Overture Maps Foundation as a General Member in 2023, actively participating in working groups to help create a global open database. Their goals include enhancing visualization, geocoding, and analysis capabilities while integrating authoritative GIS data such as buildings, addresses, and roads to support their users.
+Esri joined the Overture Maps Foundation as a General Member in 2023, actively participating in working groups to help create a global open database. 
+Their goals include enhancing visualization, geocoding, and analysis capabilities while integrating authoritative GIS data such as buildings, addresses, and roads to support their users.
 
-The use of GERS significantly improved Esri’s data integration process, making it easier to access information from related datasets. The enriched datasets facilitated better visualization and analysis, enabling further exploration and understanding of the data. Esri plans to continue leveraging GERS IDs in future data releases, expanding their coverage and enabling more use cases. This includes integrating GERS IDs into other themes such as transportation and places, further enhancing their mapping capabilities and supporting a wide range of applications.
+The use of GERS significantly improved Esri’s data integration process, making it easier to access information from related datasets. 
+
+The enriched datasets facilitated better visualization and analysis, enabling further exploration and understanding of the data. Esri plans to 
+continue leveraging GERS IDs in future data releases, expanding their coverage and enabling more use cases. This includes integrating GERS IDs 
+into other themes such as transportation and places, further enhancing their mapping capabilities and supporting a wide range of applications.
 
 === Precisely Software
 
