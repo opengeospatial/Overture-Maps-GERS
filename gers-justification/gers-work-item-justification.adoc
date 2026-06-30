@@ -39,16 +39,17 @@
 
 == Preface
 
-Based on feedback from OGC Members, OGC Staff, and from the broader geo-community, the goal for 
-this Community Standard is defining a "Framework" that any organization can implement with or 
-without dependencies on existing implementations but still be consistent with those existing implementations.
+Based on input and feedback from OGC Members, OGC Staff, and from the broader geo-community, the goal for 
+this Community Standard is to define a "Framework" that any organization can implement. Further, implementations may or may not have
+dependencies on existing implementations but still be consistent with those existing implementations.
 
 A framework is a basic structural foundation or set of guidelines used to build, support, or 
 guide the development of something. It provides a reusable skeleton or blueprint so that 
 developers do not have to start from scratch. Developers following the "blueprint" will 
 have interoperable implementations. This also implies that any individual or organization can implement the framework. 
 
-As such, this Community Standard defines a framework and not a system. However, implementations that comply with the requirements specified in this Community Standard will be 100% consistent/compatible with all current implementations of the Framework.
+As such, this Community Standard defines a Framework and not a system. However, implementations that comply with the 
+requirements specified in this Community Standard will be 100% consistent/compatible with all current implementations of the Framework.
 
 == Introduction
 
