@@ -4,15 +4,18 @@ The Standardization Goal for the GERS Framework Community Standard is to define 
 
 This Community Standard defines the following requirements classes and associated target types: 
 
-- requirements_package-gers-general: General requirements and recommendations such as 
-- requirements_class-gers-crs: Requirments for the specification of a coordinate reference system.
-- requirements-class-gers-registry.adoc: Requirements for the registry component of the framework.
-- requirements-class-gers-changelog: Requirements for the change log component of the framework.
-- requirements-class-gers-bridge: Requirements for the bridge file component of the framework.
-- requirements_class-gers-id: Requirements for generating a persistent, unique identifier (ID).
-- requirements-package-refmap: Requirements for the structure and content of the reference map.
+|===
+| Requirements Package/Class | Description
+| requirements_package-gers-general | General requirements and recommendations such as 
+| requirements_class-gers-crs | Requirments for the specification of a coordinate reference system.
+| requirements-class-gers-registry | Requirements for the registry component of the framework.
+| requirements-class-gers-changelog | Requirements for the change log component of the framework.
+| requirements-class-gers-bridge | Requirements for the bridge file component of the framework.
+| requirements_class-gers-id | Requirements for generating a persistent, unique identifier (ID).
+| requirements-package-refmap | Requirements for the structure and content of the reference map.
+|===
 
-The standardization target are implementations that comply with the above requirements classes.
+The standardization target are implementations that comply with the above requirements packages and classes.
 
 /////
 Conformance with this Community Standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
@@ -23,5 +26,5 @@ In order to conform to this OGC® interface standard, a software implementation 
 
 /////
 
-All requirements classes and crequirements packages described in this document are owned by the standard(s) identified.
+All requirements classes and requirements packages described in this document are owned by the standard(s) identified.
 
