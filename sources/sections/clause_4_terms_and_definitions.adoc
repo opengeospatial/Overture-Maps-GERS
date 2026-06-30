@@ -4,6 +4,22 @@ This document uses the terms defined in OGC Policy Directive 49, which is based 
 
 For the purposes of this document, the following additional terms and definitions apply.
 
+=== Bridge Files
+
+bridge files connect Framework IDs to the IDs contained in the source data. 
+
+NOTE: These files are a key component of an implementation of the Framework and offer two critical capabilities: reverse lookup of source features and insight into any conflation process used to process source feature.
+
+=== ChangeLog
+
+a changelog documents/captures changes in the data from the previous release to the current release of a reference map. 
+
+NOTE: This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
+
+=== Entity (feature)
+
+refers to a physical feature such as a building, address, or road segment. 
+
 === feature identifier
 
 identifier that uniquely designates a feature instance
@@ -30,27 +46,11 @@ representation of real world phenomenon associated with a location relative to t
 
 [SOURCE: ISO 19101-2:2018]
 
-=== Bridge Files
-
-bridge files connect GERS IDs to the IDs contained in the source data. 
-
-NOTE: These files are a key component of an implementation of the Framework and offer two critical capabilities: reverse lookup of source features and insight into any conflation process used to process source feature.
-
-=== ChangeLog
-
-a changelog documents/captures changes in the data from the previous release to the current release of a reference map. 
-
-NOTE: This information can be used to guide decisions about data matching, better understand data stability, and help detect data errors.
-
-=== Entity (feature)
-
-refers to a physical feature such as a building, address, or road segment. 
-
 === GERS Framework
 
 a framework for generating, structuring, discovering, and matching data across systems via the unique IDs. 
 
-NOTE: The Framework is made up of several components – Reference Map, Changelogs, Registry, and Bridge Files.
+NOTE: The Framework is made up of several components – Reference Map, ChangeLogs, Registry, and Bridge Files.
 
 === ID
 
@@ -61,17 +61,17 @@ a globally unique entity ID generated using the IETF UUID (Universally Unique Id
 
 === GERS Reference Map
 
-validated map datasets that connect the IDs to real-world entities.
+validated map datasets that connect the Framework structured unique IDs to real-world entities.
 
 === Registry
 
-a Registry serves as the single source of truth for all entities that are registered with and part of a Global Entity Reference System framework implementation. 
+a Registry serves as the single source of truth for all entities that are registered with and part of an implmenetation of the Framework. 
 
 NOTE: The Registry is a comprehensive catalog that tracks every stable ID ever published across all data releases in a given implementation of the Framework.
 
 === Themes
 
-geographic feature types for which schema and rules have been documented for inclusion in an implementation of an implmentation of the Framework. 
+geographic feature types for which schema and rules have been documented for inclusion in an implementation of the Framework. 
 
 === theme
 
@@ -83,4 +83,5 @@ class of features having common characteristics
 
 === Source data
 
-external geospatial data repository for which the unique IDs were generated and corresponding entries/updates incorporated into the GERS Registry, Bridge Files, ChangeLog, and Reference Map. Open Street Map is an example of an external geospatial repository.
+external geospatial data repository for which unique IDs were generated and corresponding entries/updates incorporated into the 
+Registry, Bridge Files, ChangeLog, and Reference Map. Open Street Map is an example of an external source data geospatial repository.
