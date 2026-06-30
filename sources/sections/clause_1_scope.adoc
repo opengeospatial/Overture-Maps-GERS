@@ -1,19 +1,28 @@
 == Scope
 
-The OGC GERS Framework Community Standard defines requirements and guidance for the following components of an implementation of the Framework:
+The OGC GERS Framework Community Standard defines requirements and guidance for the following components of an implementation of the Framework.
+The Framework as documented in this Community Standard is an abstraction of the the current Overture Maps Foundation (OMF) GERS implementation (Components, key schema, etc). 
 
-- Framework: The Framwork as documented in this Community Standard is an abstraction of the the current Overture Maps Foundation (OMF) GERS implementation (Components, key schema). 
-- BridgeFiles: Bridge files connect the unique IDs to the features identifiers used in the source data. These files are a key component of the Frameowrk and  offer two critical capabilities: Reverse lookup of source features and to enhance ability to join content from multiple geospatial data repositories.
-- ChangeLog: A change log capture changes in the map data from the previous release to the current release. This information can be used to  guide decisions about data matching, better understand data stability, and help detect data errors.
-- GERS ID: A GERS ID is a persistent, unique identifier for geospatial entities.  The ID remains stable across data updates and is the same when the same entity appears in multiple source datasets.
-- ReferenceMap: A reference map of all entities that have been assigned a unique and persistent ID. The content in the reference map is defined by a set of schema.
-- Registry: A Registry serves as the single source of truth for all entities that are part of an implementation of the Framework.
-- JSON Schema: The format of the content stored in the reference map is defined using JSON schema.  While Overture releases their reference map data as GeoParquet, this Community Standard does not specify the use of any particular storage or format technology. 
+- BridgeFiles: Bridge files connect the unique IDs to the features identifiers used in the source data. These files are a key component of the Framework 
+and  offer two critical capabilities: Reverse lookup of source features and enhancing ability to join content from multiple geospatial data repositories.
+- ChangeLog: A change log capture changes in the map data over time. This information can be used to track changes over time, 
+guide decisions about data matching, better understand data stability, and help detect data errors.
+- GERS ID: This ID is a persistent, unique identifier for geospatial entities.  The ID remains stable across data updates and is the same when the same entity appears in multiple source datasets.
+- ReferenceMap: A reference map of all entities that have been assigned a unique and persistent GERS ID. The mandatory content in the 
+reference map is defined by a schema.
+- Registry: A Registry serves as the single source of truth for all entities referenced in an implementation of the Framework.
+- JSON Schema: The format of the content stored in the reference map is defined using JSON schema. 
+This Community Standard does not specify the use of any particular storage or format technology. 
 - Themes: Any implementation of the framework organizes geospatial content into themes, such as elevation, buildings, or hydrology. 
-- Feature Types: Themes, such as land cover types, contain an enumeration of feature types. The OGC Community Standard defines how an existing enumeration can be extended while maintaining backwards compatibility.
+- Feature Types: Themes, such as land cover types, contain an enumeration of feature types. The OGC Community Standard defines how an 
+existing enumeration can be extended while maintaining backwards compatibility.
 
 Each of the above components are defined in this Community Standard using dictionaries that are clearly and fully documented. 
 
-Organization that implement the requirements and recommendations as stated in this Community Standard will be 100% consistent with the existing implementations of the Framework but "owned" by the implementing organization. An example of this approach is the `precisely` implementation (See Annex D). 
+NOTE: This Community Standard does not specify the use of any particular storage or format technology.
 
-This Community Standard DOES NOT specify how the the IDs, bridge files, registry and so forth are physically stored. Current implementations use storage and communication formats such as GeoParquet and GeoJSON and storage technologies such as Azure blob storage.
+Organization that implement the requirements and recommendations as stated in this Community Standard will be 100% consistent with the 
+existing implementations of the Framework but "owned" by the implementing organization. An example of this approach is the `precisely` implementation (See Annex D). 
+
+This Community Standard DOES NOT specify how the the IDs, bridge files, registry and so forth are physically stored. Current implementations use 
+storage and communication formats such as GeoParquet and GeoJSON and storage technologies such as Azure blob storage.
