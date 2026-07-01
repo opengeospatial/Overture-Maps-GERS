@@ -196,7 +196,9 @@ Examples from existing Framework implementations:
 
 ==== Class
 
-In the hierarchy, a Class is a fine-grained attribute that details the specific function, size, or local importance of the asset. 
+In the hierarchy, a Class is a fine-grained attribute that details the specific function, size, or local importance of the asset. A class is therefore 
+a foundational schema property used to categorize real-world features within broader subtypes (e.g., categorizing road features like a motorway, 
+cycleway, or living street). It acts as a standardized identifier for specific types of data.
 
 The purpose: of using a Class designation is to enable precise styling, rendering, and more fine grained searches.
 
