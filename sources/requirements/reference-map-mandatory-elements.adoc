@@ -13,4 +13,3 @@ permission:: Implementations of the ReferenceMap _MAY_ provide additional restri
 in a given theme. For example, if the ReferenceMap contains a `building` theme, the mandatory `geometry` element may
 be clarified with a statement: `A polygon representing the building's footprint`.
 ====
-gers-geometry.adoc
