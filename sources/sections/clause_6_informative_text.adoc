@@ -1,6 +1,6 @@
 [obligation=informative]
 
-== Global Entity Reference System Framework Concepts
+== GERS Framework Concepts
 
 This clause provides non-normative information on the concepts essential to the GERS Framework (hereafter referred to as the `Framework`. 
 
