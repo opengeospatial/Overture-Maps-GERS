@@ -126,6 +126,7 @@ ReferenceMap, and in many query instances.
 
 The Classification Hierarchy is as follows.
 
+```
 [ Theme ]  --> Broadest structural data layer (e.g., transportation)
     ↓
  [ Type ]  --> The specific data table or schema object (e.g., segment)
@@ -133,7 +134,7 @@ The Classification Hierarchy is as follows.
 [ Subtype ]--> Top-level category of the physical asset (e.g., road or railroad)
     ↓
  [ Class ] --> Functional role or importance level (e.g., a primary road or Interstate)
-
+```
 
 NOTE: While the current implementations of components of the Framework use defined enumerations for `theme` and `type`, 
 these enumerations can be extended and/or replaced with other enumerations.
