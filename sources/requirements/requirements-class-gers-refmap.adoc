@@ -2,7 +2,7 @@
 
 ====
 [%metadata]
-subject:: Requirements for optional class ReferenceMap
+subject:: Requirements class for optional requirements package for ReferenceMap
 identifier:: http://www.opengis.net/spec/GERS/1.0/req/req-class-gers-refmap
 requirement:: /req/path-to-reference-map
 requirement:: /req/reference-map-mandatory-elements
