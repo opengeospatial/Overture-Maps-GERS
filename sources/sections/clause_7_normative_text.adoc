@@ -317,7 +317,7 @@ the objects in a bucket. Or an implementation could be one or more normalized re
 
 [[req-class-refmap-7]]
 
-=== Requirement Pacage: Reference Map (Optional)
+=== Requirement Package: Reference Map (Optional)
 
 This section defines the requirements for the optional reference map. 
 
@@ -348,7 +348,7 @@ is the same for all themes and types in a Framework compliant ReferenceMap. The 
 can be extended as necessary. An example of such an extended set of properties is https://docs.overturemaps.org/schema/reference/base/water/[here].
 
 Also, a given implementation of the framework may have additional mandatory elements for a given theme. For example, a `landuse` theme may have a mandatory 
-land use code property. However, such rules are specific to a given implementation of the framework.
+land use code property. However, such rules are specific to a given implementation of the Framework and beyond the scope of this Community Standard.
 
 include::../requirements/reference-map-mandatory-elements.adoc[]
 
