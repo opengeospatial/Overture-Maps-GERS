@@ -319,11 +319,17 @@ the objects in a bucket. Or an implementation could be one or more normalized re
 
 === Requirement Package: Reference Map (Optional)
 
-This section defines the requirements for the optional reference map. 
+This section defines the optional requirements package for the implementing a reference map. 
 
 include::../requirements/requirements-package-gers-refmap.adoc[]
 
-==== Requirement: Path to a given reference map
+==== Reference Map Rwquirements Class
+
+The following requirements comprise the reference Map Requirements Class part of the Reference Map Requirements Package.
+
+include::../requirements/requirements-class-gers-refmap.adoc[]
+
+===== Requirement: Path to a given reference map
 
 The following requirement states how a path to a given reference map is structured. This path could be to a file in a 
 file oriented storage system, "table" paths in an RDMS, or S3 buckets path using slashes.
@@ -341,7 +347,7 @@ Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 
 |<type>     | A feature type within a theme, such as railways or interstates in a transportation theme.
 |===
 
-==== Requirement: Reference Map mandatory properties
+===== Requirement: Reference Map mandatory properties
 
 Any content stored in a ReferenceMap has a minimum set of required properties. The minimum set of properties 
 is the same for all themes and types in a Framework compliant ReferenceMap. The minimum set of properties 
