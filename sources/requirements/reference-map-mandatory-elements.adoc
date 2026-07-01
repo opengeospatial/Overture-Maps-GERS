@@ -4,11 +4,12 @@
 [%metadata]
 subject:: List of mandatory elements for any record for an entity stored in a RefereceMap.
 identifier:: req/reference-map-mandatory-elements
-part:: Any record for an entity (feature) in a ReferenceMap _SHALL_ have a unique GER-ID as an identifier.
+part:: Any record for an entity (feature) in a ReferenceMap _SHALL_ have a unique ID structured as specified in the GERS ID requirements class.
 part:: Any record for an entity (feature) in a ReferenceMap _SHALL_ have a geometry.
 part:: Any record for an entity (feature) in a ReferenceMap _SHALL_ have a version number. This is the version number of the feature, 
 incremented in each release where the geometry or attributes of this feature changed.
+part:: Any record for an entiry (feature) in a ReferenceMap _SHALL_ have a bounding box (bbox) as defined in ../../requirements/gers-general-bbox.adoc
 permission:: Implementations of the ReferenceMap _MAY_ provide additional restrictions or guidance for a given element
 in a given theme. For example, if the ReferenceMap contains a `building` theme, the mandatory `geometry` element may
-be clarified with a statement: A polygon representing the building's footprint.
+be clarified with a statement: `A polygon representing the building's footprint`.
 ====
