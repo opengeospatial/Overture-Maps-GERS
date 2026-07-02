@@ -347,10 +347,10 @@ Could be `"/"` for a CDB datastore or `s3://store_name/...` in an GeoParquet S3 
 |<type>     | A feature type within a theme, such as railways or interstates in a transportation theme.
 |===
 
-===== Requirement: Reference Map mandatory properties
+===== Requirement: Reference Map mandatory schema properties
 
-Any content stored in a ReferenceMap has a minimum set of required properties. The minimum set of properties 
-is the same for all themes and types in a Framework compliant ReferenceMap. The minimum set of properties 
+Any content stored in a ReferenceMap requires a minimum set of required properties. The minimum set of properties 
+is the same for any entity (feature) stored in a Framework compliant ReferenceMap. The minimum set of properties 
 can be extended as necessary. An example of such an extended set of properties is https://docs.overturemaps.org/schema/reference/base/water/[here].
 
 Also, a given implementation of the framework may have additional mandatory elements for a given theme. For example, a `landuse` theme may have a mandatory 
@@ -358,7 +358,23 @@ land use code property. However, such rules are specific to a given implementati
 
 include::../requirements/reference-map-mandatory-elements.adoc[]
 
-NOTE: The rationale for specifying this mandatory set of elements is to allow maintaining consistency with all existing implementation of the framework.
+NOTE: The rationale for specifying this mandatory set of elements is to support maintaining consistency with all existing implementation of the Framework.
+
+In table form, the above requirement is stated as:
+
+|===
+| *Property* | *Suggested Data Type* | *Description*
+|id   |  string | A feature ID. This may be an ID associated with the Global Entity Reference System (GERS) if—and-only-if the feature represents an entity that is part of GERS.
+|geometry | binary | A WKB representation of the entity's geometry. MUST be one of the geometry types as defined by the GeoJSON schema.
+|bbox	 | struct  | Bounding box defined by two longitudes and two latitudes: latitude is a decimal number between -90.0 and 90.0; longitude is a decimal number between -180.0 and 180.0.
+|version	| integer | Version number of the feature, incremented in each Overture release where the geometry or attributes of this feature changed.
+|sources	| array   | The array of source information for the properties of a given feature, with each entry being a source object which lists the property in JSON Pointer notation and the dataset that specific value came 
+|theme  | string | Name of the Overture theme being queried.
+|type	| string	 | Name of the Overture feature type being queried.
+|subtype	| string | A broad category of the type and purpose.
+|===
+
+Please note that the above table does to specify any mandatory data types. The data types shown are recommendations only. Any given implementation of the Framework can use data types most appropriate for the technology used to implement the Framework.
 
 ==== Recommendation" Reference map optional properties
 
