@@ -1,2 +1,52 @@
-== Annex A
+= Annex A: Examples
+
+== Example of Bridge File dataset hierarchy structure
+
+The following is an example of the structure of datasets in a BridgeFile for a given release (version).
+
+```
+\bridgefiles
+    \<RELEASE>
+        \dataset=OpenStreetMap
+            \theme=divisions
+                \type=division
+                \type=division_area
+            \theme=buildings
+                 \type=building
+            \theme=transportation
+                 \type=segment
+        \dataset=Esri Community Maps
+            \theme=buildings
+                 \type=building
+        \dataset=PinMeTo
+            \theme=places
+                 \type=places
+        \dataset=meta
+            \theme=places
+                \type=places
+        \dataset=Microsoft
+            \theme=places
+                \type=places
+        \dataset=Instituto Geográfico Nacional (España)
+            \theme=buildings
+                \type=building
+        \dataset=geoBoundaries
+            \theme=divisions
+                \type=division
+                \type=division_area
+```
+
+Where <release> is the release date you wish to search.
+
+Assuming that GeoParquet is the storage format and s3 is the storage technology, then an example SQL Query might be:
+
+```
+CREATE TABLE IF NOT EXISTS border_buildings AS
+(SELECT
+    *
+FROM read_parquet('s3://cdb-us-west-2/bridgefiles/2025-05-21.0/theme=buildings/type=building/*')
+WHERE
+bbox.xmin > -117.048198 AND bbox.xmax < -117.044608
+    AND bbox.ymin > 32.535068 AND bbox.ymax < 32.600154);
+```
 
