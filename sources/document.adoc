@@ -4,10 +4,10 @@
 :language: en
 :status: Draft
 :committee: technical
-:docnumber: xx-xxx
+:docnumber: 26-036
 :external-id: http://www.opengis.net/docs/CS/GERS/1.0
 :edition: 1.0
-:received-date: 2026-xx-xx
+:received-date: 2026-07-01
 :issued-date: 2026-xx-xx
 :published-date: 2026-xx-xx
 :copyright-year: 2026
