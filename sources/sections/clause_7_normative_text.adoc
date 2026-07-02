@@ -195,7 +195,9 @@ The bridge file schema consists of the following columns:
 |type	| string	| The type of the feature, either derived from the data or provided by the creator of the bridge file.
 |===
 
-NOTE: The OMF and other implementatins have a  `between` property that is applicable to segments contained in a lineal feature dataset, such as Roads or Streams. 
+NOTE: The above table _does not_ specify any mandatory data types. The data types shown are recommendations only. Any given implementation of the Framework can use data types most appropriate for the technology used to implement the Framework.
+
+NOTE: The OMF and other implementations have a  `between` property that is applicable to segments contained in a lineal feature dataset, such as Roads or Streams. 
 The concept is similar to how a position on a linear segment is identified in a linear reference system.
 
 ==== Example of BridgeFile query
@@ -237,6 +239,8 @@ include::../requirements/gers-registry-schema.adoc[]
 |path	| string	| Relative path (URI) to entity/feature in latest release of the ReferenceMap. |  
 |bbox	| struct(xmin float, xmax float, ymin float, ymax float)	| Bounding box coordinates in the CRS of the GERS framework implementation. | dcat:bbox
 |===
+
+NOTE: The above table _does not_ specify any mandatory data types. The data types shown are recommendations only. Any given implementation of the Framework can use data types most appropriate for the technology used to implement the Framework.
 
 ==== Updates to the Registry File
 
@@ -374,7 +378,7 @@ In table form, the above requirement is stated as:
 |subtype	| string | A broad category of the type and purpose.
 |===
 
-Please note that the above table does to specify any mandatory data types. The data types shown are recommendations only. Any given implementation of the Framework can use data types most appropriate for the technology used to implement the Framework.
+NOTE: The above table _does not_ specify any mandatory data types. The data types shown are recommendations only. Any given implementation of the Framework can use data types most appropriate for the technology used to implement the Framework.
 
 ==== Recommendation" Reference map optional properties
 
