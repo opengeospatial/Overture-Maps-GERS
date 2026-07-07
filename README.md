@@ -6,7 +6,7 @@ Numerous datasets/resources with geospatial content reference the same real-worl
 
 ## What is the GERS framework?
 
-The framework as originally defined by the [Overture Maps Foundation](https://overturemaps.org) provides a model for generating, cateloguing, and leveraging the use of unique, persistent identifiers for real-world entities such as buildings, places, and roads in their open map data. These IDs and associated components of the framework facilitate data interoperability and sharing by enabling different datasets to be easily connected and enriched using a common reference.
+The framework as originally defined by the [Overture Maps Foundation](https://overturemaps.org) provides a model for generating, cataloguing, and leveraging the use of unique, persistent identifiers for real-world entities such as buildings, places, and roads in their open map data. These IDs and associated components of the framework facilitate data interoperability and sharing by enabling different datasets to be easily connected and enriched using a common reference.
 
 ### Who supports using/implementing the GERS framework?
 
@@ -14,7 +14,7 @@ The use of unique IDs and the associated support framework is supported by a div
 
 ## What does a GER ID look like?
 
-GERS IDs as defined in the Community Standard framework use the [UUID - Universally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) format. Every ID is structured following the standard UUID format (e.g., 12345678-1234-5678-1234-567812345678), making them:
+GERS IDs as defined in the Framework Community Standard use the [UUID - Universally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) format. Every ID is structured following the standard UUID format (e.g., 12345678-1234-5678-1234-567812345678), making them:
 
 * Globally unique
 * System-agnostic
