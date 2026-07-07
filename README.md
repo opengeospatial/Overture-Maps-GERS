@@ -1,4 +1,4 @@
-# OGC Global Entity Reference ID (GER-ID) Draft Community Standard
+# OGC GERS Framework Draft Community Standard
 
 ## The standardization problem
 
