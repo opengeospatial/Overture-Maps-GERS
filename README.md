@@ -4,11 +4,17 @@
 
 Numerous datasets/resources with geospatial content reference the same real-world entities but use their own semantics, conventions, identifiers, and vocabulary, making them difficult to merge and combine.
 
-## What is the GERS framework?
+## What is the GERS Framework?
 
-The framework as originally defined by the [Overture Maps Foundation](https://overturemaps.org) provides a model for generating, cataloguing, and leveraging the use of unique, persistent identifiers for real-world entities such as buildings, places, and roads in their open map data. These IDs and associated components of the framework facilitate data interoperability and sharing by enabling different datasets to be easily connected and enriched using a common reference.
+The framework as originally defined by the [Overture Maps Foundation](https://overturemaps.org) provides a model for generating, cataloguing, and 
+leveraging the use of unique, persistent identifiers for real-world entities such as buildings, places, and roads in their open map data. 
+These IDs and associated components of the Framework facilitate data interoperability and sharing by enabling different datasets to be 
+easily connected and enriched using a common reference. As such, the Frameowrk defines a number of components to leverage the value of the unique identifiers.
 
-### Who supports using/implementing the GERS framework?
+NOTE: The unique identifiers as generated and used in the context of the GERS Framework are _not meant_ to replace any existing feature identifiers. Instead, they are meant to augment
+existing data and associated identifers. 
+
+## Who supports using/implementing the GERS framework?
 
 The use of unique IDs and the associated support framework is supported by a diverse community of over 40 organizations, including Amazon Web Services (AWS), Meta, Microsoft, TomTom, and Esri. These companies have committed to and depend on the implementations of the framework. Many of the Overture Maps supporting organizations are also OGC Member organizations.
 
