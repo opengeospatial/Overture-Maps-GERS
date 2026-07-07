@@ -1,4 +1,4 @@
-:CSname: Global Entity Reference System Framework
+:CSname: GERS Framework
 :Title: {CSname} Community Standard Work Item Justification
 :titletext: {Title}
 :doctype: book
@@ -18,7 +18,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <2025-12-28>
 |Approval Date:   <2026-mm-dd>
-|Internal reference number of this OGC(R) document:    25-024r1
+|Internal reference number of this OGC(R) document:    25-024r2
 |Category: OGC(R) Community Standard Work Item Justification
 |Authors:   Carl Reed, PhD, Amy Rose
 |===
