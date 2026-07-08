@@ -1,4 +1,4 @@
-# OGC GERS Framework Draft Community Standard
+# Draft OGC GERS Framework Community Standard
 
 ## The standardization problem
 
